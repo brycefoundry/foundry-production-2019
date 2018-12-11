@@ -1,0 +1,82 @@
+@import "fonts";
+@import "compass/css3/transform";
+@import "compass/css3";
+
+//Colors
+
+
+$yellow-1: #FFC623;
+$dark-1: #202020;
+$green-1: #005C64;
+$brown-1: #773A18;
+$grey-1: #E3E3E3;
+
+
+body.disable{
+	overflow: hidden;
+}
+
+strong{
+	font-weight: bold;
+}
+
+html{
+	
+}
+
+h1, h2, h3, h4, h5, h6, p{
+
+}
+
+h1{
+	
+}
+
+h2{
+	
+}
+
+h3{
+	
+}
+
+h4{
+	
+}
+
+h5{
+	
+}
+
+h6{
+	
+}
+
+
+p{
+	
+}
+
+ul, li{
+	
+}
+
+ul li{
+	
+}
+
+a{
+	
+
+	&:hover{
+		text-decoration: underline;
+		
+	}
+}
+
+a.btn, button.btn{
+
+	
+}
+
+

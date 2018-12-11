@@ -1,0 +1,14 @@
+/* line 15, ../sass/global.scss */
+body.disable {
+  overflow: hidden;
+}
+
+/* line 19, ../sass/global.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 71, ../sass/global.scss */
+a:hover {
+  text-decoration: underline;
+}
