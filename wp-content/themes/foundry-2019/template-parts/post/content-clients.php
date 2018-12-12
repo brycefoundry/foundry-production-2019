@@ -21,10 +21,37 @@ $gallerycount = 0;
 ?>
 
 
-<section style="height: 100vh; background-image:url('<?php the_field( 'cover_image');?>'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<section class="case-section intro" style="background-image:url('<?php the_field( 'cover_image');?>');">
+
 	<div class="container">
 		<div class="row">
-			<div class="col"></div>
+			<div class="col-md-6">
+				<h1 style="background-image:url('<?php the_field( 'client_logo');?>');"><?php single_post_title(); ?> </h1>
+				<p><?php the_field( 'description');?></p>
+
+				<?php if( have_rows('call_to_actions') ):?>
+
+					<?php while ( have_rows('call_to_actions') ) : the_row(); ?>
+
+						<?php 
+
+						$link = get_sub_field('button');
+					
+						if( $link ): 
+							$link_url = $link['url'];
+							$link_title = $link['title'];
+							$link_target = $link['target'] ? $link['target'] : 'self';
+							?>
+							<a class="btn btn-primary" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+						<?php endif; ?>
+						
+					<?php endwhile; ?>
+
+						<?php endif; ?>
+
+				
+
+			</div>
 		</div>
 	</div>
 	
@@ -38,7 +65,7 @@ $gallerycount = 0;
 			
 
 			<?php if(get_sub_field('background_type')=='image'): ?>
-				<section class="<?php the_sub_field('contrast')?>" style="background-image:url('<?php the_sub_field( 'background_image');?>');">
+				<section class="case-section <?php the_sub_field('contrast')?>" style="background-image:url('<?php the_sub_field( 'background_image');?>');">
 						
 					<?php the_sub_field('editor')?>
 
@@ -47,7 +74,7 @@ $gallerycount = 0;
 			<?php endif; ?>
 
 			<?php if(get_sub_field('background_type')=='video'): ?>
-				<section class="<?php the_sub_field('contrast')?>" style="">
+				<section class="case-section <?php the_sub_field('contrast')?>" style="">
 						
 					<?php the_sub_field('editor')?>
 
@@ -68,7 +95,7 @@ $gallerycount = 0;
 			<?php endif; ?>
 
 			<?php if(get_sub_field('background_type')=='color'): ?>
-				<section class="<?php the_sub_field('contrast')?>" style="background-color:<?php the_sub_field( 'background_color');?>;">
+				<section class="case-section <?php the_sub_field('contrast')?>" style="background-color:<?php the_sub_field( 'background_color');?>;">
 						
 					<?php the_sub_field('editor')?>
 

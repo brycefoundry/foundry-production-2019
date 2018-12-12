@@ -2,7 +2,11 @@
 	
 	$(function () {
 		
-	
+		$.scrollify({
+	       section : ".case-section",
+	     });
+
+		
 		
 	});
 	

@@ -45,7 +45,8 @@ font-family: $futura;
 h4{
 font-size: 2.875rem;	
 font-family: $tungsten;
-letter-spacing: 2rem;
+letter-spacing: 1rem;
+text-transform: uppercase;
 
 }
 
@@ -64,7 +65,7 @@ h6{
 p{
 	font-size: 1rem;
 	font-family: $metaserif;
-	line-height: 1rem;	
+	line-height: 1.4rem;	
 }
 
 ul, li{
@@ -82,6 +83,10 @@ a{
 		text-decoration: underline;
 		
 	}
+}
+
+section{
+	padding:0 60px;
 }
 
 a.btn, button.btn{

@@ -65,30 +65,36 @@ h3 {
 h4 {
   font-size: 2.875rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
 }
 
-/* line 52, ../sass/global.scss */
+/* line 53, ../sass/global.scss */
 h5 {
   font-size: 1.5rem;
   letter-spacing: .5rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
 }
 
-/* line 58, ../sass/global.scss */
+/* line 59, ../sass/global.scss */
 h6 {
   font-size: 1.5rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 64, ../sass/global.scss */
+/* line 65, ../sass/global.scss */
 p {
   font-size: 1rem;
   font-family: "MetaSerif-Book", "Times New Roman", serif;
-  line-height: 1rem;
+  line-height: 1.4rem;
 }
 
-/* line 81, ../sass/global.scss */
+/* line 82, ../sass/global.scss */
 a:hover {
   text-decoration: underline;
+}
+
+/* line 88, ../sass/global.scss */
+section {
+  padding: 0 60px;
 }

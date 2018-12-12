@@ -1,0 +1,40 @@
+section.intro{
+	height: 100vh;
+	background-repeat: no-repeat; 
+	background-size: cover; 
+
+	background-position: top center;
+	padding: 0 60px;
+
+	.container{
+		
+		display: block;
+		position: relative;
+
+		height: 100%;
+		
+		.row{
+			position: absolute;
+			
+			top: 50%;
+			@include transform(translateY(-50%));
+		}
+
+		h1, p{
+			margin-bottom: 20px;
+			color: rgba(255,255,255,.5);
+		}
+
+		h1{
+			text-indent: -10000px;
+			overflow: hidden;
+			background-repeat: no-repeat;
+			background-position: bottom left;
+		}
+	}
+}
+
+section{
+	padding: 100px 60px;
+	height: 100vh;
+}
