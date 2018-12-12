@@ -178,13 +178,13 @@ section {
   padding: 0 60px;
 }
 
-/* line 1, ../sass/case-detail.scss */
+/* line 4, ../sass/case-detail.scss */
 section {
   padding: 100px 60px;
   height: 100vh;
 }
 
-/* line 6, ../sass/case-detail.scss */
+/* line 9, ../sass/case-detail.scss */
 section.intro {
   height: 2300px;
   background-repeat: no-repeat;
@@ -192,13 +192,13 @@ section.intro {
   background-position: top center;
   padding: 0 60px;
 }
-/* line 14, ../sass/case-detail.scss */
+/* line 17, ../sass/case-detail.scss */
 section.intro .container {
   display: block;
   position: relative;
   height: 100%;
 }
-/* line 21, ../sass/case-detail.scss */
+/* line 24, ../sass/case-detail.scss */
 section.intro .container .row {
   position: absolute;
   top: 50%;
@@ -207,12 +207,12 @@ section.intro .container .row {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 28, ../sass/case-detail.scss */
+/* line 31, ../sass/case-detail.scss */
 section.intro .container h1, section.intro .container p {
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 33, ../sass/case-detail.scss */
+/* line 36, ../sass/case-detail.scss */
 section.intro .container h1 {
   text-indent: -10000px;
   overflow: hidden;

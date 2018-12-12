@@ -13,6 +13,7 @@ wp-config.php
 wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
+!wp-content/uploads/
 
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
