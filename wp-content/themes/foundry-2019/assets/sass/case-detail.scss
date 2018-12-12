@@ -1,5 +1,10 @@
-section.intro{
+section{
+	padding: 100px 60px;
 	height: 100vh;
+}
+
+section.intro{
+	height: 2300px;
 	background-repeat: no-repeat; 
 	background-size: cover; 
 
@@ -34,7 +39,3 @@ section.intro{
 	}
 }
 
-section{
-	padding: 100px 60px;
-	height: 100vh;
-}
