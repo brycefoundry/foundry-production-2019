@@ -6,12 +6,13 @@ body.single-clients section{
 	height: 100vh;
 
 	&.intro{
-		height: 100vh;
+		
 		background-repeat: no-repeat; 
-		background-size: 1920px auto; 
+		background-size: cover;
 
 		background-position: top center;
-		padding: 0 60px;
+		padding: 200px 60px;
+		height: auto;
 
 		.container{
 			
@@ -32,14 +33,33 @@ body.single-clients section{
 				color: rgba(255,255,255,.5);
 			}
 
-			h1{
-				text-indent: -10000px;
+			.logo{
+				
+				height: 60px;
+				background-size: auto 100%;
 				overflow: hidden;
 				background-repeat: no-repeat;
 				background-position: bottom left;
 			}
 		}
+
+		@media only screen and (min-width: 1920px){
+			background-size: cover;
+			height: 100vh;
+		}
+
+		@media only screen and (max-width: 600px){
+			
+			padding: 300px 20px;
+			height: auto!important;
+		}
+
 	}
+
+
+
 }
+
+
 
 

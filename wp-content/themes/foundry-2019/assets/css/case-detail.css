@@ -5,19 +5,19 @@ body.single-clients section {
 }
 /* line 8, ../sass/case-detail.scss */
 body.single-clients section.intro {
-  height: 100vh;
   background-repeat: no-repeat;
-  background-size: 1920px auto;
+  background-size: cover;
   background-position: top center;
-  padding: 0 60px;
+  padding: 200px 60px;
+  height: auto;
 }
-/* line 16, ../sass/case-detail.scss */
+/* line 17, ../sass/case-detail.scss */
 body.single-clients section.intro .container {
   display: block;
   position: relative;
   height: 100%;
 }
-/* line 23, ../sass/case-detail.scss */
+/* line 24, ../sass/case-detail.scss */
 body.single-clients section.intro .container .row {
   position: absolute;
   top: 50%;
@@ -26,15 +26,30 @@ body.single-clients section.intro .container .row {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 30, ../sass/case-detail.scss */
+/* line 31, ../sass/case-detail.scss */
 body.single-clients section.intro .container h1, body.single-clients section.intro .container p {
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 35, ../sass/case-detail.scss */
-body.single-clients section.intro .container h1 {
-  text-indent: -10000px;
+/* line 36, ../sass/case-detail.scss */
+body.single-clients section.intro .container .logo {
+  height: 60px;
+  background-size: auto 100%;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: bottom left;
+}
+@media only screen and (min-width: 1920px) {
+  /* line 8, ../sass/case-detail.scss */
+  body.single-clients section.intro {
+    background-size: cover;
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 8, ../sass/case-detail.scss */
+  body.single-clients section.intro {
+    padding: 300px 20px;
+    height: auto !important;
+  }
 }

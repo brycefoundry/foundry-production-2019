@@ -24,6 +24,12 @@ html{
 	font-family: $metaserif;
 }
 
+@media only screen and (max-width: 360px){
+	html{
+		font-size: 12px;
+	}
+}
+
 h1, h2, h3, h4, h5, h6, p{
 	
 }

@@ -26,7 +26,7 @@ $gallerycount = 0;
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<h1 style="background-image:url('<?php the_field( 'client_logo');?>');"><?php single_post_title(); ?> </h1>
+				<div class="logo" style="background-image:url('<?php the_field( 'client_logo');?>');"> </div>
 				<p><?php the_field( 'description');?></p>
 
 				<?php if( have_rows('call_to_actions') ):?>
