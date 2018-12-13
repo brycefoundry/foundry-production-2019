@@ -63,9 +63,9 @@
 						<div class="col-sm-4 image-area">
 							<div class="video">
 								<video autoplay muted loop playsinline>
-								  <source src="https://ak9.picdn.net/shutterstock/videos/30236209/preview/stock-footage-female-ux-architect-consults-design-engineer-they-work-on-mobile-application-late-at-night-she.webm" type="video/mp4">
-								  <source src="https://ak9.picdn.net/shutterstock/videos/30236209/preview/stock-footage-female-ux-architect-consults-design-engineer-they-work-on-mobile-application-late-at-night-she.webm" type="video/ogg">
-								  <source src="https://ak9.picdn.net/shutterstock/videos/30236209/preview/stock-footage-female-ux-architect-consults-design-engineer-they-work-on-mobile-application-late-at-night-she.webm" type="video/webm">
+								  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.mp4" type="video/mp4">
+								  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.ogg" type="video/ogg">
+								  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.webm" type="video/webm">
 								Your browser does not support the video tag.
 								</video>
 								
