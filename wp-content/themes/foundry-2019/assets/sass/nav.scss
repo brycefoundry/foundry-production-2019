@@ -380,7 +380,7 @@ $lng-duration: .4s all ease-in-out;
 }
 
 @media only screen and (max-width: 600px){
-
+	
 	.header{
 		padding: 0;
 		@include transform(translate3d(0, 0px, 0));
@@ -398,17 +398,21 @@ $lng-duration: .4s all ease-in-out;
 	#menu{
 		padding: 0px;
 
-		.menu, .submenu{
-			padding: 0;
-		}
+		
 
 		.container{
 			@include border-radius(0px);
+			.menu, .submenu{
+				padding: 40px 0 0 0;
+				
+			}
 
 			.col-sm-4.image-area{
 				flex: 0 0 100%;
 				max-width: 100%;
 				height: 30%;
+
+
 
 			}
 
@@ -416,6 +420,10 @@ $lng-duration: .4s all ease-in-out;
 				max-width: 50%;
 				flex: 0 0 50%;
 				height: 70%;
+
+				.menu, .submenu{
+					vertical-align: top;
+				}
 			}
 		}
 	}
