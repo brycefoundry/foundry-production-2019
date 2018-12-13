@@ -115,3 +115,8 @@ a:hover {
 section {
   padding: 0 60px;
 }
+
+/* line 114, ../sass/global.scss */
+.wrapper {
+  overflow: hidden;
+}
