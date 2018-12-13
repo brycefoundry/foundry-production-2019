@@ -29,19 +29,23 @@
 			<header class="header clear" role="banner">
 					<div class="container">
 						<div class="row">
-							<div class="col">
+							<div class="col-sm-4">
+								<a class="back-btn" href="">Clients</a>
+							</div>
+
+							<div class="col-sm-4 logo-container">
+								
+								<a class="logo" href="<?php echo home_url(); ?>">
+									
+									
+								</a>
 								
 							</div>
 							
 							
 
-							<div class="col">
-								<div class="logo">
-								<a href="<?php echo home_url(); ?>">
-									<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-									
-								</a>
-								</div>
+							<div class="col-sm-4">
+								
 
 								<button id="menu-btn">
 								<span>Menu</span>
