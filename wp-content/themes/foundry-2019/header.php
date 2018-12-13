@@ -60,13 +60,48 @@
 			<div id="menu">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-4">left photo</div>
-						<div class="col-sm-8">
+						<div class="col-sm-4 image-area">left photo</div>
+						<div class="col-sm-4 top-nav">
 
 							<nav class="nav" role="navigation">
-								<?php html5blank_nav(); ?>
+								<div class="menu">
+									<ul>
+										<li class="page_item page-item-16"><a href="/">Home</a></li>
+										<li class="expandable page_item page-item-16"><a href="/clients/">Clients<span class="chevron"></span></a></li>
+										<li class="expandable page_item page-item-16"><a href="/about/">About<span class="chevron"></span></a></li>
+										<li class="page_item page-item-12"><a href="/meet/">Meet</a></li>
+										<li class="page_item page-item-14"><a href="/news-media/">News &amp; Media</a></li>
+									</ul>
+								</div>
 							</nav>
 
+						</div>
+
+						<div class="col-sm-4 subnav-container">
+							<div class="subnav">
+								<div class="submenu">
+									<ul class="about-sub-nav">
+										<li><a href="">My Story</a></li>
+										<li><a href="">Strategy</a></li>
+										<li><a href="">Design Sprints</a></li>
+										<li><a href="">Development</a></li>
+										<li><a href="">Collaborators</a></li>
+										<li><a href="">Pricing</a></li>
+									</ul>
+
+									<ul class="clients-sub-nav active">
+										<li><a href="">Atlassian</a></li>
+										<li><a href="">Alter G</a></li>
+										<li><a href="">Bloom Labs</a></li>
+										<li><a href="">Grace Hill</a></li>
+										<li><a href="">Idealspot</a></li>
+										<li><a href="">KW Heyl Group</a></li>
+										<li><a href="">MaxPlay</a></li>
+										<li><a href="">Nokia Bell Labs</a></li>
+										<li><a href="">Valera Health</a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

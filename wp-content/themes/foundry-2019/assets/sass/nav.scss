@@ -27,11 +27,20 @@ $lng-duration: .4s all ease-in-out;
 	width: 80px;
 	background-color: white;
 	position: absolute;
-	right: 0;
+	right: 40px;
 	top: 0;
 	cursor: pointer;
 	overflow: hidden;
 	border: none;
+	border: 1px solid rgba(0,0,0,0);
+	@include box-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+	@include transition($sm-duration);
+	@include border-radius(2px);
+
+	&:focus{
+		outline: 0;
+	}
+
 	span{
 		width: 20px;
 		height: 1px;
@@ -40,6 +49,7 @@ $lng-duration: .4s all ease-in-out;
 		position: absolute;
 		right: 0;
 		top: 0;
+		z-index: 10;
 		@include transform(translate(-29px, 39px)rotate(0));
 		@include transition(.2s all ease-in-out);
 		text-indent: -10000px;
@@ -71,6 +81,57 @@ $lng-duration: .4s all ease-in-out;
 		}
 	}
 
+
+
+	&:after{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		@include transform(scaleX(0));
+		@include transform-origin(left, center);
+		@include transition($sm-duration);
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 0;
+	}
+
+	&:hover{
+		background-color: rgba(255,255,255, .1);
+		border: 1px solid rgba(255,255,255, 0);
+		@include transition($sm-duration);
+		span{
+			background-color: white;
+			@include transition($sm-duration);
+
+
+			&:before{
+				background-color: white;
+				@include transition($sm-duration);
+
+			}
+
+			&:after{
+				background-color: white;
+				@include transition($sm-duration);
+
+			}
+		}
+
+		&:after{
+			
+			@include transform(scaleX(1));
+			@include transform-origin(left, center);
+			@include transition($sm-duration);
+			
+			opacity: 1;
+			
+		}
+	}
+
 	
 }
 
@@ -81,10 +142,11 @@ $lng-duration: .4s all ease-in-out;
 	height: 100vh;
 
 	width: 100%;
-	padding: 120px;
+	padding: 80px;
 	background-color: rgba(0,0,0,.3);
 	z-index: 100;
 	@include transform(scale(2,2));
+
 	opacity: 0;
 	pointer-events: none;
 	@include transition($sm-duration);
@@ -93,23 +155,155 @@ $lng-duration: .4s all ease-in-out;
 	overflow: hidden;
 
 	.menu{
-		padding: 200px 0 0 100px;
+		padding: 0px 0 60px 60px;
 		@include transform(translate3d(-30px, 0, 0));
 		opacity: 0;
 		@include transition($sm-duration);
 		ul{
 			li{
+				
+				margin: 1px 0;
+				position: relative;
+				background-color: rgba(0,0,0,0);
+				border: 1px solid rgba(0,0,0,0);
+				@include transition($sm-duration);
+				@include border-radius(4px);
+				a{
+					font-family: $futura;
+					font-size: 1.3rem;
+					letter-spacing: 0px;
+					@include transition($sm-duration);
+					color: rgba(0,0,0,.4);
+					width: 100%;
+					height: 100%;
+					display: block;
+					padding: 18px 0 16px 16px;
+					@include transition($sm-duration);
+					
+				}
+
+				&.expandable{
+					@include transition($sm-duration);
+					background-color: white;
+
+					a .chevron{
+
+						display: block;
+						width: 21px;
+						position: absolute;
+						right: 20px;
+						top: 16px;
+						height: 22px;
+						background-color: transparent;
+						@include transition($sm-duration);
+						@include transform(rotate(0));
+						&:after{
+							content: "";
+						    display: block;
+						    position: absolute;
+						    right: -1px;
+						    top: 9px;
+						    height: 2px;
+						    width: 14px;
+							background-color: #CACACA;
+							@include border-radius(4px);
+							@include transform(rotate(45deg));
+						}
+						&:before{
+							content: "";
+							display: block;
+							position: absolute;
+							right: 14px;
+							@include border-radius(4px);
+							top: 3px;
+							height: 14px;
+							width: 2px;
+							background-color: #CACACA;
+							@include transform(rotate(45deg));
+						}
+					}
+
+
+					&.active{
+						
+						
+						@include transition($sm-duration);
+						a{
+							color: #C34510;
+						}
+						a .chevron{
+							@include transform(rotate(90deg));
+							@include transition($sm-duration);
+							&:before, &:after{
+								@include transition($sm-duration);
+								background-color: black;
+								
+							}
+						}
+
+						
+					}
+
+
+					
+				}
+
+				&:hover{
+					
+					border-bottom: 1px solid rgba(0,0,0,.1);
+					@include transition($sm-duration);
+
+					a{
+						text-decoration: none;
+						@include transition($sm-duration);
+						color: black;
+
+						.chevron{
+							&:before, &:after{
+								@include transition($sm-duration);
+								background-color: rgba(0,0,0,1);
+								
+							}
+						}
+						padding-left: 16px;
+						@include transition($sm-duration);
+					}
+				}
+
+				
+			}
+		}
+	}
+
+	.submenu{
+		padding: 0 0 60px 60px;
+		@include transform(translate(-40px, 0));
+		opacity: 0;
+		@include transition($sm-duration);
+		@include transition-delay(.1s);
+
+		ul{
+			display: none;
+			li{
 				margin: 0 0 20px 0;
 				a{
 					font-family: $futura;
-					font-size: 2rem;
-					letter-spacing: 0px;
+					font-size: .65rem;
+					text-transform: uppercase;
+
+					letter-spacing: 1px;
 					
 					color: rgba(0,0,0,.9);
 					
 				}
 			}
+			&.active{
+				display: block;
+			}
+
 		}
+
+		
 	}
 
 	
@@ -117,7 +311,8 @@ $lng-duration: .4s all ease-in-out;
 	.container{
 		background-color: white;
 		max-width: 1140px;
-		
+		@include border-radius(4px);
+		overflow: hidden;
 		height: 100%;
 		padding: 0;
 
@@ -125,17 +320,29 @@ $lng-duration: .4s all ease-in-out;
 			height: 100%;
 		}
 		
-		.col-sm-4{
-			background-color: red;
+		.col-sm-4.image-area{
+			background-color: #C34510;
 			@include transform-origin(center, left);
 			@include transform(scaleX(0)translate3d(0px,0,0));
 			@include transition($sm-duration);
 
 		}
 
-		.col-sm-8{
+		.col-sm-4.top-nav, .col-sm-4.subnav-container{
 			@include transform(translate3d(0 0 0));
 			@include transform-origin(center, right);
+
+			display: table;
+			height: 100%;
+
+			.nav,.subnav{
+				display: table-row;
+			}
+
+			.menu, .submenu{
+				display: table-cell;
+				vertical-align: bottom;
+			}
 
 		}
 
@@ -160,8 +367,8 @@ body.menu-active{
 		@include transition($lng-duration);
 
 		.container{
-			.col-sm-4{
-				background-color: red;
+			.col-sm-4.image-area{
+				background-color: #C34510;
 				@include transform-origin(left, center);
 				@include transform(scaleX(1)translate3d(0px,0,0));
 				
@@ -174,11 +381,20 @@ body.menu-active{
 			@include transform(translate3d(0px, 0, 0));
 			opacity: 1;
 			@include transition($sm-duration);
-			@include transition-delay(.5s);
+			@include transition-delay(.6s);
+		}
+
+		.submenu{
+			@include transform(translate3d(0px, 0, 0));
+			opacity: 1;
+			@include transition($sm-duration);
+			@include transition-delay(.8s);
 		}
 	}
 	#menu-btn{
-		
+		border: 1px solid rgba(0,0,0,.1);
+		@include border-radius(2px);
+
 		span{
 			@include transform(translate(-28px, 38px)rotate(45deg));
 			@include transition($sm-duration);
@@ -190,9 +406,14 @@ body.menu-active{
 
 			&:after{
 				@include transform(rotate(-90deg)translate(7px, 0px));
-				@include transition($sm-duration);
+				@incluefcde transition($sm-duration);
 			}
 		}
+		@include box-shadow(0 0px 0px rgba(0, 0, 0, 0.2));
+		@include transition($sm-duration);
+
+		
+
 		
 	}
 
