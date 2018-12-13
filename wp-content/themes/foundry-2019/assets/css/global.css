@@ -53,26 +53,32 @@ html {
     font-size: 12px;
   }
 }
-/* line 37, ../sass/global.scss */
+@media only screen and (min-width: 1920px) {
+  /* line 34, ../sass/global.scss */
+  html {
+    font-size: 22px;
+  }
+}
+/* line 43, ../sass/global.scss */
 h1 {
   font-size: 7.5rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 44, ../sass/global.scss */
+/* line 50, ../sass/global.scss */
 h2 {
   font-size: 2.75rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 49, ../sass/global.scss */
+/* line 55, ../sass/global.scss */
 h3 {
   font-size: 2rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 54, ../sass/global.scss */
+/* line 60, ../sass/global.scss */
 h4 {
   font-size: 2.875rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
@@ -80,32 +86,32 @@ h4 {
   text-transform: uppercase;
 }
 
-/* line 62, ../sass/global.scss */
+/* line 68, ../sass/global.scss */
 h5 {
   font-size: 1.5rem;
   letter-spacing: .5rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
 }
 
-/* line 68, ../sass/global.scss */
+/* line 74, ../sass/global.scss */
 h6 {
   font-size: 1.5rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 74, ../sass/global.scss */
+/* line 80, ../sass/global.scss */
 p {
   font-size: 1rem;
   font-family: "MetaSerif-Book", "Times New Roman", serif;
   line-height: 1.4rem;
 }
 
-/* line 91, ../sass/global.scss */
+/* line 97, ../sass/global.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 97, ../sass/global.scss */
+/* line 103, ../sass/global.scss */
 section {
   padding: 0 60px;
 }
