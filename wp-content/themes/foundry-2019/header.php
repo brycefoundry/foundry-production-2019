@@ -22,26 +22,56 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
+		
+		
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								
+							</div>
 							
-						</a>
-					</div>
-					<!-- /logo -->
+							
 
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
+							<div class="col">
+								<div class="logo">
+								<a href="<?php echo home_url(); ?>">
+									<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+									
+								</a>
+								</div>
+
+								<button id="menu-btn">
+								<span>Menu</span>
+								</button>
+							</div>
+							
+						</div>
+						
+					</div>
+					<!-- logo -->
+					
+					
 
 			</header>
+
+			<div id="menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">left photo</div>
+						<div class="col-sm-8">
+
+							<nav class="nav" role="navigation">
+								<?php html5blank_nav(); ?>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<!-- /header -->
+
+			<div class="wrapper">

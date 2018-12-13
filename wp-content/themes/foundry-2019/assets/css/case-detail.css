@@ -1,25 +1,24 @@
 /* line 4, ../sass/case-detail.scss */
-section {
+body.single-clients section {
   padding: 100px 60px;
   height: 100vh;
 }
-
-/* line 9, ../sass/case-detail.scss */
-section.intro {
-  height: 2300px;
+/* line 8, ../sass/case-detail.scss */
+body.single-clients section.intro {
+  height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1920px auto;
   background-position: top center;
   padding: 0 60px;
 }
-/* line 17, ../sass/case-detail.scss */
-section.intro .container {
+/* line 16, ../sass/case-detail.scss */
+body.single-clients section.intro .container {
   display: block;
   position: relative;
   height: 100%;
 }
-/* line 24, ../sass/case-detail.scss */
-section.intro .container .row {
+/* line 23, ../sass/case-detail.scss */
+body.single-clients section.intro .container .row {
   position: absolute;
   top: 50%;
   -moz-transform: translateY(-50%);
@@ -27,13 +26,13 @@ section.intro .container .row {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 31, ../sass/case-detail.scss */
-section.intro .container h1, section.intro .container p {
+/* line 30, ../sass/case-detail.scss */
+body.single-clients section.intro .container h1, body.single-clients section.intro .container p {
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 36, ../sass/case-detail.scss */
-section.intro .container h1 {
+/* line 35, ../sass/case-detail.scss */
+body.single-clients section.intro .container h1 {
   text-indent: -10000px;
   overflow: hidden;
   background-repeat: no-repeat;

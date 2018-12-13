@@ -26,42 +26,47 @@
   font-weight: bold;
   font-style: normal;
 }
-/* line 11, ../sass/global.scss */
+/* line 8, ../sass/global.scss */
+body {
+  position: relative;
+}
+
+/* line 14, ../sass/global.scss */
 body.disable {
   overflow: hidden;
 }
 
-/* line 15, ../sass/global.scss */
+/* line 18, ../sass/global.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 19, ../sass/global.scss */
+/* line 22, ../sass/global.scss */
 html {
   font-size: 16px;
   font-family: "MetaSerif-Book", "Times New Roman", serif;
 }
 
-/* line 28, ../sass/global.scss */
+/* line 31, ../sass/global.scss */
 h1 {
   font-size: 7.5rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 35, ../sass/global.scss */
+/* line 38, ../sass/global.scss */
 h2 {
   font-size: 2.75rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 40, ../sass/global.scss */
+/* line 43, ../sass/global.scss */
 h3 {
   font-size: 2rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 45, ../sass/global.scss */
+/* line 48, ../sass/global.scss */
 h4 {
   font-size: 2.875rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
@@ -69,32 +74,32 @@ h4 {
   text-transform: uppercase;
 }
 
-/* line 53, ../sass/global.scss */
+/* line 56, ../sass/global.scss */
 h5 {
   font-size: 1.5rem;
   letter-spacing: .5rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
 }
 
-/* line 59, ../sass/global.scss */
+/* line 62, ../sass/global.scss */
 h6 {
   font-size: 1.5rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 65, ../sass/global.scss */
+/* line 68, ../sass/global.scss */
 p {
   font-size: 1rem;
   font-family: "MetaSerif-Book", "Times New Roman", serif;
   line-height: 1.4rem;
 }
 
-/* line 82, ../sass/global.scss */
+/* line 85, ../sass/global.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 88, ../sass/global.scss */
+/* line 91, ../sass/global.scss */
 section {
   padding: 0 60px;
 }
