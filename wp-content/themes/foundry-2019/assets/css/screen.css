@@ -304,7 +304,7 @@ body.single-clients section.intro .container .logo {
   position: absolute;
   left: 40px;
   top: 10px;
-  background: url(/wp-content/themes/foundry-2019/assets/img/back.png) no-repeat transparent scroll;
+  background: url(/wp-content/themes/foundry-2019/assets/img/back-btn.png) no-repeat transparent scroll;
   background-size: 28px 28px;
   background-position: left center;
 }
