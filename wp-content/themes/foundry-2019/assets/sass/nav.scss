@@ -676,7 +676,7 @@ body.menu-active{
 		.container{
 			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
 			background-size: 159px auto;
-			background-position: bottom center;
+			background-position: center 74%;
 			background-repeat: no-repeat;
 			@include border-radius(0px);
 			.menu, .submenu{
@@ -687,7 +687,7 @@ body.menu-active{
 			.col-sm-4.image-area{
 				flex: 0 0 100%;
 				max-width: 100%;
-				height: 30%;
+				height: 20%;
 
 
 
@@ -696,7 +696,7 @@ body.menu-active{
 			.col-sm-4.top-nav, .col-sm-4.subnav-container{
 				max-width: 50%;
 				flex: 0 0 50%;
-				height: 70%;
+				height: 80%;
 
 				.menu, .submenu{
 					vertical-align: top;
