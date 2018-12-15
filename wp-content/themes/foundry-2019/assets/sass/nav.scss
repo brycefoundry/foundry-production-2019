@@ -73,9 +73,7 @@ $lng-duration: .4s all ease-in-out;
 	@include transition($sm-duration);
 	@include border-radius(2px);
 
-	&:focus{
-		outline: 0;
-	}
+
 
 	span{
 		width: 20px;
@@ -115,6 +113,21 @@ $lng-duration: .4s all ease-in-out;
 			@include transform(rotate(0deg)translate(0px, 0px));
 			@include transition(.2s all ease-in-out);
 		}
+	}
+
+	&:focus{
+		outline: 0;
+		background-color: white;
+		span{
+			&:before{
+				background-color: black;
+			}
+
+			&:after{
+				background-color: black;
+			}
+		}
+		
 	}
 
 
