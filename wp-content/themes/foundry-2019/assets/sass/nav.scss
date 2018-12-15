@@ -318,6 +318,10 @@ $lng-duration: .4s all ease-in-out;
 
 				&:hover{
 
+					@media only screen and (min-width: 600px){
+
+
+
 					&.expandable{
 						button .chevron{
 					
@@ -368,6 +372,8 @@ $lng-duration: .4s all ease-in-out;
 						@include transform(scaleY(1));
 						@include transition(.2s all ease-in-out);
 						
+					}
+
 					}
 				}
 
