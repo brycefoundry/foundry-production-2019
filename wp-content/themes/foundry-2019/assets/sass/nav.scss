@@ -228,6 +228,10 @@ $lng-duration: .4s all ease-in-out;
 						outline: none;
 					}
 
+					&:active{
+						color: white;
+					}
+
 					
 				}
 
@@ -364,6 +368,8 @@ $lng-duration: .4s all ease-in-out;
 						
 					}
 				}
+
+
 
 
 
