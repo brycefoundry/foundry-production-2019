@@ -1,65 +1,78 @@
 @import "compass/css3/transform";
 @import "compass/css3"; 
 
-body.single-clients section{
-	padding: 100px 60px;
-	height: 100vh;
 
-	&.intro{
-		
-		background-repeat: no-repeat; 
-		background-size: cover;
 
-		background-position: top center;
-		padding: 200px 60px;
-		height: auto;
 
-		.container{
+
+body.single-clients{
+	section{
+		padding: 100px 60px;
+		height: 100vh;
+
+		&.intro{
 			
-			display: block;
-			position: relative;
-
-			height: 100%;
-			
-			.row{
-				position: absolute;
-				
-				top: 50%;
-				@include transform(translateY(-50%));
-			}
-
-			h1, p{
-				margin-bottom: 20px;
-				color: rgba(255,255,255,.5);
-			}
-
-			.logo{
-				
-				height: 60px;
-				background-size: auto 100%;
-				overflow: hidden;
-				background-repeat: no-repeat;
-				background-position: bottom left;
-			}
-		}
-
-		@media only screen and (min-width: 1920px){
+			background-repeat: no-repeat; 
 			background-size: cover;
-			height: 100vh;
-		}
 
-		@media only screen and (max-width: 600px){
-			
-			padding: 300px 20px;
-			height: auto!important;
+			background-position: top center;
+			padding: 200px 60px;
+			height: auto;
+
+			.container{
+				
+				display: block;
+				position: relative;
+
+				height: 100%;
+				
+				.row{
+					position: absolute;
+					
+					top: 50%;
+					@include transform(translateY(-50%));
+				}
+
+				h1, p{
+					margin-bottom: 20px;
+					color: rgba(255,255,255,.5);
+				}
+
+				.logo{
+					
+					height: 60px;
+					background-size: auto 100%;
+					overflow: hidden;
+					background-repeat: no-repeat;
+					background-position: bottom left;
+				}
+			}
+
+			@media only screen and (min-width: 1920px){
+				background-size: cover;
+				height: 100vh;
+			}
+
+			@media only screen and (max-width: 600px){
+				
+				padding: 300px 20px;
+				height: auto!important;
+			}
+
 		}
+	}
+
+	.header .logo{
+		opacity: 0;
+		@include transition(.2s all ease-in-out);
 
 	}
 
-
-
+	&.menu-active{
+		.header .logo{
+			opacity: 1;
+			@include transition(.2s all ease-in-out);
+			@include transition-delay(.3s);
+		}
+	}
 }
-
-
-
-

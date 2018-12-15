@@ -1,9 +1,9 @@
-/* line 4, ../sass/case-detail.scss */
+/* line 9, ../sass/case-detail.scss */
 body.single-clients section {
   padding: 100px 60px;
   height: 100vh;
 }
-/* line 8, ../sass/case-detail.scss */
+/* line 13, ../sass/case-detail.scss */
 body.single-clients section.intro {
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,13 +11,13 @@ body.single-clients section.intro {
   padding: 200px 60px;
   height: auto;
 }
-/* line 17, ../sass/case-detail.scss */
+/* line 22, ../sass/case-detail.scss */
 body.single-clients section.intro .container {
   display: block;
   position: relative;
   height: 100%;
 }
-/* line 24, ../sass/case-detail.scss */
+/* line 29, ../sass/case-detail.scss */
 body.single-clients section.intro .container .row {
   position: absolute;
   top: 50%;
@@ -26,12 +26,12 @@ body.single-clients section.intro .container .row {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 31, ../sass/case-detail.scss */
+/* line 36, ../sass/case-detail.scss */
 body.single-clients section.intro .container h1, body.single-clients section.intro .container p {
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 36, ../sass/case-detail.scss */
+/* line 41, ../sass/case-detail.scss */
 body.single-clients section.intro .container .logo {
   height: 60px;
   background-size: auto 100%;
@@ -40,16 +40,36 @@ body.single-clients section.intro .container .logo {
   background-position: bottom left;
 }
 @media only screen and (min-width: 1920px) {
-  /* line 8, ../sass/case-detail.scss */
+  /* line 13, ../sass/case-detail.scss */
   body.single-clients section.intro {
     background-size: cover;
     height: 100vh;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 8, ../sass/case-detail.scss */
+  /* line 13, ../sass/case-detail.scss */
   body.single-clients section.intro {
     padding: 300px 20px;
     height: auto !important;
   }
+}
+/* line 65, ../sass/case-detail.scss */
+body.single-clients .header .logo {
+  opacity: 0;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 72, ../sass/case-detail.scss */
+body.single-clients.menu-active .header .logo {
+  opacity: 1;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }

@@ -199,13 +199,15 @@ $lng-duration: .4s all ease-in-out;
 		ul{
 			li{
 				
-				margin: 1px 0;
+				
 				position: relative;
 				background-color: rgba(0,0,0,0);
-				border: 1px solid rgba(0,0,0,0);
+				
 				@include transition($sm-duration);
-				@include border-radius(4px);
-				a{
+				
+				overflow: hidden;
+
+				a, button{
 					font-family: $futura;
 					font-size: 1.3rem;
 					letter-spacing: 0px;
@@ -216,6 +218,16 @@ $lng-duration: .4s all ease-in-out;
 					display: block;
 					padding: 18px 0 16px 16px;
 					@include transition($sm-duration);
+					background-color: transparent;
+					text-align: left;
+					border: none;
+					z-index: 5;
+					position: relative;
+
+					&:focus{
+						outline: none;
+					}
+
 					
 				}
 
@@ -223,7 +235,7 @@ $lng-duration: .4s all ease-in-out;
 					@include transition($sm-duration);
 					background-color: white;
 
-					a .chevron{
+					button .chevron{
 
 						display: block;
 						width: 21px;
@@ -265,10 +277,10 @@ $lng-duration: .4s all ease-in-out;
 						
 						
 						@include transition($sm-duration);
-						a{
-							color: #C34510;
+						button{
+							color: black;
 						}
-						a .chevron{
+						button .chevron{
 							@include transform(rotate(90deg));
 							@include transition($sm-duration);
 							&:before, &:after{
@@ -285,15 +297,53 @@ $lng-duration: .4s all ease-in-out;
 					
 				}
 
+				&:after{
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 0;
+					height: 100%;
+					background-color: black;
+					width: 100%;
+					@include transform-origin(top, left);
+					@include transform(scaleY(0));
+					@include transition(0s all ease-in-out);
+				}
+
 				&:hover{
+
+					&.expandable{
+						button .chevron{
 					
-					border-bottom: 1px solid rgba(0,0,0,.1);
+							&:after{
+								
+								background-color: white;
+								
+								
+							}
+							&:before{
+								
+								background-color: white;
+								
+							}
+						}
+
+						&.expandable{
+							button{
+								color: white;
+							}
+						}
+					}
+					
+					
 					@include transition($sm-duration);
 
-					a{
+					a, button{
 						text-decoration: none;
 						@include transition($sm-duration);
-						color: black;
+						@include transition-delay(.1s);
+						color: white;
+						cursor: pointer;
 
 						.chevron{
 							&:before, &:after{
@@ -305,7 +355,17 @@ $lng-duration: .4s all ease-in-out;
 						padding-left: 16px;
 						@include transition($sm-duration);
 					}
+
+					&:after{
+						z-index: 0;
+						@include transform-origin(top, left);
+						@include transform(scaleY(1));
+						@include transition(.2s all ease-in-out);
+						
+					}
 				}
+
+
 
 				
 			}
@@ -318,9 +378,17 @@ $lng-duration: .4s all ease-in-out;
 		opacity: 0;
 		@include transition($sm-duration);
 		@include transition-delay(.1s);
+		position: relative;
+
 
 		ul{
-			display: none;
+			opacity: 0;
+			pointer-events: none;
+			position: absolute;
+			bottom: 60px;
+			@include transition-delay(.5s);
+			@include transition(.2s all ease-in-out);
+			@include transform(translate3d(-40px,0px,0));
 			li{
 				margin: 0 0 20px 0;
 				a{
@@ -335,9 +403,21 @@ $lng-duration: .4s all ease-in-out;
 				}
 			}
 			&.active{
-				display: block;
+				opacity: 1;
+				pointer-events: auto;
+				
+				@include transition(.2s all ease-in-out);
+				@include transform(translate3d(0,0,0));
+				@include transition-delay(.4s);
 			}
 
+		}
+
+		@media only screen and (max-width: 600px){
+			ul{
+				bottom: auto;
+				top: 60px;
+			}
 		}
 
 		
