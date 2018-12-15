@@ -443,7 +443,7 @@ $lng-duration: .4s all ease-in-out;
 		@media only screen and (max-width: 600px){
 			ul{
 				bottom: auto;
-				top: 60px;
+				top: 40px;
 			}
 		}
 
@@ -680,14 +680,14 @@ body.menu-active{
 			background-repeat: no-repeat;
 			@include border-radius(0px);
 			.menu, .submenu{
-				padding: 40px 0 0 0;
+				padding: 20px 0 0 0;
 				
 			}
 
 			.col-sm-4.image-area{
 				flex: 0 0 100%;
 				max-width: 100%;
-				height: 20%;
+				height: 26%;
 
 
 
@@ -696,7 +696,7 @@ body.menu-active{
 			.col-sm-4.top-nav, .col-sm-4.subnav-container{
 				max-width: 50%;
 				flex: 0 0 50%;
-				height: 80%;
+				height: 74%;
 
 				.menu, .submenu{
 					vertical-align: top;
@@ -704,4 +704,12 @@ body.menu-active{
 			}
 		}
 	}
+}
+
+@media only screen and (max-width: 360px){
+#menu{
+	.container{
+		background-position: center 90%;
+	}
+}
 }
