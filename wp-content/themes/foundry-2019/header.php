@@ -8,6 +8,8 @@
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
 
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -66,12 +68,53 @@
 					<div class="row">
 						<div class="col-sm-4 image-area">
 							<div class="video">
-								<video autoplay muted loop playsinline>
-								  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.mp4" type="video/mp4">
-								  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.ogg" type="video/ogg">
-								  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.webm" type="video/webm">
-								Your browser does not support the video tag.
-								</video>
+								<ul>
+									<li class="active">
+										<video autoplay muted loop playsinline>
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.mp4" type="video/mp4">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.ogg" type="video/ogg">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.webm" type="video/webm">
+										Your browser does not support the video tag.
+										</video>
+									</li>
+
+									<li>
+										<video autoplay muted loop playsinline>
+										  <source src="https://ak9.picdn.net/shutterstock/videos/24251279/preview/stock-footage-abstract-digital-background-made-of-different-shapes-with-hight-detailed-elements-rich-details-and.webm" type="video/mp4">
+										  <source src="https://ak9.picdn.net/shutterstock/videos/24251279/preview/stock-footage-abstract-digital-background-made-of-different-shapes-with-hight-detailed-elements-rich-details-and.webm" type="video/ogg">
+										  <source src="https://ak9.picdn.net/shutterstock/videos/24251279/preview/stock-footage-abstract-digital-background-made-of-different-shapes-with-hight-detailed-elements-rich-details-and.webm" type="video/webm">
+										Your browser does not support the video tag.
+										</video>
+									</li>
+
+									<li>
+										<video autoplay muted loop playsinline>
+										  <source src="https://ak6.picdn.net/shutterstock/videos/32430376/preview/stock-footage-virtual-human-head-d-motion-graphics.webm" type="video/mp4">
+										  <source src="https://ak6.picdn.net/shutterstock/videos/32430376/preview/stock-footage-virtual-human-head-d-motion-graphics.webm" type="video/ogg">
+										  <source src="https://ak6.picdn.net/shutterstock/videos/32430376/preview/stock-footage-virtual-human-head-d-motion-graphics.webm type="video/webm">
+										Your browser does not support the video tag.
+										</video>
+									</li>
+
+									<li>
+										<video autoplay muted loop playsinline>
+										  <source src="https://ak8.picdn.net/shutterstock/videos/22522198/preview/stock-footage-seven-stylish-diverse-people-lean-on-a-conference-table-while-energetically-discussing-daily.webm" type="video/mp4">
+										  <source src="https://ak8.picdn.net/shutterstock/videos/22522198/preview/stock-footage-seven-stylish-diverse-people-lean-on-a-conference-table-while-energetically-discussing-daily.webm" type="video/ogg">
+										  <source src="https://ak8.picdn.net/shutterstock/videos/22522198/preview/stock-footage-seven-stylish-diverse-people-lean-on-a-conference-table-while-energetically-discussing-daily.webm" type="video/webm">
+										Your browser does not support the video tag.
+										</video>
+									</li>
+
+									<li>
+										<video autoplay muted loop playsinline>
+										  <source src="https://ak0.picdn.net/shutterstock/videos/25834700/preview/stock-footage-casual-young-man-using-smartphone-in-a-car-he-is-checking-mails-chats-or-the-news-online.webm" type="video/mp4">
+										  <source src="https://ak0.picdn.net/shutterstock/videos/25834700/preview/stock-footage-casual-young-man-using-smartphone-in-a-car-he-is-checking-mails-chats-or-the-news-online.webm" type="video/ogg">
+										  <source src="https://ak0.picdn.net/shutterstock/videos/25834700/preview/stock-footage-casual-young-man-using-smartphone-in-a-car-he-is-checking-mails-chats-or-the-news-online.webm" type="video/webm">
+										Your browser does not support the video tag.
+										</video>
+									</li>
+								</ul>
+								
 								
 							</div>
 						</div>
@@ -123,6 +166,25 @@
 									</ul>
 								</div>
 							</div>
+						</div>
+
+						
+					</div>
+					<div class="row colophon">
+						<div class="col-sm-4">
+							
+						</div>
+						<div class="col-sm-4">
+							<p><strong>P</strong> 512.123.1230 <br /><strong>M</strong> 2028 E Ben White Blvd Suite 240-3350 Austin, Texas 78741</p>
+						</div>
+						<div class="col-sm-4">
+							<p>
+							<a href=""><i class="fab fa-youtube"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-linkedin"></i></a>
+							<a href="mailto:info@foundryatx.com"><i class="fas fa-envelope"></i></a>
+							</p>
 						</div>
 					</div>
 				</div>

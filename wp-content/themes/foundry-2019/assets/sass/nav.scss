@@ -150,8 +150,9 @@ $lng-duration: .4s all ease-in-out;
 
 	&:hover{
 		background-color: rgba(255,255,255, .1);
-		border: 1px solid rgba(255,255,255, 0);
+		
 		@include transition($sm-duration);
+
 		span{
 			background-color: white;
 			@include transition($sm-duration);
@@ -212,11 +213,12 @@ $lng-duration: .4s all ease-in-out;
 		ul{
 			li{
 				
-				
+			
 				position: relative;
 				background-color: rgba(0,0,0,0);
 				
 				@include transition($sm-duration);
+				@include transition-delay(.3s);
 				
 				overflow: hidden;
 
@@ -325,11 +327,12 @@ $lng-duration: .4s all ease-in-out;
 					@include transform-origin(top, left);
 					@include transform(scaleY(0));
 					@include transition(0s all ease-in-out);
+					
 				}
 
 				&:hover{
 
-					@media only screen and (min-width: 600px){
+					@media only screen and (min-width: 1100px){
 
 
 
@@ -412,29 +415,77 @@ $lng-duration: .4s all ease-in-out;
 			pointer-events: none;
 			position: absolute;
 			top: 180px;
+			width: 100%;
 			@include transition-delay(.5s);
 			@include transition(.2s all ease-in-out);
 			@include transform(translate3d(-40px,0px,0));
+
+			hr{
+				margin-right: 160px;
+				height: 6px;
+			}
 			li{
-				margin: 0 0 20px 0;
+				margin: 0 0 1px 0;
+				padding-right: 160px;
+				
 				a{
+					display: block;
 					font-family: $futura;
 					font-size: .65rem;
 					text-transform: uppercase;
-
+					padding: 14px 0;
 					letter-spacing: 1px;
+					@include transition(.1s all ease-in-out);
+					padding-left: 10px;
+					position: relative;					
+					color: rgba(0,0,0,.5);
+
+					&:hover{
+						text-decoration: none;
+						@include transition(.1s all ease-in-out);
+						color: rgba(0,0,0,1);
+
+						
+					}
+
+					&:after{
+						position: absolute;
+						content: "";
+						display: block;
+						bottom: 0;
+						left: 0;
+						height: 100%;
+						width: 100%;
+						margin-right: 160px;
+						background-color: rgba(0,0,0,0);
+						@include transition($sm-duration);
+						@include transform(scaleY(0));
+						@include transform-origin(top, left);
+
+					}
+
+					&:hover{
+						&:after{
+							background-color: rgba(0,0,0,.1);
+							@include transform(scaleY(1));
+							@include transition(.4s all ease-in-out);
+						}
+					}
 					
-					color: rgba(0,0,0,.9);
+
+
 					
 				}
+
+
 
 				&.locked{
 					background: url(/wp-content/themes/foundry-2019/assets/img/lock_circle_close.png) no-repeat transparent scroll;
 					background-size: 14px auto;
-					background-position: center left;
+					background-position: 10px center;
 
 					a{
-						padding-left: 24px;
+						padding-left: 40px;
 					}
 
 					@media only screen and (max-width: 1920px){
@@ -447,6 +498,20 @@ $lng-duration: .4s all ease-in-out;
 
 				}
 			}
+
+			@media only screen and (max-width: 1100px){
+				li{
+					padding-right: 0px;
+
+					a:after{
+						padding-right: 0px;
+					}
+				}
+
+				hr{
+					margin-right: 0px;
+				}	
+			}
 			&.active{
 				opacity: 1;
 				pointer-events: auto;
@@ -458,7 +523,7 @@ $lng-duration: .4s all ease-in-out;
 
 		}
 
-		@media only screen and (max-width: 600px){
+		@media only screen and (max-width: 1100px){
 			ul{
 				bottom: auto;
 				top: 40px;
@@ -478,6 +543,7 @@ $lng-duration: .4s all ease-in-out;
 		overflow: hidden;
 		height: 100%;
 		padding: 0;
+		position: relative;
 
 		.row{
 			height: 100vh;
@@ -493,6 +559,21 @@ $lng-duration: .4s all ease-in-out;
 			@include transition-delay(.2s);
 			overflow: hidden;
 			position: relative;
+
+			.video ul li{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				@include transition($sm-duration);
+
+				&.active{
+					opacity: 1;
+					@include transition($sm-duration);
+				}
+			}
 
 			video{
 				min-height: 100%;
@@ -529,6 +610,100 @@ $lng-duration: .4s all ease-in-out;
 
 		}
 
+		.colophon{
+			height: 80px;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			position: absolute;
+			@include transform(translateY(200px));
+			opacity: 0;
+			@include transition($sm-duration);
+
+			.col-sm-4{
+				&:nth-child(2), &:nth-child(3){
+					
+					background-color: rgba(0,0,0,.8);
+
+					padding-left: 100px;
+					color: white;
+
+					p{
+						margin-top: 11px;
+						font-family: $bodoni;
+						font-size: .75rem;
+						color: rgba(255,255,255,.6);
+						
+						strong{
+							font-family: $futura;
+							text-transform: uppercase;
+							margin-right: 10px;
+							color: rgba(255,255,255,1);
+						}
+						
+						
+
+						a{
+							color: black;
+						}
+					}
+				}
+
+				&:nth-child(3){
+					text-align: right;
+					padding-right: 100px;
+					padding-left: 0px;
+					p{
+						font-size: .75rem;
+						margin-top: 27px;
+					}
+					a{
+						margin: 0 0 0 10px;
+						padding: 12px 10px 8px 10px;
+						
+						@include border-radius(4px);
+						background-color: rgba(0,0,0,.5);
+						i{
+							color: white;
+						}
+					}
+				}
+			}
+
+			@media only screen and (max-width: 1920px){
+				.col-sm-4{
+					&:nth-child(2), &:nth-child(3){
+						padding-left: 0px;
+						
+					}
+
+					&:nth-child(2){
+						padding-left: 20px;
+
+						p{
+							margin-top: 17px;
+							max-width: 320px;
+						}
+					}
+
+					&:nth-child(3){
+						padding-right: 20px;
+
+						p{
+							margin-top: 27px;
+						}
+					}
+
+				}
+			}
+
+			@media only screen and (max-width: 1200px){
+				
+					display: none;
+				
+			}
+		}
+
 	}
 	.row{
 		margin: 0;
@@ -562,6 +737,12 @@ body.menu-active{
 		@include transition($lng-duration);
 
 		.container{
+			.colophon{
+				@include transform(translateY(0px));
+				opacity: 1;
+				@include transition($sm-duration);
+				@include transition-delay(.5s);
+			}
 			.col-sm-4.image-area{
 				
 				@include transform-origin(left, center);
@@ -615,7 +796,9 @@ body.menu-active{
 		@include box-shadow(0 0px 0px rgba(0, 0, 0, 0.2));
 		@include transition($sm-duration);
 
-		
+		@media only screen and (max-width: 1100px){
+			border: none;
+		}
 
 		
 	}
@@ -660,7 +843,7 @@ body.menu-active{
 	}
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1100px){
 	
 	.header{
 		padding: 0;
@@ -681,7 +864,12 @@ body.menu-active{
 	#menu-btn{
 			right: 20px;
 			top: 20px;
-		}
+			border: none;
+			
+			&:hover{
+				border: none;
+			}	
+	}
 
 	#menu{
 		padding: 0px;

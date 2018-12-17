@@ -91,6 +91,21 @@
 				
 			});
 
+			$('#menu .col-sm-4.top-nav ul li').hover(function(){
+				var activeitem = $(this).index();
+				$('.video ul li.active').removeClass('active');
+				$('.video ul li.active').find('video').trigger('pause');
+				$('.video ul li').eq(activeitem).addClass('active');
+				$('.video ul li').eq(activeitem).find('video').trigger('play');
+
+
+
+			}, function(){
+				var activeitem = $(this).index();
+
+				
+			});
+
 			
 
 			
