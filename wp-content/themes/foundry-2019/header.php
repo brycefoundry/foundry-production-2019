@@ -124,8 +124,8 @@
 								<div class="menu">
 									<ul>
 										<li class="page_item "><a href="/">Home</a></li>
-										<li class="expandable clients"><button href="/clients/">Clients<span class="chevron"></span></button></li>
-										<li class="expandable about"><button href="/about/">About<span class="chevron"></span></button></li>
+										<li class="expandable clients"><button>Clients<span class="chevron"></span></button></li>
+										<li class="expandable about"><button>About<span class="chevron"></span></button></li>
 										<li class="page_item"><a href="/meet/">Meet</a></li>
 										<li class="page_item"><a href="/news-media/">News &amp; Media</a></li>
 									</ul>
@@ -138,30 +138,30 @@
 							<div class="subnav">
 								<div class="submenu">
 									<ul class="about-sub-nav about">
-										<li><a href="">My Story</a></li>
-										<li><a href="">Strategy</a></li>
-										<li><a href="">Design Sprints</a></li>
-										<li><a href="">Development</a></li>
-										<li><a href="">Collaborators</a></li>
-										<li><a href="">Pricing</a></li>
+										<li><a href="/about/story/">Story</a></li>
+										<li><a href="/about/">Strategy</a></li>
+										<li><a href="/about/">Design Sprints</a></li>
+										<li><a href="/about/">Development</a></li>
+										<li><a href="/about/">Collaborators</a></li>
+										<li><a href="/about/">Pricing</a></li>
 									</ul>
 
 									<ul class="clients-sub-nav clients">
-										<li><a href="">Atlassian</a></li>
+										<li><a href="/clients/atlassian/">Atlassian</a></li>
 										
-										<li><a href="">Bloom Labs</a></li>
+										<li><a href="/clients/bloom-labs/">Bloom Labs</a></li>
 										
-										<li><a href="">Grace Hill</a></li>
-										<li><a href="">Idealspot</a></li>
-										<li><a href="">KW Heyl Group</a></li>
-										<li><a href="">MaxPlay</a></li>
-										<li><a href="">Valera Health</a></li>
+										<li><a href="/clients/grace-hill/">Grace Hill</a></li>
+										<li><a href="/clients/idealspot/">Idealspot</a></li>
+										<li><a href="/clients/heyl-group/">KW Heyl Group</a></li>
+										<li><a href="/clients/maxplay/">MaxPlay</a></li>
+										<li><a href="/clients/valera-health/">Valera Health</a></li>
 										<hr />
-										<li class="locked"><a href="">Alter G</a></li>
-										<li class="locked"><a href="">Cerebri AI</a></li>
+										<li class="locked"><a href="/clients/alter-g/">Alter G</a></li>
+										<li class="locked"><a href="/clients/cerebri-ai/">Cerebri AI</a></li>
 										
-										<li class="locked"><a href="">Nokia Bell Labs</a></li>
-										<li class="locked"><a href="">TWIA</a></li>
+										<li class="locked"><a href="/clients/nokie-bell-labs/">Nokia Bell Labs</a></li>
+										<li class="locked"><a href="/clients/twia/">TWIA</a></li>
 										
 									</ul>
 								</div>
