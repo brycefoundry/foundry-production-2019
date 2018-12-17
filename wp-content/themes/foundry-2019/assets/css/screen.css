@@ -1163,18 +1163,8 @@ body.menu-active .wrapper {
   #menu {
     padding: 0px;
   }
-  /* line 687, ../sass/nav.scss */
-  #menu .container {
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-  }
-  /* line 691, ../sass/nav.scss */
-  #menu .container .menu, #menu .container .submenu {
-    padding: 20px 0 0 0;
-  }
-  /* line 696, ../sass/nav.scss */
-  #menu .container:after {
+  /* line 682, ../sass/nav.scss */
+  #menu:after {
     display: block;
     content: "";
     width: 100%;
@@ -1188,6 +1178,16 @@ body.menu-active .wrapper {
     background-position: center center;
     z-index: 100;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  /* line 702, ../sass/nav.scss */
+  #menu .container {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+  }
+  /* line 706, ../sass/nav.scss */
+  #menu .container .menu, #menu .container .submenu {
+    padding: 20px 0 0 0;
   }
   /* line 713, ../sass/nav.scss */
   #menu .container .col-sm-4.image-area {

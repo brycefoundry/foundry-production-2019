@@ -679,7 +679,22 @@ body.menu-active{
 	#menu{
 		padding: 0px;
 
+		&:after{
+			display: block;
+			content: "";
+			width: 100%;
+			height: 60px;
+			position: fixed;
+			bottom: 100px;
+			left: 0;
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
+			background-repeat: no-repeat;
+			background-size: 159px auto;
+			background-position: center center;
+			z-index: 100;
+			border-top: 1px solid rgba(0,0,0,.1);
 
+		}
 
 
 		
@@ -693,22 +708,7 @@ body.menu-active{
 				
 			}
 
-			&:after{
-				display: block;
-				content: "";
-				width: 100%;
-				height: 60px;
-				position: fixed;
-				bottom: 100px;
-				left: 0;
-				background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
-				background-repeat: no-repeat;
-				background-size: 159px auto;
-				background-position: center center;
-				z-index: 100;
-				border-top: 1px solid rgba(0,0,0,.1);
-
-			}
+			
 
 			.col-sm-4.image-area{
 				flex: 0 0 100%;
