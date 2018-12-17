@@ -24,14 +24,33 @@
 		}
 
 		mobilemenu = function(){
+
+			var menutoggle = 0;
 			$('#menu-btn').click(function(){
 				
-				$('body').toggleClass('menu-active');
+					
 				
+				if(menutoggle==0){
+					
+					$('body').addClass('menu-active');
+					menutoggle = 1;
+					
+				}else if(menutoggle==1){
+					
+					
+					$('body').removeClass('menu-active');
+					$('body').removeClass('submenu-active');
+					$('#menu .submenu ul.active').removeClass('active');
+					$('#menu .menu ul li.expandable.active').removeClass('active');
+					menutoggle = 0;
+					
+				}
+				console.log(menutoggle);
+
 			});
 
 			
-			var toggle = 0;
+			
 			$('li.expandable').click(function(){
 					
 					if($(this).hasClass('active')){
