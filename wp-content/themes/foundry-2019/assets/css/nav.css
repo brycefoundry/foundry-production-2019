@@ -903,48 +903,55 @@ body.menu-active .wrapper {
     display: block;
     content: "";
     width: 100%;
-    height: 60px;
-    position: fixed;
-    bottom: 100px;
+    height: 71px;
+    position: absolute;
+    top: 220px;
     left: 0;
-    background-image: url(/wp-content/themes/foundryatx-blackndry-2019/assets/img/foundryatx-black.png);
+    background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
     background-repeat: no-repeat;
     background-size: 159px auto;
-    background-position: center center;
+    background-color: white;
+    background-position: 30px center;
     z-index: 100;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  /* line 702, ../sass/nav.scss */
+  /* line 704, ../sass/nav.scss */
   #menu .container {
+    overflow-y: scroll;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
   }
-  /* line 706, ../sass/nav.scss */
+  /* line 708, ../sass/nav.scss */
   #menu .container .menu, #menu .container .submenu {
     padding: 20px 0 0 0;
   }
-  /* line 713, ../sass/nav.scss */
+  /* line 715, ../sass/nav.scss */
   #menu .container .col-sm-4.image-area {
     flex: 0 0 100%;
     max-width: 100%;
-    height: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 220px;
+    z-index: 100;
   }
-  /* line 722, ../sass/nav.scss */
+  /* line 727, ../sass/nav.scss */
   #menu .container .col-sm-4.top-nav, #menu .container .col-sm-4.subnav-container {
     max-width: 50%;
     flex: 0 0 50%;
     height: 80%;
+    margin-top: 290px;
   }
-  /* line 727, ../sass/nav.scss */
+  /* line 733, ../sass/nav.scss */
   #menu .container .col-sm-4.top-nav .menu, #menu .container .col-sm-4.top-nav .submenu, #menu .container .col-sm-4.subnav-container .menu, #menu .container .col-sm-4.subnav-container .submenu {
     vertical-align: top;
   }
-  /* line 735, ../sass/nav.scss */
+  /* line 741, ../sass/nav.scss */
   #menu .menu ul li a, #menu .menu ul li button {
     font-size: 1.3rem;
   }
-  /* line 739, ../sass/nav.scss */
+  /* line 745, ../sass/nav.scss */
   #menu .menu ul li.expandable {
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -952,13 +959,13 @@ body.menu-active .wrapper {
     transition: all 0.2s ease-in-out;
     background-color: white;
   }
-  /* line 743, ../sass/nav.scss */
+  /* line 749, ../sass/nav.scss */
   #menu .menu ul li.expandable button .chevron {
     top: 12px;
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 754, ../sass/nav.scss */
+  /* line 760, ../sass/nav.scss */
   #menu .container {
     background-position: center 90%;
   }
