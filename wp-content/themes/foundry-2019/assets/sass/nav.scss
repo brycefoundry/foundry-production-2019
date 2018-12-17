@@ -692,7 +692,7 @@ body.menu-active{
 			width: 100%;
 			height: 60px;
 			position: absolute;
-			top: 220px;
+			bottom: 0px;
 
 			left: 0;
 			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
@@ -701,7 +701,7 @@ body.menu-active{
 			background-color: white;
 			background-position: 30px 9px;
 			z-index: 100;
-			@include box-shadow(0 1px 12px rgba(0,0,0,.2));
+			border-top: 1px solid rgba(0,0,0,.1);
 			
 			opacity: 0;
 			@include transition($sm-duration);
@@ -747,7 +747,23 @@ body.menu-active{
 
 			.col-sm-4.subnav-container{
 				overflow: hidden;
-				border-left: 1px solid rgba(0,0,0,.1);
+				background-color: rgba(0,0,0,0);
+				@include transition($sm-duration);
+
+				&:after{
+					width: 1px;
+					height: 100%;
+					position: absolute;
+					content: "";
+					display: block;
+					left: 0;
+					top: 0;
+					background-color: rgba(0,0,0,.1);
+					@include transform-origin(top, left);
+					@include transition($sm-duration);
+					@include transform(scaleY(0));
+					@include transition-delay(.3s);
+				}
 			}
 		}
 
@@ -776,6 +792,33 @@ body.menu-active{
 				opacity: 1;
 				@include transition($sm-duration);
 				@include transition-delay(.6s);
+			}
+
+			.container{
+				.col-sm-4.subnav-container{
+					
+					
+
+					
+				}
+			}
+
+		}
+	}
+
+	body.submenu-active{
+		#menu{
+			.container{
+
+				.col-sm-4.subnav-container{
+					
+					@include transition($sm-duration);
+					@include transition-delay(.5s);
+					&:after{
+						@include transition($sm-duration);
+						@include transform(scaleY(1));
+					}
+				}
 			}
 		}
 	}	

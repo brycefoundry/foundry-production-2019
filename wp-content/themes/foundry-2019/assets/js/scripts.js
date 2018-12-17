@@ -39,8 +39,8 @@
 						$(this).removeClass('active');
 
 						
-							$('.submenu ul').removeClass('active');
-							
+						$('.submenu ul').removeClass('active');
+						$('body').removeClass('submenu-active');
 						
 
 						
@@ -52,7 +52,7 @@
 					}else{
 						$('li.expandable').removeClass('active');
 						$(this).addClass('active');
-
+						$('body').addClass('submenu-active');
 						if($(this).hasClass('about')){
 							$('.submenu ul').removeClass('active');
 							$('.about-sub-nav').addClass('active');
