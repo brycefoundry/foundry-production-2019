@@ -471,7 +471,7 @@ $lng-duration: .4s all ease-in-out;
 		padding: 0;
 
 		.row{
-			height: 100%;
+			height: 100vh;
 		}
 		
 		.col-sm-4.image-area{
@@ -687,7 +687,7 @@ body.menu-active{
 			position: fixed;
 			bottom: 100px;
 			left: 0;
-			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
+			background-image: url(/wp-content/themes/foundryatx-blackndry-2019/assets/img/foundryatx-black.png);
 			background-repeat: no-repeat;
 			background-size: 159px auto;
 			background-position: center center;
