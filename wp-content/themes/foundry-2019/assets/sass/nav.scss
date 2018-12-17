@@ -437,6 +437,14 @@ $lng-duration: .4s all ease-in-out;
 						padding-left: 24px;
 					}
 
+					@media only screen and (max-width: 1920px){
+						background-size: 10px auto;
+					}
+
+					@media only screen and (max-width: 360px){
+						background-size: 8px auto;
+					}
+
 				}
 			}
 			&.active{
@@ -667,9 +675,7 @@ body.menu-active{
 		}
 	}
 
-	body.menu-active{
 
-	}
 
 	#menu-btn{
 			right: 20px;
@@ -683,7 +689,7 @@ body.menu-active{
 			display: block;
 			content: "";
 			width: 100%;
-			height: 71px;
+			height: 60px;
 			position: absolute;
 			top: 220px;
 
@@ -692,9 +698,12 @@ body.menu-active{
 			background-repeat: no-repeat;
 			background-size: 159px auto;
 			background-color: white;
-			background-position: 30px center;
+			background-position: 30px 9px;
 			z-index: 100;
-			border-bottom: 1px solid rgba(0,0,0,.1);
+			@include box-shadow(0 1px 12px rgba(0,0,0,.2));
+			
+			opacity: 0;
+			@include transition($sm-duration);
 
 		}
 
@@ -728,7 +737,7 @@ body.menu-active{
 				max-width: 50%;
 				flex: 0 0 50%;
 				height: 80%;
-				margin-top: 290px;
+				margin-top: 270px;
 
 				.menu, .submenu{
 					vertical-align: top;
@@ -753,6 +762,17 @@ body.menu-active{
 			}
 		}
 	}
+
+
+	body.menu-active{
+		#menu{
+			&:after{
+				opacity: 1;
+				@include transition($sm-duration);
+				@include transition-delay(.6s);
+			}
+		}
+	}	
 }
 
 @media only screen and (max-width: 360px){
