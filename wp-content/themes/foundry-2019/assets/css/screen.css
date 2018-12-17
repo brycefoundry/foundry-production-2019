@@ -1180,7 +1180,7 @@ body.menu-active .wrapper {
     width: 100%;
     height: 60px;
     position: fixed;
-    bottom: 0;
+    bottom: 100px;
     left: 0;
     background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
     background-repeat: no-repeat;
