@@ -462,6 +462,7 @@ $lng-duration: .4s all ease-in-out;
 			ul{
 				bottom: auto;
 				top: 40px;
+				padding-left: 10px;
 			}
 		}
 
@@ -743,6 +744,11 @@ body.menu-active{
 					vertical-align: top;
 				}
 			}
+
+			.col-sm-4.subnav-container{
+				overflow: hidden;
+				border-left: 1px solid rgba(0,0,0,.1);
+			}
 		}
 
 		.menu{
@@ -756,7 +762,7 @@ body.menu-active{
 					background-color: white;
 
 					button .chevron{
-						top: 12px;
+						top: 16px;
 					}
 				}
 			}
