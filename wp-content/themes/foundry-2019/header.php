@@ -105,14 +105,21 @@
 
 									<ul class="clients-sub-nav clients">
 										<li><a href="">Atlassian</a></li>
-										<li><a href="">Alter G</a></li>
+										
 										<li><a href="">Bloom Labs</a></li>
+										
 										<li><a href="">Grace Hill</a></li>
 										<li><a href="">Idealspot</a></li>
 										<li><a href="">KW Heyl Group</a></li>
 										<li><a href="">MaxPlay</a></li>
-										<li><a href="">Nokia Bell Labs</a></li>
 										<li><a href="">Valera Health</a></li>
+										<hr />
+										<li class="locked"><a href="">Alter G</a></li>
+										<li class="locked"><a href="">Cerebri AI</a></li>
+										
+										<li class="locked"><a href="">Nokia Bell Labs</a></li>
+										<li class="locked"><a href="">TWIA</a></li>
+										
 									</ul>
 								</div>
 							</div>

@@ -205,7 +205,7 @@ $lng-duration: .4s all ease-in-out;
 	overflow: hidden;
 
 	.menu{
-		padding: 0px 0 60px 60px;
+		padding: 160px 0 60px 60px;
 		@include transform(translate3d(-30px, 0, 0));
 		opacity: 0;
 		@include transition($sm-duration);
@@ -222,7 +222,7 @@ $lng-duration: .4s all ease-in-out;
 
 				a, button{
 					font-family: $futura;
-					font-size: 1.3rem;
+					font-size: 2rem;
 					letter-spacing: 0px;
 					@include transition($sm-duration);
 					color: rgba(0,0,0,.4);
@@ -240,12 +240,10 @@ $lng-duration: .4s all ease-in-out;
 
 					&:focus{
 						outline: none;
-						color: white;
+						
 					}
 
-					&:active{
-						color: white;
-					}
+					
 
 					
 				}
@@ -260,7 +258,7 @@ $lng-duration: .4s all ease-in-out;
 						width: 21px;
 						position: absolute;
 						right: 20px;
-						top: 16px;
+						top: 26px;
 						height: 22px;
 						background-color: transparent;
 						@include transition($sm-duration);
@@ -406,13 +404,14 @@ $lng-duration: .4s all ease-in-out;
 		@include transition($sm-duration);
 		@include transition-delay(.1s);
 		position: relative;
+		pointer-events: none;
 
 
 		ul{
 			opacity: 0;
 			pointer-events: none;
 			position: absolute;
-			bottom: 60px;
+			top: 180px;
 			@include transition-delay(.5s);
 			@include transition(.2s all ease-in-out);
 			@include transform(translate3d(-40px,0px,0));
@@ -427,6 +426,17 @@ $lng-duration: .4s all ease-in-out;
 					
 					color: rgba(0,0,0,.9);
 					
+				}
+
+				&.locked{
+					background: url(/wp-content/themes/foundry-2019/assets/img/lock_circle_close.png) no-repeat transparent scroll;
+					background-size: 14px auto;
+					background-position: center left;
+
+					a{
+						padding-left: 24px;
+					}
+
 				}
 			}
 			&.active{
@@ -505,7 +515,7 @@ $lng-duration: .4s all ease-in-out;
 
 			.menu, .submenu{
 				display: table-cell;
-				vertical-align: bottom;
+				vertical-align: top;
 			}
 
 		}
@@ -570,6 +580,7 @@ body.menu-active{
 		.submenu{
 			@include transform(translate3d(0px, 0, 0));
 			opacity: 1;
+			pointer-events: auto;
 			@include transition($sm-duration);
 			@include transition-delay(.8s);
 		}
@@ -674,20 +685,34 @@ body.menu-active{
 		
 
 		.container{
-			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
-			background-size: 159px auto;
-			background-position: center 80%;
-			background-repeat: no-repeat;
+			
+			
 			@include border-radius(0px);
 			.menu, .submenu{
 				padding: 20px 0 0 0;
 				
 			}
 
+			&:after{
+				display: block;
+				content: "";
+				width: 100%;
+				height: 60px;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
+				background-repeat: no-repeat;
+				background-size: 159px auto;
+				background-position: center center;
+				border-top: 1px solid rgba(0,0,0,.1);
+
+			}
+
 			.col-sm-4.image-area{
 				flex: 0 0 100%;
 				max-width: 100%;
-				height: 26%;
+				height: 20%;
 
 
 
@@ -696,10 +721,27 @@ body.menu-active{
 			.col-sm-4.top-nav, .col-sm-4.subnav-container{
 				max-width: 50%;
 				flex: 0 0 50%;
-				height: 74%;
+				height: 80%;
 
 				.menu, .submenu{
 					vertical-align: top;
+				}
+			}
+		}
+
+		.menu{
+			ul li{
+				a,button{
+					font-size: 1.3rem;
+				}
+
+				&.expandable{
+					@include transition($sm-duration);
+					background-color: white;
+
+					button .chevron{
+						top: 12px;
+					}
 				}
 			}
 		}

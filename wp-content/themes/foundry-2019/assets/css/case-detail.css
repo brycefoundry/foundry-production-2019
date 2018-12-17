@@ -13,8 +13,10 @@ body.single-clients section.intro {
 }
 /* line 22, ../sass/case-detail.scss */
 body.single-clients section.intro .container {
+  max-width: 100%;
   display: block;
   position: relative;
+  padding: 0 60px;
   height: 100%;
 }
 /* line 29, ../sass/case-detail.scss */
@@ -32,6 +34,10 @@ body.single-clients section.intro .container h1, body.single-clients section.int
   color: rgba(255, 255, 255, 0.5);
 }
 /* line 41, ../sass/case-detail.scss */
+body.single-clients section.intro .container p {
+  margin-top: 20px;
+}
+/* line 45, ../sass/case-detail.scss */
 body.single-clients section.intro .container .logo {
   height: 60px;
   background-size: auto 100%;
@@ -52,8 +58,12 @@ body.single-clients section.intro .container .logo {
     padding: 300px 20px;
     height: auto !important;
   }
+  /* line 65, ../sass/case-detail.scss */
+  body.single-clients section.intro .container {
+    padding: 0 20px;
+  }
 }
-/* line 65, ../sass/case-detail.scss */
+/* line 73, ../sass/case-detail.scss */
 body.single-clients .header .logo {
   opacity: 0;
   -moz-transition: all 0.2s ease-in-out;
@@ -61,7 +71,7 @@ body.single-clients .header .logo {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 72, ../sass/case-detail.scss */
+/* line 80, ../sass/case-detail.scss */
 body.single-clients.menu-active .header .logo {
   opacity: 1;
   -moz-transition: all 0.2s ease-in-out;
