@@ -963,7 +963,7 @@ body.single-clients.menu-active .header .logo {
 @media only screen and (max-width: 600px) {
   /* line 548, ../sass/nav.scss */
   #menu .container .row {
-    margin-bottom: 100px;
+    margin-bottom: 160px;
   }
 }
 /* line 557, ../sass/nav.scss */
