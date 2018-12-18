@@ -1,0 +1,480 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Passster\n"
+"POT-Creation-Date: 2018-09-07 13:00+0200\n"
+"PO-Revision-Date: 2018-09-07 13:01+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: content-protector.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: src/class-ps-activation.php:20
+msgid "View Passster settings"
+msgstr "View Passster settings"
+
+#: src/class-ps-activation.php:20
+msgid "Settings"
+msgstr "Settings"
+
+#: src/class-ps-activation.php:36
+#, php-format
+msgid ""
+"This plugin can not be activated because it requires a PHP version greater "
+"than %1$s. Your PHP version can be updated by your hosting company."
+msgstr ""
+"This plugin can not be activated because it requires a PHP version greater "
+"than %1$s. Your PHP version can be updated by your hosting company."
+
+#: src/class-ps-activation.php:39 src/class-ps-activation.php:50
+msgid "go back"
+msgstr "go back"
+
+#: src/class-ps-activation.php:47
+#, php-format
+msgid ""
+"This plugin can not be activated because it requires a WordPress version "
+"greater than %1$s. Please go to Dashboard &#9656; Updates to gran the latest "
+"version of WordPress ."
+msgstr ""
+"This plugin can not be activated because it requires a WordPress version "
+"greater than %1$s. Please go to Dashboard &#9656; Updates to gran the latest "
+"version of WordPress ."
+
+#: src/class-ps-admin.php:17
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: src/class-ps-admin.php:26
+msgid ""
+"Use this little tool to <b>generate your shortcode</b>. Simply fill out the "
+"fields, save your changes and copy your shortcode. It <b>does not</b> "
+"influence your current shortcodes. "
+msgstr ""
+"Use this little tool to <b>generate your shortcode</b>. Simply fill out the "
+"fields, save your changes and copy your shortcode. It <b>does not</b> "
+"influence your current shortcodes. "
+
+#: src/class-ps-admin.php:27
+msgid "Shortcode Generator"
+msgstr "Shortcode Generator"
+
+#: src/class-ps-admin.php:37 src/class-ps-admin.php:52
+#: src/class-ps-admin.php:66 src/class-ps-admin.php:80
+#: src/class-ps-admin.php:94
+msgid "Protection Type"
+msgstr "Protection Type"
+
+#: src/class-ps-admin.php:108 src/class-ps-admin.php:232
+msgid "Password"
+msgstr "Password"
+
+#: src/class-ps-admin.php:109
+msgid "Add your Shortcode Password"
+msgstr "Add your Shortcode Password"
+
+#: src/class-ps-admin.php:120
+msgid "Passwords"
+msgstr "Passwords"
+
+#: src/class-ps-admin.php:121
+msgid "Add multiple passwords separated by comma."
+msgstr "Add multiple passwords separated by comma."
+
+#: src/class-ps-admin.php:133
+msgid "Copy shortcode"
+msgstr "Copy shortcode"
+
+#: src/class-ps-admin.php:140
+msgid "Captcha"
+msgstr "Captcha"
+
+#: src/class-ps-admin.php:149
+msgid "Captcha Code Length"
+msgstr "Captcha Code Length"
+
+#: src/class-ps-admin.php:150
+msgid "Length of the generated code. For example 4 means a Code like \"A2cD\""
+msgstr "Length of the generated code. For example 4 means a Code like \"A2cD\""
+
+#: src/class-ps-admin.php:161
+msgid "Use only numbers"
+msgstr "Use only numbers"
+
+#: src/class-ps-admin.php:171 src/class-ps-admin.php:493
+msgid "Google Recaptcha"
+msgstr "Google Recaptcha"
+
+#: src/class-ps-admin.php:180
+msgid "Site Key"
+msgstr "Site Key"
+
+#: src/class-ps-admin.php:181
+msgid "Add your Google ReCaptcha Site Key"
+msgstr "Add your Google ReCaptcha Site Key"
+
+#: src/class-ps-admin.php:190
+msgid "Secret"
+msgstr "Secret"
+
+#: src/class-ps-admin.php:191
+msgid "Add your Google ReCaptcha Secret"
+msgstr "Add your Google ReCaptcha Secret"
+
+#: src/class-ps-admin.php:200
+msgid "Language"
+msgstr "Language"
+
+#: src/class-ps-admin.php:201
+msgid ""
+"Add your language shortcode. For example \"en\" for english or \"de\" for "
+"german. "
+msgstr ""
+"Add your language shortcode. For example \"en\" for english or \"de\" for "
+"german. "
+
+#: src/class-ps-admin.php:212
+msgid "Link"
+msgstr "Link"
+
+#: src/class-ps-admin.php:221
+msgid "Slug"
+msgstr "Slug"
+
+#: src/class-ps-admin.php:222
+msgid ""
+"Enter the page slug where the shortcode is placed which you want to unlock."
+msgstr ""
+"Enter the page slug where the shortcode is placed which you want to unlock."
+
+#: src/class-ps-admin.php:233
+msgid ""
+"This should match your shortcode password. <br>The password will be "
+"encrypted in the URL"
+msgstr ""
+"This should match your shortcode password. <br>The password will be "
+"encrypted in the URL"
+
+#: src/class-ps-admin.php:243
+msgid "Bitly API (Optional)"
+msgstr "Bitly API (Optional)"
+
+#: src/class-ps-admin.php:252
+msgid ""
+"You can shorten the ecrypted password link with bit.ly. So the given URL is "
+"as short as possible."
+msgstr ""
+"You can shorten the ecrypted password link with bit.ly. So the given URL is "
+"as short as possible."
+
+#: src/class-ps-admin.php:253
+msgid "About Bitly"
+msgstr "About Bitly"
+
+#: src/class-ps-admin.php:262
+msgid "Bitly Access Token"
+msgstr "Bitly Access Token"
+
+#: src/class-ps-admin.php:263
+msgid "Your bitly access token"
+msgstr "Your bitly access token"
+
+#: src/class-ps-admin.php:273
+msgid "Copy link"
+msgstr "Copy link"
+
+#: src/class-ps-admin.php:282
+msgid "Addons"
+msgstr "Addons"
+
+#: src/class-ps-admin.php:290
+msgid ""
+"All Addons are included in the <b>pro version of Passster</b>. Activate and "
+"use the advanced features to get the maximum of out of content protection."
+msgstr ""
+"All Addons are included in the <b>pro version of Passster</b>. Activate and "
+"use the advanced features to get the maximum of out of content protection."
+
+#: src/class-ps-admin.php:291
+msgid "Explanation"
+msgstr "Explanation"
+
+#: src/class-ps-admin.php:300 src/class-ps-admin.php:492
+msgid "Multiple Passwords"
+msgstr "Multiple Passwords"
+
+#: src/class-ps-admin.php:309
+msgid ""
+"The Multiple Passwords Addon allows you to add multiple passwords per "
+"shortcode. You could also use the Password Generator with this addon."
+msgstr ""
+"The Multiple Passwords Addon allows you to add multiple passwords per "
+"shortcode. You could also use the Password Generator with this addon."
+
+#: src/class-ps-admin.php:310 src/class-ps-admin.php:351
+#: src/class-ps-admin.php:392
+msgid "Description"
+msgstr "Description"
+
+#: src/class-ps-admin.php:320 src/class-ps-admin.php:330
+msgid "Activate Multiple Passwords"
+msgstr "Activate Multiple Passwords"
+
+#: src/class-ps-admin.php:341
+msgid "Google ReCaptcha"
+msgstr "Google ReCaptcha"
+
+#: src/class-ps-admin.php:350
+msgid ""
+"Let users unlock your protected content with Google ReCaptcha. Simply add "
+"your API Key and use the Shortcode Generator to generate the shortcode."
+msgstr ""
+"Let users unlock your protected content with Google ReCaptcha. Simply add "
+"your API Key and use the Shortcode Generator to generate the shortcode."
+
+#: src/class-ps-admin.php:361 src/class-ps-admin.php:371
+msgid "Activate Google ReCaptcha"
+msgstr "Activate Google ReCaptcha"
+
+#: src/class-ps-admin.php:382 src/class-ps-admin.php:494
+msgid "Unlock via Link"
+msgstr "Unlock via Link"
+
+#: src/class-ps-admin.php:391
+msgid ""
+"Let users unlock your protected content with a link. The passwords are "
+"always encrypted in your URL. Additionally you can use your bit.ly account "
+"to automatically shorten your link."
+msgstr ""
+"Let users unlock your protected content with a link. The passwords are "
+"always encrypted in your URL. Additionally you can use your bit.ly account "
+"to automatically shorten your link."
+
+#: src/class-ps-admin.php:402 src/class-ps-admin.php:412
+msgid "Activate Unlock via Link"
+msgstr "Activate Unlock via Link"
+
+#: src/class-ps-admin.php:421
+msgid "Options"
+msgstr "Options"
+
+#: src/class-ps-admin.php:430
+msgid "Cookie"
+msgstr "Cookie"
+
+#: src/class-ps-admin.php:440
+msgid "Use Cookie"
+msgstr "Use Cookie"
+
+#: src/class-ps-admin.php:449
+msgid "Cookie Duration"
+msgstr "Cookie Duration"
+
+#: src/class-ps-admin.php:450
+msgid ""
+"Duration (in days) for your cookie. Once a cookie expires, the user will "
+"have to enter the password again."
+msgstr ""
+"Duration (in days) for your cookie. Once a cookie expires, the user will "
+"have to enter the password again."
+
+#: src/class-ps-admin.php:460
+msgid "Uninstall"
+msgstr "Uninstall"
+
+#: src/class-ps-admin.php:469
+msgid "Delete Plugin Options On Uninstall"
+msgstr "Delete Plugin Options On Uninstall"
+
+#: src/class-ps-admin.php:470
+msgid ""
+"If checked, all plugin options will be deleted if the plugin is unstalled."
+msgstr ""
+"If checked, all plugin options will be deleted if the plugin is unstalled."
+
+#: src/class-ps-admin.php:490
+msgid "Want to be a Pro?"
+msgstr "Want to be a Pro?"
+
+#: src/class-ps-admin.php:495
+msgid "bit.ly URL Shortener"
+msgstr "bit.ly URL Shortener"
+
+#: src/class-ps-admin.php:496
+msgid "All future addons"
+msgstr "All future addons"
+
+#: src/class-ps-admin.php:497
+msgid "Awesome Support"
+msgstr "Awesome Support"
+
+#: src/class-ps-admin.php:499
+msgid "Get it now"
+msgstr "Get it now"
+
+#: src/class-ps-admin.php:502
+msgid "Need help?"
+msgstr "Need help?"
+
+#: src/class-ps-admin.php:504
+msgid "Read the Docs"
+msgstr "Read the Docs"
+
+#. Plugin Name of the plugin/theme
+#: src/class-ps-customizer.php:22
+msgid "Passster"
+msgstr "Passster"
+
+#: src/class-ps-customizer.php:27
+msgid "General"
+msgstr "General"
+
+#: src/class-ps-customizer.php:37 src/class-ps-customizer.php:226
+#: src/class-ps-customizer.php:279
+msgid "Background Color"
+msgstr "Background Color"
+
+#: src/class-ps-customizer.php:38
+msgid "Change the background color of the form"
+msgstr "Change the background color of the form"
+
+#: src/class-ps-customizer.php:50
+msgid "Padding"
+msgstr "Padding"
+
+#: src/class-ps-customizer.php:51
+msgid "Padding in PX"
+msgstr "Padding in PX"
+
+#: src/class-ps-customizer.php:63
+msgid "Margin"
+msgstr "Margin"
+
+#: src/class-ps-customizer.php:64
+msgid "Margin in PX"
+msgstr "Margin in PX"
+
+#: src/class-ps-customizer.php:72
+msgid "Form Instructions"
+msgstr "Form Instructions"
+
+#: src/class-ps-customizer.php:78 src/class-ps-form.php:17
+#: src/class-ps-form.php:34 src/class-ps-form.php:55
+msgid "Protected Area"
+msgstr "Protected Area"
+
+#: src/class-ps-customizer.php:81
+msgid "Headline"
+msgstr "Headline"
+
+#: src/class-ps-customizer.php:92
+msgid "Headline Font Size"
+msgstr "Headline Font Size"
+
+#: src/class-ps-customizer.php:93 src/class-ps-customizer.php:139
+#: src/class-ps-customizer.php:191
+msgid "Font size in PX"
+msgstr "Font size in PX"
+
+#: src/class-ps-customizer.php:104
+msgid "Headline Font Weight"
+msgstr "Headline Font Weight"
+
+#: src/class-ps-customizer.php:116
+msgid "Headline Color"
+msgstr "Headline Color"
+
+#: src/class-ps-customizer.php:124 src/class-ps-form.php:18
+#: src/class-ps-form.php:35 src/class-ps-form.php:56
+msgid ""
+"This content is password-protected. Please verify with a password to unlock "
+"the content."
+msgstr ""
+"This content is password-protected. Please verify with a password to unlock "
+"the content."
+
+#: src/class-ps-customizer.php:127
+msgid "Instructions Text"
+msgstr "Instructions Text"
+
+#: src/class-ps-customizer.php:138 src/class-ps-customizer.php:190
+msgid "Font Size"
+msgstr "Font Size"
+
+#: src/class-ps-customizer.php:150 src/class-ps-customizer.php:202
+msgid "Font Weight"
+msgstr "Font Weight"
+
+#: src/class-ps-customizer.php:162 src/class-ps-customizer.php:214
+#: src/class-ps-customizer.php:255
+msgid "Text Color"
+msgstr "Text Color"
+
+#: src/class-ps-customizer.php:170 src/class-ps-customizer.php:179
+msgid "Error Message"
+msgstr "Error Message"
+
+#: src/class-ps-customizer.php:176 src/class-ps-shortcode.php:25
+msgid "Something went wrong. Please try again."
+msgstr "Something went wrong. Please try again."
+
+#: src/class-ps-customizer.php:234
+msgid "Button"
+msgstr "Button"
+
+#: src/class-ps-customizer.php:240 src/class-ps-form.php:19
+#: src/class-ps-form.php:36 src/class-ps-form.php:57
+msgid "Submit"
+msgstr "Submit"
+
+#: src/class-ps-customizer.php:243
+msgid "Button Label"
+msgstr "Button Label"
+
+#: src/class-ps-customizer.php:267
+msgid "Text Color (Hover)"
+msgstr "Text Color (Hover)"
+
+#: src/class-ps-customizer.php:291
+msgid "Background Color (Hover)"
+msgstr "Background Color (Hover)"
+
+#: src/class-ps-form.php:38
+msgid "Captcha Code"
+msgstr "Captcha Code"
+
+#: src/class-ps-settings.php:456
+msgid "Copy Shortcode"
+msgstr "Copy Shortcode"
+
+#: src/class-ps-settings.php:473
+msgid "Copy Link"
+msgstr "Copy Link"
+
+#: src/class-ps-settings.php:719
+msgid "Choose File"
+msgstr "Choose File"
+
+#: src/class-ps-settings.php:740
+msgid "Choose Image"
+msgstr "Choose Image"
+
+#. Description of the plugin/theme
+msgid "Plugin to password-protect portions of a Page or Post."
+msgstr "Plugin to password-protect portions of a Page or Post."
+
+#. Author of the plugin/theme
+msgid "patrickposner"
+msgstr "patrickposner"

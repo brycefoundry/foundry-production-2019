@@ -21,6 +21,14 @@
 
 			}
 
+			if($('#password-form').length){
+				$('.container.locked').addClass('show');
+				
+			}else{
+				
+				
+			}
+
 		}
 
 		mobilemenu = function(){

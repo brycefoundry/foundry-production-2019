@@ -105,64 +105,64 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
   font-style: normal;
 }
-/* line 8, ../sass/global.scss */
+/* line 40, ../sass/global.scss */
 body {
   position: relative;
 }
 
-/* line 14, ../sass/global.scss */
+/* line 46, ../sass/global.scss */
 body.disable {
   overflow: hidden;
 }
 
-/* line 18, ../sass/global.scss */
+/* line 50, ../sass/global.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 22, ../sass/global.scss */
+/* line 54, ../sass/global.scss */
 html {
   font-size: 16px;
   font-family: "MetaSerif-Book", "Times New Roman", serif;
 }
 
 @media only screen and (max-width: 360px) {
-  /* line 28, ../sass/global.scss */
+  /* line 60, ../sass/global.scss */
   html {
     font-size: 12px;
   }
 }
 @media only screen and (min-width: 1920px) {
-  /* line 34, ../sass/global.scss */
+  /* line 66, ../sass/global.scss */
   html {
     font-size: 22px;
   }
 }
-/* line 39, ../sass/global.scss */
+/* line 71, ../sass/global.scss */
 h1, h2, h3, h4, h5, h6, p {
   display: block;
 }
 
-/* line 43, ../sass/global.scss */
+/* line 75, ../sass/global.scss */
 h1 {
   font-size: 7.5rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 50, ../sass/global.scss */
+/* line 82, ../sass/global.scss */
 h2 {
   font-size: 2.75rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 55, ../sass/global.scss */
+/* line 87, ../sass/global.scss */
 h3 {
   font-size: 2rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 60, ../sass/global.scss */
+/* line 92, ../sass/global.scss */
 h4 {
   font-size: 2.875rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
@@ -170,39 +170,65 @@ h4 {
   text-transform: uppercase;
 }
 
-/* line 68, ../sass/global.scss */
+/* line 100, ../sass/global.scss */
 h5 {
   font-size: 1.5rem;
   letter-spacing: .5rem;
   font-family: "Tungsten Narrow", "Helvetica", sans-serif;
 }
 
-/* line 74, ../sass/global.scss */
+/* line 106, ../sass/global.scss */
 h6 {
   font-size: 1.5rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 80, ../sass/global.scss */
+/* line 112, ../sass/global.scss */
 p {
   font-size: 1rem;
   font-family: "MetaSerif-Book", "Times New Roman", serif;
   line-height: 1.4rem;
 }
 
-/* line 97, ../sass/global.scss */
+/* line 129, ../sass/global.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 103, ../sass/global.scss */
+/* line 135, ../sass/global.scss */
 section {
   padding: 0 60px;
 }
 
-/* line 114, ../sass/global.scss */
+/* line 146, ../sass/global.scss */
 .wrapper {
   overflow: hidden;
+}
+
+/* line 151, ../sass/global.scss */
+a.btn-primary, button.btn-primary {
+  font-family: "Futura Std", "Helvetica", sans-serif;
+  border: none;
+  font-size: .5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #E05113;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 12px 20px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 162, ../sass/global.scss */
+a.btn-primary:hover, button.btn-primary:hover {
+  background-color: #C34510;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /* line 9, ../sass/case-detail.scss */
@@ -1585,4 +1611,144 @@ body.menu-active .wrapper {
   #menu .container {
     background-position: center 90%;
   }
+}
+/* line 7, ../sass/passster.scss */
+.container.locked {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  max-width: 100%;
+  z-index: 109;
+  padding-top: 200px;
+  pointer-events: none;
+  opacity: 0;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 23, ../sass/passster.scss */
+.container.locked.show {
+  pointer-events: auto;
+  opacity: 1;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+/* line 30, ../sass/passster.scss */
+.container.locked .passster-form, .container.locked #yikes-mailchimp-container-1 {
+  background-color: transparent;
+  max-width: 960px;
+  margin: 0 auto !important;
+  display: block;
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+/* line 39, ../sass/passster.scss */
+.container.locked .passster-form input[type='password'], .container.locked #yikes-mailchimp-container-1 input[type='password'] {
+  padding: .5278em;
+  background-color: #f1f1f1;
+  border: 2px solid rgba(51, 51, 51, 0.1);
+}
+/* line 45, ../sass/passster.scss */
+.container.locked .passster-form .yikes-easy-mc-form input[type=email], .container.locked #yikes-mailchimp-container-1 .yikes-easy-mc-form input[type=email] {
+  font-family: "MetaSerif-Book", "Times New Roman", serif;
+  font-size: 1rem;
+}
+/* line 53, ../sass/passster.scss */
+.container.locked .passster-form #password-form h4, .container.locked #yikes-mailchimp-container-1 #password-form h4 {
+  font-family: "Bodoni Std", "Times New Roman", serif;
+  letter-spacing: 0px;
+  text-transform: none;
+  font-size: 2rem;
+  font-weight: normal;
+  color: black;
+}
+/* line 62, ../sass/passster.scss */
+.container.locked .passster-form #password-form #passster_submit, .container.locked #yikes-mailchimp-container-1 #password-form #passster_submit {
+  margin-top: 20px;
+  max-width: 180px;
+  font-family: "Futura Std", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  background-color: #C34510;
+  font-size: .5rem;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 80, ../sass/passster.scss */
+.container.locked .passster-form .yikes-easy-mc-submit-button.admin-logged-in, .container.locked #yikes-mailchimp-container-1 .yikes-easy-mc-submit-button.admin-logged-in {
+  max-width: 180px;
+  background-color: #409C94;
+}
+/* line 85, ../sass/passster.scss */
+.container.locked .passster-form .EMAIL-label, .container.locked #yikes-mailchimp-container-1 .EMAIL-label {
+  font-family: "Futura Std", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: block;
+  font-size: .65rem;
+}
+/* line 95, ../sass/passster.scss */
+.container.locked .passster-form .yikes-easy-mc-success-message, .container.locked #yikes-mailchimp-container-1 .yikes-easy-mc-success-message {
+  margin-bottom: 20px;
+}
+/* line 101, ../sass/passster.scss */
+.container.locked .passster-form p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+/* line 109, ../sass/passster.scss */
+.container.locked .access-title, .container.locked .access-content, .container.locked hr {
+  max-width: 960px;
+  margin: 20px auto;
+  font-family: "Bodoni Std", "Times New Roman", serif;
+}
+/* line 115, ../sass/passster.scss */
+.container.locked .access-content {
+  font-family: "MetaSerif-Book", "Times New Roman", serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 120, ../sass/passster.scss */
+.container.locked hr {
+  margin: 60px auto;
+  max-width: 960px;
+}
+@media only screen and (max-width: 960px) {
+  /* line 120, ../sass/passster.scss */
+  .container.locked hr {
+    margin: 60px;
+  }
+}
+/* line 129, ../sass/passster.scss */
+.container.locked .row, .container.locked .access-title, .container.locked .access-content {
+  margin: 10px auto;
+}
+@media only screen and (max-width: 960px) {
+  /* line 129, ../sass/passster.scss */
+  .container.locked .row, .container.locked .access-title, .container.locked .access-content {
+    padding: 0 60px;
+  }
+}
+/* line 137, ../sass/passster.scss */
+.container.locked .row small, .container.locked .access-title small, .container.locked .access-content small {
+  display: block;
+  font-size: .5rem;
+  color: red;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Futura Std", "Helvetica", sans-serif;
 }

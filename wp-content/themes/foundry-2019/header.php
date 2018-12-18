@@ -139,18 +139,21 @@
 								<div class="submenu">
 									<ul class="about-sub-nav about">
 										<li><a href="/about/story/">Story</a></li>
-										<li><a href="/about/">Strategy</a></li>
-										<li><a href="/about/">Design Sprints</a></li>
-										<li><a href="/about/">Development</a></li>
-										<li><a href="/about/">Collaborators</a></li>
-										<li><a href="/about/">Pricing</a></li>
+										<li><a href="/about/strategy/">Strategy</a></li>
+										<li><a href="/about/design-sprints/">Design Sprints</a></li>
+										<li><a href="/about/development/">Development</a></li>
+										<li><a href="/about/collaborators/">Collaborators</a></li>
+										<li><a href="/about/pricing/">Pricing</a></li>
 									</ul>
 
 									<ul class="clients-sub-nav clients">
+										<li><a href="/clients/atlassian/">Altir</a></li>
+
 										<li><a href="/clients/atlassian/">Atlassian</a></li>
 										
 										<li><a href="/clients/bloom-labs/">Bloom Labs</a></li>
-										
+										<li><a href="/clients/bloom-labs/">Career Fair+</a></li>
+										<li><a href="/clients/atlassian/">Code My Views</a></li>
 										<li><a href="/clients/grace-hill/">Grace Hill</a></li>
 										<li><a href="/clients/idealspot/">Idealspot</a></li>
 										<li><a href="/clients/heyl-group/">KW Heyl Group</a></li>

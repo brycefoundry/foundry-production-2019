@@ -17,8 +17,38 @@
 <?php
 
 $gallerycount = 0;
+
+
+
  	
 ?>
+
+<?php if(get_field('lock_option')=='locked'): ?>
+	<div class="container locked">
+		<div class="row">
+	<?php 
+	echo do_shortcode( ' [passster password="ember"][/passster] ' );
+	
+	?>
+	</div>
+	<hr />
+	
+	<h3 class="access-title">Get Access</h3>
+	<p class="access-content">Enter your email address and we'll send you an access code for some of our more sensitive work. By entering your email you agree not to share this project.</p>	
+
+	
+	
+	<div class="row">
+	<?php 
+		echo do_shortcode( ' [yikes-mailchimp form="1"] ' );
+	?>
+	</div>
+	</div>
+
+<?php endif; ?>
+
+
+
 
 
 <section class="case-section intro" style="background-image:url('<?php the_field( 'cover_image');?>');">
@@ -111,16 +141,4 @@ $gallerycount = 0;
 
 
 								
-			
-							
-					
-
-		
-		
-		
 	
-
-
-	
-
-

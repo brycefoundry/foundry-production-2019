@@ -5,6 +5,38 @@
 //Colors
 
 
+//Primary Orange
+$primary-orange-1: #E05113;
+$primary-orange-2: #C34510;
+$primary-orange-3: #FCECE5;
+
+//Primary Black
+$primary-black-1: #30313B;
+$primary-black-2: #5C5D6D;
+$primary-black-3: #EEF3F6;
+
+//Primary White
+$primary-white-1: #ffffff;
+
+//Secondary Green
+$secondary-green-1: #409C94;
+$secondary-green-2: #34817A;
+$secondary-green-3: #C5E1DE;
+
+//Secondary Purple
+$secondary-purple-1: #6066A3;
+$secondary-purple-2: #454B80;
+$secondary-purple-3: #999DC6;
+
+//Secondary Grey
+$secondary-grey-1: #CBCBCB;
+$secondary-grey-2: #E5E5E5;
+$secondary-grey-3: #F1F1F1;
+
+$sm-duration: .2s all ease-in-out;
+$lng-duration: .4s all ease-in-out;
+
+
 body{
 position: relative;	
 }
@@ -113,4 +145,22 @@ a.btn, button.btn{
 
 .wrapper{
 	overflow: hidden;
+}
+
+
+a.btn-primary, button.btn-primary{
+	font-family: $futura;
+	border: none;
+	font-size: .5rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background-color: $primary-orange-1;
+	@include transition($sm-duration);
+	padding: 12px 20px;
+	@include border-radius(2px);
+
+	&:hover{
+		background-color: $primary-orange-2;
+		@include transition($sm-duration);
+	}
 }

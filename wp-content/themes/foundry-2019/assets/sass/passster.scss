@@ -1,0 +1,153 @@
+@import "compass/css3/transform";
+@import "compass/css3"; 
+@import "global";
+
+
+
+.container.locked{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+	max-width: 100%;
+	z-index: 109;
+	padding-top: 200px;
+	
+	pointer-events: none;
+	opacity: 0;
+
+	@include transition(.2s all ease-in-out);
+
+	&.show{
+		pointer-events: auto;
+		opacity: 1;
+		@include transition(.2s all ease-in-out);
+		@include transition-delay(.5s);
+	}
+
+	.passster-form, #yikes-mailchimp-container-1{
+		background-color: transparent;
+		max-width: 960px;
+		margin: 0 auto!important;
+		display: block;
+		height: auto;
+		padding: 0;
+		width: 100%;
+
+		input[type='password']{
+			padding: .5278em;
+			    background-color: #f1f1f1;
+			    border: 2px solid rgba(51,51,51,.1);
+		}
+
+		.yikes-easy-mc-form input[type=email]{
+			font-family: $metaserif;
+
+			font-size: 1rem;
+
+		}
+
+		#password-form{
+			h4{
+				font-family: $bodoni;
+				letter-spacing: 0px;
+				text-transform: none;
+				font-size: 2rem;
+				font-weight: normal;
+				color: black;
+			}
+
+			#passster_submit{
+				margin-top: 20px;
+				max-width: 180px;
+				font-family: $futura;
+				text-transform: uppercase;
+				background-color: $primary-orange-2;
+				font-size: .5rem;
+				letter-spacing: 1px;
+				padding: 15px 20px;
+				@include border-radius(2px);
+			}
+			
+		}
+
+		.email-input{
+			
+		}
+
+		.yikes-easy-mc-submit-button.admin-logged-in{
+			max-width: 180px;
+			background-color: $secondary-green-1;
+		}
+
+		.EMAIL-label{
+			font-family: $futura;
+			
+			text-transform: uppercase;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			display: block;
+			font-size: .65rem;
+		}
+
+		.yikes-easy-mc-success-message{
+			margin-bottom: 20px;
+		}
+	}
+
+	.passster-form{
+		p{
+			font-size: 1rem;
+			color: rgba(0,0,0,.5);
+			margin-bottom: 20px;
+
+		}
+	}
+
+	.access-title, .access-content, hr{
+		max-width: 960px;
+		margin: 20px auto;
+		font-family: $bodoni;
+	}
+
+	.access-content{
+		font-family: $metaserif;
+		color: rgba(0,0,0,.5);
+	}
+
+	hr{
+		margin: 60px auto;
+		max-width: 960px;
+		@media only screen and (max-width: 960px){
+			margin: 60px;
+		}
+
+	}
+
+	.row, .access-title, .access-content{
+		
+		margin: 10px auto;
+
+		@media only screen and (max-width: 960px){
+			padding: 0 60px;
+		}
+
+		small{
+			display: block;
+			font-size: .5rem;
+			color: red;
+			color: rgba(0,0,0,1);
+			text-transform: uppercase;
+			font-family: $futura;
+		}
+	}
+}
+
+
+
+
+
+
+
