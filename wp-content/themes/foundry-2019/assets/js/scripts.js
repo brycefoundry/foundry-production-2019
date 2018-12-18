@@ -2,10 +2,7 @@
 	
 	$(function () {
 		
-		$.scrollify({
-	       section : ".case-section",
-	     });
-
+		
 		init = function(){
 			views();
 			components();
@@ -23,10 +20,18 @@
 
 			if($('#password-form').length){
 				$('.container.locked').addClass('show');
+
+				setTimeout(function(){
+				$('.case-section').remove();	
+				},1000);
+				
 				
 			}else{
 				
-				
+				$.scrollify({
+			       section : ".case-section",
+			     });
+
 			}
 
 		}

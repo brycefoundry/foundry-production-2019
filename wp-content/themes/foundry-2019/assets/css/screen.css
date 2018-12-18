@@ -1105,7 +1105,7 @@ body.single-clients.menu-active .header .logo {
 }
 /* line 629, ../sass/nav.scss */
 #menu .container .colophon .col-sm-4:nth-child(2), #menu .container .colophon .col-sm-4:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #E05113;
   padding-left: 100px;
   color: white;
 }

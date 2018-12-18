@@ -628,7 +628,7 @@ $lng-duration: .4s all ease-in-out;
 			.col-sm-4{
 				&:nth-child(2), &:nth-child(3){
 					
-					background-color: rgba(0,0,0,.8);
+					background-color: $primary-orange-1;
 
 					padding-left: 100px;
 					color: white;
