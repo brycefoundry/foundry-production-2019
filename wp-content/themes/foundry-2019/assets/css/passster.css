@@ -228,7 +228,7 @@ a.btn-primary:hover, button.btn-primary:hover {
   border-radius: 2px;
 }
 /* line 80, ../sass/passster.scss */
-.container.locked .passster-form .yikes-easy-mc-submit-button.admin-logged-in, .container.locked #yikes-mailchimp-container-1 .yikes-easy-mc-submit-button.admin-logged-in {
+.container.locked .passster-form .yikes-easy-mc-submit-button, .container.locked #yikes-mailchimp-container-1 .yikes-easy-mc-submit-button {
   max-width: 180px;
   background-color: #409C94;
 }
