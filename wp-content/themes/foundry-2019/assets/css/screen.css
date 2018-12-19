@@ -1584,7 +1584,7 @@ body.menu-active .wrapper {
   }
   /* line 961, ../sass/nav.scss */
   #menu .container .col-sm-4.top-nav, #menu .container .col-sm-4.subnav-container {
-    height: 80%;
+    height: 100%;
     margin-top: 270px;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
