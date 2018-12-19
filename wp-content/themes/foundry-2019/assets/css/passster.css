@@ -74,56 +74,57 @@ h1 {
 h2 {
   font-size: 2.75rem;
   font-family: "Bodoni Std", "Times New Roman", serif;
+  color: #409C94;
 }
 
-/* line 88, ../sass/global.scss */
+/* line 89, ../sass/global.scss */
 h3 {
   font-size: 2.5rem;
   font-family: "Bodoni Std", "Times New Roman", serif;
 }
 
-/* line 93, ../sass/global.scss */
+/* line 94, ../sass/global.scss */
 h4 {
   font-size: 1rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 102, ../sass/global.scss */
+/* line 103, ../sass/global.scss */
 h5 {
   font-size: 1rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 108, ../sass/global.scss */
+/* line 109, ../sass/global.scss */
 h6 {
   font-size: .75rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 115, ../sass/global.scss */
+/* line 116, ../sass/global.scss */
 p {
   font-size: 1rem;
   font-family: "MetaSerif-Book", "Times New Roman", serif;
   line-height: 1.4rem;
 }
 
-/* line 132, ../sass/global.scss */
+/* line 133, ../sass/global.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 138, ../sass/global.scss */
+/* line 139, ../sass/global.scss */
 section {
   padding: 0 60px;
 }
 
-/* line 149, ../sass/global.scss */
+/* line 150, ../sass/global.scss */
 .wrapper {
   overflow: hidden;
 }
 
-/* line 154, ../sass/global.scss */
+/* line 155, ../sass/global.scss */
 a.btn-primary, button.btn-primary {
   font-family: "Futura Std", "Helvetica", sans-serif;
   border: none;
@@ -140,7 +141,7 @@ a.btn-primary, button.btn-primary {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 165, ../sass/global.scss */
+/* line 166, ../sass/global.scss */
 a.btn-primary:hover, button.btn-primary:hover {
   background-color: #C34510;
   -moz-transition: all 0.2s ease-in-out;
@@ -149,7 +150,7 @@ a.btn-primary:hover, button.btn-primary:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 171, ../sass/global.scss */
+/* line 172, ../sass/global.scss */
 a.btn-secondary, button.btn-secondary {
   font-family: "Futura Std", "Helvetica", sans-serif;
   border: none;
@@ -166,7 +167,7 @@ a.btn-secondary, button.btn-secondary {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 182, ../sass/global.scss */
+/* line 183, ../sass/global.scss */
 a.btn-secondary:hover, button.btn-secondary:hover {
   background-color: #5C5D6D;
   -moz-transition: all 0.2s ease-in-out;
@@ -175,38 +176,49 @@ a.btn-secondary:hover, button.btn-secondary:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 188, ../sass/global.scss */
+/* line 189, ../sass/global.scss */
 section.page-section {
   padding: 120px 0;
 }
-/* line 191, ../sass/global.scss */
+/* line 192, ../sass/global.scss */
 section.page-section img {
   height: auto;
   width: 100%;
 }
 
-/* line 197, ../sass/global.scss */
+/* line 198, ../sass/global.scss */
 section.white {
   color: white;
 }
-/* line 203, ../sass/global.scss */
+/* line 204, ../sass/global.scss */
 section.white p {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 207, ../sass/global.scss */
+/* line 208, ../sass/global.scss */
 section.white .card {
   color: black;
 }
-/* line 213, ../sass/global.scss */
+/* line 214, ../sass/global.scss */
 section.white .card p {
   color: black;
 }
 
-/* line 220, ../sass/global.scss */
+/* line 221, ../sass/global.scss */
 section:nth-child(1) {
   padding-top: 250px;
 }
 
+@media only screen and (max-width: 768px) {
+  /* line 231, ../sass/global.scss */
+  section .container {
+    padding: 0px 44px;
+  }
+
+  /* line 235, ../sass/global.scss */
+  .card {
+    margin: 20px 0;
+  }
+}
 /* line 7, ../sass/passster.scss */
 .container.locked {
   width: 100%;

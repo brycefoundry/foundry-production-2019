@@ -102,7 +102,7 @@ $lng-duration: .4s all ease-in-out;
 		padding: 10px 0 10px 40px;
 		position: absolute;
 		left: 40px;
-		top: 20px;
+		top: 28px;
 
 		background: url(/wp-content/themes/foundry-2019/assets/img/back-btn.png) no-repeat transparent scroll;
 		background-size: 28px 28px;
@@ -586,10 +586,15 @@ $lng-duration: .4s all ease-in-out;
 					a:after{
 						padding-right: 0px;
 					}
+
+					a{
+						color: rgba(255,255,255,1);
+					}
 				}
 
 				hr{
 					margin-right: 0px;
+					border-color: rgba(255,255,255,.1);
 				}	
 			}
 			&.active{
@@ -606,7 +611,7 @@ $lng-duration: .4s all ease-in-out;
 		@media only screen and (max-width: 1100px){
 			ul{
 				bottom: auto;
-				top: 40px;
+				top: 25px;
 				padding-left: 10px;
 			}
 		}
@@ -943,27 +948,90 @@ body.menu-active{
 }
 
 @media only screen and (max-width: 1100px){
-	
+
 	.header{
 		padding: 0;
 		@include transform(translate3d(0, 0px, 0));
 
 		a.back-btn{
-			top: 43px;
-			left: 20px;
+			top: 23px;
+			left: 23px;
+			overflow: hidden;
+			width: 40px;
 		}
 
 		a.logo{
-			display: none;
+			width: 180px;
+		    margin-left: -90px;
+		        background-size: auto 42px;
+		    top: 18px;
+		    z-index: 20;
+		    background-position: 0px 0;
+		    @include transition($sm-duration);
+		    opacity: 1;
+
+			
+		}
+
+		.logo-container{
+			position: relative;
+			&:after{
+				content: "";
+				display: none;
+				width: 57px;
+				height: 57px;
+				@include border-radius(50px);
+				position: absolute;
+				left: 50%;
+				top: 32px;
+				margin-left: -29px;
+				background-color: black;
+				border: 4px solid rgba(255,255,255,1);
+				z-index: 10;
+				@include box-shadow(0 0 10px rgba(0,0,0,.3));
+				@include transition($sm-duration);
+				@include transform-origin(center,center);
+				@include transform(scale(0,0)translate(0,0px));
+			}
 		}
 	}
 
+
+	body.menu-active{
+		
+
+		.header, .header.minified{
+			.logo{
+				opacity: 0;
+				margin-left: -90px;
+				left: 50%;
+				@include transform(translate(0,-156px));
+				@include transition($sm-duration);
+			}
+		}
+
+		.logo-container{
+			&:after{
+				@include transition($sm-duration);
+				@include transform-origin(center,center);
+				@include transform(scale(1,1)translate(0,156px));
+			}
+		}
+	}
+	
 
 
 	#menu-btn{
 			right: 20px;
 			top: 20px;
+			height: 40px;
+			width: 40px;
 			border: none;
+
+			span{
+				right: -19px;
+				top: -19px;
+			}
 			
 			&:hover{
 				border: none;
@@ -974,7 +1042,7 @@ body.menu-active{
 		padding: 0px;
 
 		&:after{
-			display: block;
+			display: none;
 			content: "";
 			width: 100%;
 			height: 60px;
@@ -1024,11 +1092,12 @@ body.menu-active{
 			.col-sm-4.top-nav, .col-sm-4.subnav-container{
 				
 				height: 100%;
-				margin-top: 270px;
+				margin-top: 220px;
 				@include transition($sm-duration);
 
 				.menu, .submenu{
 					vertical-align: top;
+					z-index: 10;
 				}
 			}
 
@@ -1044,6 +1113,8 @@ body.menu-active{
 				flex: 0 0 50%;
 				background-color: rgba(0,0,0,0);
 				@include transition($sm-duration);
+				position: relative;
+				@include transition-delay(2s);
 
 				&:after{
 					width: 1px;
@@ -1058,6 +1129,22 @@ body.menu-active{
 					@include transition($sm-duration);
 					@include transform(scaleY(0));
 					@include transition-delay(.3s);
+				}
+				.bg{
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					content: "";
+					display: block;
+					left: 0;
+					top: 0;
+					z-index:0;
+					background-color: rgba(0,0,0,.9);
+					@include transform-origin(top, left);
+					@include transition($sm-duration);
+					@include transform(scaleX(0));
+
+					
 				}
 			}
 		}
@@ -1098,6 +1185,7 @@ body.menu-active{
 				@include transition-delay(.6s);
 			}
 
+
 			.container{
 				
 				.col-sm-4.subnav-container{
@@ -1118,11 +1206,16 @@ body.menu-active{
 				.col-sm-4.subnav-container{
 					
 					@include transition($sm-duration);
-					@include transition-delay(.5s);
+					
 					&:after{
 						@include transition($sm-duration);
 						@include transform(scaleY(1));
-						@include transition-delay(.3s);
+						
+					}
+					.bg{
+						@include transition($sm-duration);
+						@include transform(scaleX(1));
+						@include transition-delay(.4s);
 					}
 				}
 
@@ -1132,8 +1225,27 @@ body.menu-active{
 					@include transition($sm-duration);
 				}
 			}
+
+			.submenu{
+				ul.active{
+				
+				}
+			}
 		}
 	}	
+	#menu{
+		.container{
+			.submenu{
+				ul.active{
+					@include transition-delay(.4s);
+				}
+
+				ul li a:hover{
+					color: white;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 360px){
