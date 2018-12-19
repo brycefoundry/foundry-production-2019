@@ -154,6 +154,28 @@ section.page-section {
   padding: 120px 0;
 }
 
+/* line 172, ../sass/global.scss */
+section.white {
+  color: white;
+}
+/* line 178, ../sass/global.scss */
+section.white p {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 182, ../sass/global.scss */
+section.white .card {
+  color: black;
+}
+/* line 188, ../sass/global.scss */
+section.white .card p {
+  color: black;
+}
+
+/* line 195, ../sass/global.scss */
+section:nth-child(1) {
+  padding-top: 250px;
+}
+
 /* line 9, ../sass/nav.scss */
 .header {
   position: fixed;

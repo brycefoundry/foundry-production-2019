@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-	
-<section class="page-section intro" style="background-image:url('<?php the_field( 'cover_image');?>');">
+<?php if(get_field('cover_type')!='none'): ?>
+<section class="<?php the_field( 'cover_contrast');?> page-section intro" style="background-image:url('<?php the_field( 'cover_image');?>');">
 
 	<div class="container">
 		<div class="row">
@@ -36,6 +36,7 @@
 	</div>
 	
 </section>	
+<?php endif; ?>
 
 <?php if( have_rows('section') ):?>
 
