@@ -63,15 +63,7 @@ body.single-clients section.intro .container .logo {
     padding: 0 20px;
   }
 }
-/* line 73, ../sass/case-detail.scss */
-body.single-clients .header .logo {
-  opacity: 0;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 80, ../sass/case-detail.scss */
+/* line 79, ../sass/case-detail.scss */
 body.single-clients.menu-active .header .logo {
   opacity: 1;
   -moz-transition: all 0.2s ease-in-out;

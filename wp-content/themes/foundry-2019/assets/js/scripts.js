@@ -26,6 +26,8 @@
 				setTimeout(function(){
 				$('.case-section').remove();	
 				},1000);
+
+				$('.header').addClass('locked');
 				
 				
 			}else{

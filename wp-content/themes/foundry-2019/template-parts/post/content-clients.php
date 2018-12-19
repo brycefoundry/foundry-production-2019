@@ -33,7 +33,7 @@ $gallerycount = 0;
 	</div>
 	<hr />
 	
-	<h3 class="access-title">Get Access</h3>
+	<h4 class="access-title">Get Access</h4>
 	<p class="access-content">Enter your email address and we'll send you an access code for some of our more sensitive work. By entering your email you agree not to share this project.</p>	
 
 	

@@ -27,8 +27,8 @@ $lng-duration: .4s all ease-in-out;
 
 	.logo{
 		@include transition($sm-duration);
-		width: 159px;
-		height: 37px;
+		width: 200px;
+		height: 50px;
 		background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-white.png);
 		background-size: 100% auto;
 		background-repeat: no-repeat;
@@ -36,25 +36,84 @@ $lng-duration: .4s all ease-in-out;
 		left: 50%;
 		margin-left: -80px;
 		@include transition($sm-duration);
+		@include transform(translate(0px,0));
 		top: 17px;
 		overflow: hidden;
+	}
+
+	&.white{
+		.logo{
+			@include transition($sm-duration);
+			width: 200px;
+			height: 50px;
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-white.png);
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 50%;
+			margin-left: -80px;
+			@include transition($sm-duration);
+			@include transform(translate(0px,0));
+			top: 17px;
+			overflow: hidden;
+		}
+	}
+
+	&.dark{
+		.logo{
+			@include transition($sm-duration);
+			width: 200px;
+			height: 50px;
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 50%;
+			margin-left: -80px;
+			@include transition($sm-duration);
+			@include transform(translate(0px,0));
+			top: 17px;
+			overflow: hidden;
+		}
+	}
+
+	&.locked{
+		.logo{
+			@include transition($sm-duration);
+			width: 200px;
+			height: 50px;
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 50%;
+			margin-left: -80px;
+			@include transition($sm-duration);
+			@include transform(translate(0px,0));
+			top: 17px;
+			overflow: hidden;
+		}
 	}
 
 	a.back-btn{
 		color: white;
 		font-family: $futura;
-		font-size: 1rem;
+		font-size: 18px;
 		padding: 10px 0 10px 40px;
 		position: absolute;
 		left: 40px;
-		top: 10px;
+		top: 20px;
 
 		background: url(/wp-content/themes/foundry-2019/assets/img/back-btn.png) no-repeat transparent scroll;
 		background-size: 28px 28px;
 		background-position: left center;
 		@include transition($sm-duration);
-		@include transform(translate(0px));
+		@include transform(translate(0px,0));
 		opacity: 1;
+
+		@media only screen and (max-width: 1920px){
+			
+		}
 	}
 
 	.logo-container{
@@ -64,12 +123,13 @@ $lng-duration: .4s all ease-in-out;
 	&.minified{
 		a.back-btn{
 			@include transition($sm-duration);
-			@include transform(translate(-100px));
+			@include transform(translate(0,-100px));
 			opacity: 0;
 		}
 
 		.logo{
 			@include transition($sm-duration);
+			@include transform(translate(0,-100px));
 			opacity: 0;
 		}
 	}
@@ -410,7 +470,9 @@ $lng-duration: .4s all ease-in-out;
 				}
 
 
-
+				&:last-child{
+					border-bottom: none;
+				}
 
 
 				
@@ -616,7 +678,7 @@ $lng-duration: .4s all ease-in-out;
 		}
 
 		.col-sm-4.top-nav, .col-sm-4.subnav-container{
-			@include transform(translate3d(0 0 0));
+			@include transform(translate3d(0, 0, 0));
 			@include transform-origin(center, right);
 
 			display: table;
@@ -755,12 +817,13 @@ body.menu-active{
 		&.minified{
 			a.back-btn{
 				@include transition($sm-duration);
-				@include transform(translate(0px));
+				@include transform(translate(0px,0px));
 				opacity: 1;
 			}
 
 			.logo{
 				@include transition($sm-duration);
+				@include transform(translate(0px,0px));
 				opacity: 1;
 			}
 		}

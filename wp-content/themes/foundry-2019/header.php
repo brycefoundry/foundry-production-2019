@@ -22,13 +22,13 @@
 
 
 	</head>
-	<body <?php body_class(); ?> id="px-offset-waypoint">
+	<body <?php body_class(); ?>  id="px-offset-waypoint">
 
 		
 		
 
 			<!-- header -->
-			<header class="header clear" role="banner">
+			<header class="header clear <?php the_field( 'logo_type');?>" role="banner">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-4">

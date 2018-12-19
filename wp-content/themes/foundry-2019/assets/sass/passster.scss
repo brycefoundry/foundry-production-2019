@@ -13,7 +13,7 @@
 	background-color: white;
 	max-width: 100%;
 	z-index: 109;
-	padding-top: 200px;
+	padding-top: 300px;
 	
 	pointer-events: none;
 	opacity: 0;
@@ -51,10 +51,11 @@
 
 		#password-form{
 			h4{
-				font-family: $bodoni;
+				
+
 				letter-spacing: 0px;
-				text-transform: none;
-				font-size: 2rem;
+			
+				
 				font-weight: normal;
 				color: black;
 			}
@@ -109,7 +110,7 @@
 	.access-title, .access-content, hr{
 		max-width: 960px;
 		margin: 20px auto;
-		font-family: $bodoni;
+		
 	}
 
 	.access-content{
