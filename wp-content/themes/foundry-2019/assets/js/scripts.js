@@ -18,6 +18,8 @@
 
 			}
 
+
+
 			if($('#password-form').length){
 				$('.container.locked').addClass('show');
 
@@ -37,6 +39,22 @@
 		}
 
 		mobilemenu = function(){
+
+			var waypoint = new Waypoint({
+			  element: document.getElementById('px-offset-waypoint'),
+			  handler: function(direction) {
+			   
+
+			   if(direction=='down'){
+			   	
+			   	$('.header').addClass('minified');
+			   }else if(direction=='up'){
+			   	
+			   	$('.header').removeClass('minified');
+			   }
+			  },
+			  offset: -1 
+			})
 
 			var menutoggle = 0;
 			$('#menu-btn').click(function(){

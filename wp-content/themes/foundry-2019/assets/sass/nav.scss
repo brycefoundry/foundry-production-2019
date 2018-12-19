@@ -26,6 +26,7 @@ $lng-duration: .4s all ease-in-out;
 	}
 
 	.logo{
+		@include transition($sm-duration);
 		width: 159px;
 		height: 37px;
 		background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-white.png);
@@ -51,10 +52,26 @@ $lng-duration: .4s all ease-in-out;
 		background: url(/wp-content/themes/foundry-2019/assets/img/back-btn.png) no-repeat transparent scroll;
 		background-size: 28px 28px;
 		background-position: left center;
+		@include transition($sm-duration);
+		@include transform(translate(0px));
+		opacity: 1;
 	}
 
 	.logo-container{
 
+	}
+
+	&.minified{
+		a.back-btn{
+			@include transition($sm-duration);
+			@include transform(translate(-100px));
+			opacity: 0;
+		}
+
+		.logo{
+			@include transition($sm-duration);
+			opacity: 0;
+		}
 	}
 
 }
@@ -734,6 +751,18 @@ body.menu-active{
 			@include transition($sm-duration);
 			left: 0;
 			margin-left: 80px;
+		}
+		&.minified{
+			a.back-btn{
+				@include transition($sm-duration);
+				@include transform(translate(0px));
+				opacity: 1;
+			}
+
+			.logo{
+				@include transition($sm-duration);
+				opacity: 1;
+			}
 		}
 	}
 	#menu{
