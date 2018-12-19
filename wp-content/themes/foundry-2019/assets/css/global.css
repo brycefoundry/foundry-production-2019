@@ -53,78 +53,72 @@ html {
     font-size: 12px;
   }
 }
-@media only screen and (min-width: 1920px) {
-  /* line 66, ../sass/global.scss */
-  html {
-    font-size: 18px;
-  }
-}
-/* line 71, ../sass/global.scss */
+/* line 67, ../sass/global.scss */
 h1, h2, h3, h4, h5, h6, p {
   display: block;
 }
 
-/* line 75, ../sass/global.scss */
+/* line 71, ../sass/global.scss */
 h1 {
   font-size: 5rem;
   font-family: "Bodoni Std", "Times New Roman", serif;
 }
 
-/* line 82, ../sass/global.scss */
+/* line 78, ../sass/global.scss */
 h2 {
   font-size: 2.75rem;
   font-family: "Bodoni Std", "Times New Roman", serif;
   color: #409C94;
 }
 
-/* line 89, ../sass/global.scss */
+/* line 85, ../sass/global.scss */
 h3 {
   font-size: 2.5rem;
   font-family: "Bodoni Std", "Times New Roman", serif;
 }
 
-/* line 94, ../sass/global.scss */
+/* line 90, ../sass/global.scss */
 h4 {
   font-size: 1rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 103, ../sass/global.scss */
+/* line 99, ../sass/global.scss */
 h5 {
   font-size: 1rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 109, ../sass/global.scss */
+/* line 105, ../sass/global.scss */
 h6 {
   font-size: .75rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 116, ../sass/global.scss */
+/* line 112, ../sass/global.scss */
 p {
   font-size: 1rem;
   font-family: "MetaSerif-Book", "Times New Roman", serif;
   line-height: 1.4rem;
 }
 
-/* line 133, ../sass/global.scss */
+/* line 129, ../sass/global.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 139, ../sass/global.scss */
+/* line 135, ../sass/global.scss */
 section {
   padding: 0 60px;
 }
 
-/* line 150, ../sass/global.scss */
+/* line 146, ../sass/global.scss */
 .wrapper {
   overflow: hidden;
 }
 
-/* line 155, ../sass/global.scss */
+/* line 151, ../sass/global.scss */
 a.btn-primary, button.btn-primary {
   font-family: "Futura Std", "Helvetica", sans-serif;
   border: none;
@@ -141,7 +135,7 @@ a.btn-primary, button.btn-primary {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 166, ../sass/global.scss */
+/* line 162, ../sass/global.scss */
 a.btn-primary:hover, button.btn-primary:hover {
   background-color: #C34510;
   -moz-transition: all 0.2s ease-in-out;
@@ -150,7 +144,7 @@ a.btn-primary:hover, button.btn-primary:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 172, ../sass/global.scss */
+/* line 168, ../sass/global.scss */
 a.btn-secondary, button.btn-secondary {
   font-family: "Futura Std", "Helvetica", sans-serif;
   border: none;
@@ -167,7 +161,7 @@ a.btn-secondary, button.btn-secondary {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 183, ../sass/global.scss */
+/* line 179, ../sass/global.scss */
 a.btn-secondary:hover, button.btn-secondary:hover {
   background-color: #5C5D6D;
   -moz-transition: all 0.2s ease-in-out;
@@ -176,46 +170,73 @@ a.btn-secondary:hover, button.btn-secondary:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 189, ../sass/global.scss */
+/* line 185, ../sass/global.scss */
 section.page-section {
   padding: 120px 0;
 }
-/* line 192, ../sass/global.scss */
+/* line 188, ../sass/global.scss */
 section.page-section img {
   height: auto;
   width: 100%;
 }
 
-/* line 198, ../sass/global.scss */
+/* line 194, ../sass/global.scss */
 section.white {
   color: white;
 }
-/* line 204, ../sass/global.scss */
+/* line 200, ../sass/global.scss */
 section.white p {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 208, ../sass/global.scss */
+/* line 204, ../sass/global.scss */
 section.white .card {
   color: black;
 }
-/* line 214, ../sass/global.scss */
+/* line 210, ../sass/global.scss */
 section.white .card p {
   color: black;
 }
 
-/* line 221, ../sass/global.scss */
+/* line 217, ../sass/global.scss */
 section:nth-child(1) {
   padding-top: 250px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 231, ../sass/global.scss */
+  /* line 227, ../sass/global.scss */
   section .container {
     padding: 0px 44px;
   }
 
-  /* line 235, ../sass/global.scss */
+  /* line 231, ../sass/global.scss */
   .card {
     margin: 20px 0;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  /* line 237, ../sass/global.scss */
+  html {
+    font-size: 18px;
+  }
+
+  /* line 240, ../sass/global.scss */
+  .container {
+    max-width: 1600px;
+  }
+
+  /* line 243, ../sass/global.scss */
+  section:nth-child(1) {
+    padding-top: 350px;
+  }
+}
+@media only screen and (min-width: 2400px) {
+  /* line 249, ../sass/global.scss */
+  html {
+    font-size: 22px;
+  }
+
+  /* line 255, ../sass/global.scss */
+  section:nth-child(1) {
+    padding-top: 350px;
   }
 }

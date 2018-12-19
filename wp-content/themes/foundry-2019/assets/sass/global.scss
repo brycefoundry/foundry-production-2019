@@ -62,11 +62,7 @@ html{
 	}
 }
 
-@media only screen and (min-width: 1920px){
-	html{
-		font-size: 18px;
-	}
-}
+
 
 h1, h2, h3, h4, h5, h6, p{
 	display: block;
@@ -234,5 +230,29 @@ section:nth-child(1){
 
 	.card{
 		margin: 20px 0;
+	}
+}
+
+@media only screen and (min-width: 1920px){
+	html{
+		font-size: 18px;
+	}
+	.container{
+		max-width: 1600px;
+	}
+	section:nth-child(1){
+		padding-top: 350px;
+	}
+}
+
+@media only screen and (min-width: 2400px){
+	html{
+		font-size: 22px;
+	}
+	.container{
+		
+	}
+	section:nth-child(1){
+		padding-top: 350px;
 	}
 }
