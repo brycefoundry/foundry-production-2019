@@ -135,7 +135,7 @@ html {
 @media only screen and (min-width: 1920px) {
   /* line 66, ../sass/global.scss */
   html {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 /* line 71, ../sass/global.scss */
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* line 75, ../sass/global.scss */
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-family: "Bodoni Std", "Times New Roman", serif;
 }
 
@@ -1137,7 +1137,7 @@ body.single-clients.menu-active .header .logo {
 #menu .container .colophon .col-sm-4:nth-child(2) p, #menu .container .colophon .col-sm-4:nth-child(3) p {
   margin-top: 11px;
   font-family: "Bodoni Std", "Times New Roman", serif;
-  font-size: .75rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.6);
 }
 /* line 643, ../sass/nav.scss */
@@ -1146,7 +1146,7 @@ body.single-clients.menu-active .header .logo {
   text-transform: uppercase;
   margin-right: 10px;
   color: white;
-  font-size: .5rem;
+  font-size: .75rem;
 }
 /* line 653, ../sass/nav.scss */
 #menu .container .colophon .col-sm-4:nth-child(2) p a, #menu .container .colophon .col-sm-4:nth-child(3) p a {
