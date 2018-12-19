@@ -66,9 +66,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* line 75, ../sass/global.scss */
 h1 {
-  font-size: 7.5rem;
-  font-family: "Tungsten Narrow", "Helvetica", sans-serif;
-  text-transform: uppercase;
+  font-size: 7rem;
+  font-family: "Bodoni Std", "Times New Roman", serif;
 }
 
 /* line 82, ../sass/global.scss */
@@ -77,18 +76,16 @@ h2 {
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 87, ../sass/global.scss */
+/* line 88, ../sass/global.scss */
 h3 {
-  font-size: 2rem;
-  font-family: "Futura Std", "Helvetica", sans-serif;
+  font-size: 2.5rem;
+  font-family: "Bodoni Std", "Times New Roman", serif;
 }
 
-/* line 92, ../sass/global.scss */
+/* line 93, ../sass/global.scss */
 h4 {
-  font-size: 2.875rem;
-  font-family: "Tungsten Narrow", "Helvetica", sans-serif;
-  letter-spacing: 1rem;
-  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
 /* line 100, ../sass/global.scss */
@@ -100,7 +97,7 @@ h5 {
 
 /* line 106, ../sass/global.scss */
 h6 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
@@ -150,6 +147,11 @@ a.btn-primary:hover, button.btn-primary:hover {
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+/* line 168, ../sass/global.scss */
+section.page-section {
+  padding: 120px 0;
 }
 
 /* line 7, ../sass/passster.scss */
