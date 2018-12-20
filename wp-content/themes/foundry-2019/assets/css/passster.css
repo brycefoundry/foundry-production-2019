@@ -152,7 +152,7 @@ a.btn-primary:hover, button.btn-primary:hover {
 a.btn-secondary, button.btn-secondary {
   font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   border: none;
-  font-size: .5rem;
+  font-size: .65rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #409C94;
