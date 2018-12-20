@@ -718,6 +718,19 @@ $lng-duration: .4s all ease-in-out;
 
 		}
 
+		.col-sm-4.subnav-container{
+			.subnav{
+				height: 70%;
+				overflow-x: scroll;
+				width: 100%;
+				display: block;
+
+				.submenu{
+					display: block;
+				}
+			}	
+		}
+
 		.colophon{
 			height: 80px;
 			width: 100%;
