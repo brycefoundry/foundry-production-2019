@@ -5,33 +5,54 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
-				<div class="logo" style="background-image:url('<?php the_field( 'client_logo');?>');"> </div>
-				<p><?php the_field( 'description');?></p>
-
-				<?php if( have_rows('call_to_actions') ):?>
-
-					<?php while ( have_rows('call_to_actions') ) : the_row(); ?>
-
-						<?php 
-
-						$link = get_sub_field('button');
+				<div class="intro-content">
 					
-						if( $link ): 
-							$link_url = $link['url'];
-							$link_title = $link['title'];
-							$link_target = $link['target'] ? $link['target'] : 'self';
-							?>
-							<a class="btn btn-primary" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-						<?php endif; ?>
-						
-					<?php endwhile; ?>
+				
+				
+					<div class="container">
+						<div class="row">
+							<div class="logo" style="background-image:url('<?php the_field( 'client_logo');?>');"> </div>
+							<h1><?php the_field( 'header');?></h1>
+							<p><?php the_field( 'description');?></p>
+							<?php if( have_rows('call_to_actions') ):?>
 
-						<?php endif; ?>
+								<?php while ( have_rows('call_to_actions') ) : the_row(); ?>
+
+									<?php 
+
+									$link = get_sub_field('button');
+								
+									if( $link ): 
+										$link_url = $link['url'];
+										$link_title = $link['title'];
+										$link_target = $link['target'] ? $link['target'] : 'self';
+										?>
+										<a class="btn btn-primary" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+									<?php endif; ?>
+									
+								<?php endwhile; ?>
+
+							<?php endif; ?>
+						</div>
+					</div>
+				
+				</div>
+				
+				<?php if(get_field('cover_type')=='bg-video'): ?>
+					<div class="video">
+						<video autoplay muted loop>
+						  <source src="<?php the_field('cover_image_mp4'); ?>" type="video/mp4">
+						  <source src="<?php the_field('cover_image_ogg'); ?>" type="video/ogg">
+						  <source src="<?php the_field('cover_image_webm'); ?>" type="video/webm">
+						Your browser does not support the video tag.
+						</video>
+						
+					</div>
+				<?php endif; ?>
 
 				
 
-			</div>
+			
 		</div>
 	</div>
 	

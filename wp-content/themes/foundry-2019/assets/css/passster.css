@@ -184,79 +184,79 @@ section.page-section img {
   width: 100%;
 }
 
-/* line 199, ../sass/global.scss */
+/* line 201, ../sass/global.scss */
 section.white {
   color: white;
 }
-/* line 205, ../sass/global.scss */
+/* line 207, ../sass/global.scss */
 section.white p {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 209, ../sass/global.scss */
+/* line 211, ../sass/global.scss */
 section.white .card {
   color: black;
 }
-/* line 215, ../sass/global.scss */
+/* line 217, ../sass/global.scss */
 section.white .card p {
   color: black;
 }
 
-/* line 222, ../sass/global.scss */
+/* line 224, ../sass/global.scss */
 section:nth-child(1) {
   padding-top: 250px;
 }
 
-/* line 231, ../sass/global.scss */
+/* line 233, ../sass/global.scss */
 section .container .card .btn {
   display: block;
   margin-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 241, ../sass/global.scss */
+  /* line 243, ../sass/global.scss */
   section .container, footer .container {
     padding: 0px 44px;
   }
 
-  /* line 245, ../sass/global.scss */
+  /* line 247, ../sass/global.scss */
   .card {
     margin: 20px 0;
   }
 }
 @media only screen and (min-width: 1920px) {
-  /* line 253, ../sass/global.scss */
+  /* line 255, ../sass/global.scss */
   html {
     font-size: 18px;
   }
 
-  /* line 256, ../sass/global.scss */
+  /* line 258, ../sass/global.scss */
   .container {
     max-width: 1600px;
   }
 
-  /* line 259, ../sass/global.scss */
+  /* line 261, ../sass/global.scss */
   section:nth-child(1) {
     padding-top: 350px;
   }
 }
 @media only screen and (min-width: 2400px) {
-  /* line 265, ../sass/global.scss */
+  /* line 267, ../sass/global.scss */
   html {
     font-size: 22px;
   }
 
-  /* line 271, ../sass/global.scss */
+  /* line 273, ../sass/global.scss */
   section:nth-child(1) {
     padding-top: 350px;
   }
 }
-/* line 278, ../sass/global.scss */
+/* line 280, ../sass/global.scss */
 footer {
   background-color: #30313B;
   padding: 80px 0;
   color: white;
 }
-/* line 283, ../sass/global.scss */
+/* line 285, ../sass/global.scss */
 footer h6 {
   text-transform: uppercase;
   padding-top: 18px;
@@ -264,17 +264,17 @@ footer h6 {
   padding-bottom: 15px;
   padding-top: 15px;
 }
-/* line 294, ../sass/global.scss */
+/* line 296, ../sass/global.scss */
 footer ul {
   padding-top: 20px;
 }
-/* line 296, ../sass/global.scss */
+/* line 298, ../sass/global.scss */
 footer ul li {
   font-family: "Bodoni Std", "Times New Roman", serif;
   font-size: 1.5rem;
   margin: 0 0 30px 0;
 }
-/* line 300, ../sass/global.scss */
+/* line 302, ../sass/global.scss */
 footer ul li strong {
   font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   font-size: 1rem;
@@ -282,45 +282,45 @@ footer ul li strong {
   margin-right: 20px;
   color: #6066A3;
 }
-/* line 307, ../sass/global.scss */
+/* line 309, ../sass/global.scss */
 footer ul li a {
   color: rgba(255, 255, 255, 0.6);
 }
-/* line 311, ../sass/global.scss */
+/* line 313, ../sass/global.scss */
 footer ul li a:hover {
   text-decoration: underline;
   color: white;
 }
-/* line 322, ../sass/global.scss */
+/* line 324, ../sass/global.scss */
 footer .col-md-4:first-child h6 {
   border-bottom: 3px solid #409C94;
   color: white;
 }
-/* line 329, ../sass/global.scss */
+/* line 331, ../sass/global.scss */
 footer .col-md-4:nth-child(2) h6 {
   border-bottom: 3px solid #6066A3;
   color: white;
 }
-/* line 336, ../sass/global.scss */
+/* line 338, ../sass/global.scss */
 footer .col-md-4:last-child h6 {
   border-bottom: 3px solid #E05113;
   color: white;
 }
-/* line 344, ../sass/global.scss */
+/* line 346, ../sass/global.scss */
 footer .col-md-4 h6, footer .col-md-4 ul, footer .col-md-4 a.logo, footer .col h6, footer .col ul, footer .col a.logo {
   margin: 0 40px 0 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 349, ../sass/global.scss */
+  /* line 351, ../sass/global.scss */
   footer .col-md-4 h6, footer .col-md-4 ul, footer .col-md-4 a.logo, footer .col h6, footer .col ul, footer .col a.logo {
     margin: 0 0px 0 0;
   }
 }
-/* line 355, ../sass/global.scss */
+/* line 357, ../sass/global.scss */
 footer .logo-container {
   padding-top: 60px;
 }
-/* line 357, ../sass/global.scss */
+/* line 359, ../sass/global.scss */
 footer .logo-container p {
   display: block;
   width: 100%;
@@ -328,7 +328,7 @@ footer .logo-container p {
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
 }
-/* line 367, ../sass/global.scss */
+/* line 369, ../sass/global.scss */
 footer .logo {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -353,13 +353,62 @@ footer .logo {
   overflow: hidden;
 }
 
-/* line 389, ../sass/global.scss */
+/* line 391, ../sass/global.scss */
 body.meet h2 {
   color: #409C94;
 }
-/* line 393, ../sass/global.scss */
+/* line 395, ../sass/global.scss */
 body.meet h4 {
   color: #E05113;
+}
+
+/* line 405, ../sass/global.scss */
+section.intro {
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+/* line 411, ../sass/global.scss */
+section.intro .intro-content {
+  position: absolute;
+  bottom: 180px;
+  left: 180px;
+  z-index: 100;
+  max-width: 640px;
+}
+/* line 420, ../sass/global.scss */
+section.intro .intro-content h1, section.intro .intro-content p {
+  color: white;
+  text-shadow: 0 0 4px black;
+  width: 100%;
+  display: block;
+}
+/* line 428, ../sass/global.scss */
+section.intro:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+}
+/* line 439, ../sass/global.scss */
+section .video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+/* line 447, ../sass/global.scss */
+section .video video {
+  width: auto;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* line 7, ../sass/passster.scss */
