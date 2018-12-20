@@ -340,9 +340,13 @@ $lng-duration: .4s all ease-in-out;
 						outline: none;
 						
 					}
-
 					
-
+					@media only screen and (max-width: 1440px){
+						font-size: 2rem;
+						padding: 24px 0 14px 16px;
+					}
+					
+					
 					
 				}
 
@@ -361,6 +365,9 @@ $lng-duration: .4s all ease-in-out;
 						background-color: transparent;
 						@include transition($sm-duration);
 						@include transform(rotate(0));
+						@media only screen and (max-width: 1440px){
+							top: 27px;
+						}
 						&:after{
 							content: "";
 						    display: block;
