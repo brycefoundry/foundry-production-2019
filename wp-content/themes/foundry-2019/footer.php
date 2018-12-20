@@ -1,12 +1,43 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-md-4">
+							<h6>Resources</h6>
+							<ul>
+								<li><a href="">Design Sprints</a></li>
+								<li><a href="">Strategy</a></li>
+								<li><a href="">Pricing</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<h6>Connect</h6>
+							<ul>
+								<li><strong>Y:</strong><a href="">foundrydigital</a></li>
+								<li><strong>T:</strong><a href="">madebyfoundry</a></li>
+								<li><strong>I:</strong><a href="">foundryatx</a></li>
+							</ul>
+						</div>
+					
+					<div class="col-md-4">
+						<a class="logo" href="<?php echo home_url(); ?>"></a>
+						
+						<ul>
+							<li>Foundry Digital LLC @ 2018</li>
+							<li>2028 E Ben White Blvd
+								<br />
+								Suite 240-3350
+								<br />
+								Austin, Texas 78741
+							</li>
+							<li>512.298.4060
+							</li>
+						</ul>
+					</div>
+				</div>
+				</div>
 
 			</footer>
 			<!-- /footer -->
