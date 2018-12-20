@@ -2,6 +2,7 @@
 			<footer class="footer" role="contentinfo">
 
 				<div class="container">
+					
 					<div class="row">
 						
 						<div class="col-md-4">
@@ -13,29 +14,38 @@
 							</ul>
 						</div>
 						<div class="col-md-4">
-							<h6>Connect</h6>
+							<h6>Social</h6>
 							<ul>
 								<li><strong>Y:</strong><a href="">foundrydigital</a></li>
 								<li><strong>T:</strong><a href="">madebyfoundry</a></li>
 								<li><strong>I:</strong><a href="">foundryatx</a></li>
 							</ul>
 						</div>
-					
-					<div class="col-md-4">
-						<a class="logo" href="<?php echo home_url(); ?>"></a>
-						
-						<ul>
-							<li>Foundry Digital LLC @ 2018</li>
-							<li>2028 E Ben White Blvd
+
+						<div class="col-md-4">
+							<h6>Contact</h6>
+							<ul>
+								<li>2028 E Ben White Blvd
 								<br />
 								Suite 240-3350
 								<br />
 								Austin, Texas 78741
-							</li>
-							<li>512.298.4060
-							</li>
-						</ul>
-					</div>
+								</li>
+								<li>512.298.4060
+								</li>
+							</ul>
+						</div>
+					
+					
+				</div>
+				<div class="row logo-container">
+					<div class="col">
+						<a class="logo" href="<?php echo home_url(); ?>"></a>
+						
+					
+						<p>Foundry Digital LLC @ 2018</p>
+						</div>
+					
 				</div>
 				</div>
 
