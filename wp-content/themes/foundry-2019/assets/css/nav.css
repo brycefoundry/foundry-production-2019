@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* line 71, ../sass/global.scss */
 h1 {
   font-size: 5rem;
-  font-family: "Bodoni Std", "Times New Roman", serif;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   margin: 0 0 20px 0;
 }
 
@@ -372,10 +372,10 @@ section.intro {
 /* line 411, ../sass/global.scss */
 section.intro .intro-content {
   position: absolute;
-  bottom: 180px;
-  left: 180px;
-  z-index: 100;
-  max-width: 640px;
+  bottom: 80px;
+  right: 80px;
+  z-index: 20;
+  max-width: 480px;
 }
 /* line 420, ../sass/global.scss */
 section.intro .intro-content h1, section.intro .intro-content p {
@@ -407,8 +407,10 @@ section .video video {
   width: auto;
   height: 100vh;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1.2, 1.2);
+  transform-origin: center center;
 }
 
 /* line 9, ../sass/nav.scss */
