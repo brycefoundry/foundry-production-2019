@@ -62,63 +62,66 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-size: 5rem;
   font-family: "Bodoni Std", "Times New Roman", serif;
+  margin: 0 0 20px 0;
 }
 
-/* line 78, ../sass/global.scss */
+/* line 79, ../sass/global.scss */
 h2 {
   font-size: 2.75rem;
   font-family: "Bodoni Std", "Times New Roman", serif;
-  color: #409C94;
+  margin: 0 0 20px 0;
 }
 
-/* line 85, ../sass/global.scss */
+/* line 86, ../sass/global.scss */
 h3 {
   font-size: 2.5rem;
   font-family: "Bodoni Std", "Times New Roman", serif;
+  margin: 0 0 10px 0;
 }
 
-/* line 90, ../sass/global.scss */
+/* line 92, ../sass/global.scss */
 h4 {
   font-size: 1rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
   text-transform: uppercase;
+  margin: 0 0 20px 0;
 }
 
-/* line 99, ../sass/global.scss */
+/* line 102, ../sass/global.scss */
 h5 {
   font-size: 1rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 105, ../sass/global.scss */
+/* line 108, ../sass/global.scss */
 h6 {
   font-size: .75rem;
   font-family: "Futura Std", "Helvetica", sans-serif;
 }
 
-/* line 112, ../sass/global.scss */
+/* line 115, ../sass/global.scss */
 p {
   font-size: 1rem;
   font-family: "MetaSerif-Book", "Times New Roman", serif;
   line-height: 1.4rem;
 }
 
-/* line 129, ../sass/global.scss */
+/* line 133, ../sass/global.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 135, ../sass/global.scss */
+/* line 139, ../sass/global.scss */
 section {
   padding: 0 60px;
 }
 
-/* line 146, ../sass/global.scss */
+/* line 150, ../sass/global.scss */
 .wrapper {
   overflow: hidden;
 }
 
-/* line 151, ../sass/global.scss */
+/* line 155, ../sass/global.scss */
 a.btn-primary, button.btn-primary {
   font-family: "Futura Std", "Helvetica", sans-serif;
   border: none;
@@ -134,9 +137,9 @@ a.btn-primary, button.btn-primary {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  margin: 0 0 10px 0;
+  margin: 10px 0 10px 0;
 }
-/* line 163, ../sass/global.scss */
+/* line 167, ../sass/global.scss */
 a.btn-primary:hover, button.btn-primary:hover {
   background-color: #C34510;
   -moz-transition: all 0.2s ease-in-out;
@@ -145,7 +148,7 @@ a.btn-primary:hover, button.btn-primary:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 169, ../sass/global.scss */
+/* line 173, ../sass/global.scss */
 a.btn-secondary, button.btn-secondary {
   font-family: "Futura Std", "Helvetica", sans-serif;
   border: none;
@@ -162,7 +165,7 @@ a.btn-secondary, button.btn-secondary {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 180, ../sass/global.scss */
+/* line 184, ../sass/global.scss */
 a.btn-secondary:hover, button.btn-secondary:hover {
   background-color: #5C5D6D;
   -moz-transition: all 0.2s ease-in-out;
@@ -171,83 +174,89 @@ a.btn-secondary:hover, button.btn-secondary:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 186, ../sass/global.scss */
+/* line 190, ../sass/global.scss */
 section.page-section {
   padding: 120px 0;
 }
-/* line 189, ../sass/global.scss */
+/* line 193, ../sass/global.scss */
 section.page-section img {
   height: auto;
   width: 100%;
 }
 
-/* line 195, ../sass/global.scss */
+/* line 199, ../sass/global.scss */
 section.white {
   color: white;
 }
-/* line 201, ../sass/global.scss */
+/* line 205, ../sass/global.scss */
 section.white p {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 205, ../sass/global.scss */
+/* line 209, ../sass/global.scss */
 section.white .card {
   color: black;
 }
-/* line 211, ../sass/global.scss */
+/* line 215, ../sass/global.scss */
 section.white .card p {
   color: black;
 }
 
-/* line 218, ../sass/global.scss */
+/* line 222, ../sass/global.scss */
 section:nth-child(1) {
   padding-top: 250px;
 }
 
+/* line 231, ../sass/global.scss */
+section .container .card .btn {
+  display: block;
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 228, ../sass/global.scss */
+  /* line 241, ../sass/global.scss */
   section .container, footer .container {
     padding: 0px 44px;
   }
 
-  /* line 232, ../sass/global.scss */
+  /* line 245, ../sass/global.scss */
   .card {
     margin: 20px 0;
   }
 }
 @media only screen and (min-width: 1920px) {
-  /* line 238, ../sass/global.scss */
+  /* line 253, ../sass/global.scss */
   html {
     font-size: 18px;
   }
 
-  /* line 241, ../sass/global.scss */
+  /* line 256, ../sass/global.scss */
   .container {
     max-width: 1600px;
   }
 
-  /* line 244, ../sass/global.scss */
+  /* line 259, ../sass/global.scss */
   section:nth-child(1) {
     padding-top: 350px;
   }
 }
 @media only screen and (min-width: 2400px) {
-  /* line 250, ../sass/global.scss */
+  /* line 265, ../sass/global.scss */
   html {
     font-size: 22px;
   }
 
-  /* line 256, ../sass/global.scss */
+  /* line 271, ../sass/global.scss */
   section:nth-child(1) {
     padding-top: 350px;
   }
 }
-/* line 263, ../sass/global.scss */
+/* line 278, ../sass/global.scss */
 footer {
   background-color: black;
   padding: 80px 0;
   color: white;
 }
-/* line 268, ../sass/global.scss */
+/* line 283, ../sass/global.scss */
 footer h6 {
   text-transform: uppercase;
   padding-top: 18px;
@@ -255,17 +264,17 @@ footer h6 {
   padding-bottom: 15px;
   padding-top: 15px;
 }
-/* line 279, ../sass/global.scss */
+/* line 294, ../sass/global.scss */
 footer ul {
   padding-top: 20px;
 }
-/* line 281, ../sass/global.scss */
+/* line 296, ../sass/global.scss */
 footer ul li {
   font-family: "Bodoni Std", "Times New Roman", serif;
   font-size: 1.5rem;
   margin: 0 0 30px 0;
 }
-/* line 285, ../sass/global.scss */
+/* line 300, ../sass/global.scss */
 footer ul li strong {
   font-family: "Futura Std", "Helvetica", sans-serif;
   font-size: 1rem;
@@ -273,45 +282,45 @@ footer ul li strong {
   margin-right: 20px;
   color: #6066A3;
 }
-/* line 292, ../sass/global.scss */
+/* line 307, ../sass/global.scss */
 footer ul li a {
   color: rgba(255, 255, 255, 0.6);
 }
-/* line 296, ../sass/global.scss */
+/* line 311, ../sass/global.scss */
 footer ul li a:hover {
   text-decoration: underline;
   color: white;
 }
-/* line 307, ../sass/global.scss */
+/* line 322, ../sass/global.scss */
 footer .col-md-4:first-child h6 {
   border-bottom: 3px solid #409C94;
   color: white;
 }
-/* line 314, ../sass/global.scss */
+/* line 329, ../sass/global.scss */
 footer .col-md-4:nth-child(2) h6 {
   border-bottom: 3px solid #6066A3;
   color: white;
 }
-/* line 321, ../sass/global.scss */
+/* line 336, ../sass/global.scss */
 footer .col-md-4:last-child h6 {
   border-bottom: 3px solid #E05113;
   color: white;
 }
-/* line 329, ../sass/global.scss */
+/* line 344, ../sass/global.scss */
 footer .col-md-4 h6, footer .col-md-4 ul, footer .col-md-4 a.logo, footer .col h6, footer .col ul, footer .col a.logo {
   margin: 0 40px 0 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 334, ../sass/global.scss */
+  /* line 349, ../sass/global.scss */
   footer .col-md-4 h6, footer .col-md-4 ul, footer .col-md-4 a.logo, footer .col h6, footer .col ul, footer .col a.logo {
     margin: 0 0px 0 0;
   }
 }
-/* line 340, ../sass/global.scss */
+/* line 355, ../sass/global.scss */
 footer .logo-container {
   padding-top: 60px;
 }
-/* line 342, ../sass/global.scss */
+/* line 357, ../sass/global.scss */
 footer .logo-container p {
   display: block;
   width: 100%;
@@ -319,7 +328,7 @@ footer .logo-container p {
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
 }
-/* line 352, ../sass/global.scss */
+/* line 367, ../sass/global.scss */
 footer .logo {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;

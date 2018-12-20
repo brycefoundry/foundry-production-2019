@@ -17,6 +17,10 @@ $lng-duration: .4s all ease-in-out;
 	
 	@include transform(translate3d(0,120px,0));
 
+	@media only screen and (max-width: 1340px){
+		padding: 0 40px;
+	}
+
 	.container{
 	 max-width: 100%;
 	}
@@ -114,6 +118,16 @@ $lng-duration: .4s all ease-in-out;
 		@media only screen and (max-width: 1920px){
 			
 		}
+
+		
+	}
+
+	@media only screen and (max-width: 1340px){
+		a.back-btn{
+			left: 0px;
+		}
+
+
 	}
 
 	.logo-container{
@@ -150,6 +164,10 @@ $lng-duration: .4s all ease-in-out;
 	@include box-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
 	@include transition($sm-duration);
 	@include border-radius(2px);
+
+	@media only screen and (max-width: 1340px){
+		right: 0px;
+	}
 
 
 
@@ -1025,7 +1043,7 @@ body.menu-active{
 			right: 20px;
 			top: 20px;
 			height: 40px;
-			width: 40px;
+			width: 41px;
 			border: none;
 
 			span{

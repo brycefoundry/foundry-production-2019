@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6, p{
 h1{
  font-size: 5rem;	
  font-family: $bodoni;
+ margin: 0 0 20px 0;
  
 
 }
@@ -78,19 +79,21 @@ h1{
 h2{
 font-size: 2.75rem;	
 font-family: $bodoni;
-color: $secondary-green-1;
 
+margin: 0 0 20px 0;
 }
 
 h3{
 font-size: 2.5rem;
 font-family: $bodoni;
+margin: 0 0 10px 0;
 }
 
 h4{
 font-size: 1rem;	
 font-family: $futura;
 text-transform: uppercase;
+margin: 0 0 20px 0;
 
 
 
@@ -113,6 +116,7 @@ p{
 	font-size: 1rem;
 	font-family: $metaserif;
 	line-height: 1.4rem;	
+
 }
 
 ul, li{
@@ -158,7 +162,7 @@ a.btn-primary, button.btn-primary{
 	@include transition($sm-duration);
 	padding: 12px 20px;
 	@include border-radius(2px);
-	margin: 0 0 10px 0;
+	margin: 10px 0 10px 0;
 
 	&:hover{
 		background-color: $primary-orange-2;
@@ -221,7 +225,16 @@ section:nth-child(1){
 
 
 
-
+section{
+	.container{
+		.card{
+			.btn{
+				display: block;
+				margin-top: 10px;
+			}
+		}
+	}
+}
 
 
 @media only screen and (max-width: 768px){
@@ -233,6 +246,8 @@ section:nth-child(1){
 		margin: 20px 0;
 	}
 }
+
+
 
 @media only screen and (min-width: 1920px){
 	html{
