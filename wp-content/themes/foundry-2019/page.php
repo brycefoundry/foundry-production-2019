@@ -40,7 +40,7 @@
 				
 				<?php if(get_field('cover_type')=='bg-video'): ?>
 					<div class="video">
-						<video autoplay muted loop>
+						<video autoplay muted loop playsinline>
 						  <source src="<?php the_field('cover_image_mp4'); ?>" type="video/mp4">
 						  <source src="<?php the_field('cover_image_ogg'); ?>" type="video/ogg">
 						  <source src="<?php the_field('cover_image_webm'); ?>" type="video/webm">
@@ -82,7 +82,7 @@
 
 
 					<div class="video">
-						<video autoplay muted loop>
+						<video autoplay muted loop playsinline>
 						  <source src="<?php the_sub_field('background_video_mp4'); ?>" type="video/mp4">
 						  <source src="<?php the_sub_field('background_video_ogg'); ?>" type="video/ogg">
 						  <source src="<?php the_sub_field('background_video_webm'); ?>" type="video/webm">
