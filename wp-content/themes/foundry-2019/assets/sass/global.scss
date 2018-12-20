@@ -155,17 +155,17 @@ a.btn, button.btn{
 a.btn-primary, button.btn-primary{
 	font-family: $futura;
 	border: none;
-	font-size: .5rem;
+	font-size: .65rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	background-color: $primary-orange-1;
+	background-color: $primary-black-2;
 	@include transition($sm-duration);
 	padding: 12px 20px;
 	@include border-radius(2px);
 	margin: 10px 0 10px 0;
 
 	&:hover{
-		background-color: $primary-orange-2;
+		background-color: $primary-black-1;
 		@include transition($sm-duration);
 	}
 }
@@ -176,13 +176,13 @@ a.btn-secondary, button.btn-secondary{
 	font-size: .5rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	background-color: $primary-black-1;
+	background-color: $secondary-green-1;
 	@include transition($sm-duration);
 	padding: 12px 20px;
 	@include border-radius(2px);
 
 	&:hover{
-		background-color: $primary-black-2;
+		background-color: $secondary-green-2;
 		@include transition($sm-duration);
 	}
 }
@@ -276,7 +276,7 @@ section{
 
 
 footer{
-	background-color: black;
+	background-color: $primary-black-1;
 	padding: 80px 0;
 	color: white;
 
@@ -381,4 +381,17 @@ footer{
 	}
 
 	
+}
+
+
+
+body.meet{
+	h2{
+		color: $secondary-green-1;
+	}
+
+	h4{
+		color: $primary-orange-1;
+	}
+
 }

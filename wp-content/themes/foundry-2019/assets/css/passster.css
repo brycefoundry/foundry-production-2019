@@ -125,10 +125,10 @@ section {
 a.btn-primary, button.btn-primary {
   font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   border: none;
-  font-size: .5rem;
+  font-size: .65rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #E05113;
+  background-color: #5C5D6D;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -141,7 +141,7 @@ a.btn-primary, button.btn-primary {
 }
 /* line 167, ../sass/global.scss */
 a.btn-primary:hover, button.btn-primary:hover {
-  background-color: #C34510;
+  background-color: #30313B;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -155,7 +155,7 @@ a.btn-secondary, button.btn-secondary {
   font-size: .5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #30313B;
+  background-color: #409C94;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -167,7 +167,7 @@ a.btn-secondary, button.btn-secondary {
 }
 /* line 184, ../sass/global.scss */
 a.btn-secondary:hover, button.btn-secondary:hover {
-  background-color: #5C5D6D;
+  background-color: #34817A;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -252,7 +252,7 @@ section .container .card .btn {
 }
 /* line 278, ../sass/global.scss */
 footer {
-  background-color: black;
+  background-color: #30313B;
   padding: 80px 0;
   color: white;
 }
@@ -351,6 +351,15 @@ footer .logo {
   -webkit-transform: translate(0px, 0);
   transform: translate(0px, 0);
   overflow: hidden;
+}
+
+/* line 389, ../sass/global.scss */
+body.meet h2 {
+  color: #409C94;
+}
+/* line 393, ../sass/global.scss */
+body.meet h4 {
+  color: #E05113;
 }
 
 /* line 7, ../sass/passster.scss */

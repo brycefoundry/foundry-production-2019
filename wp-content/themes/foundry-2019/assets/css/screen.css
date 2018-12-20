@@ -204,10 +204,10 @@ section {
 a.btn-primary, button.btn-primary {
   font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   border: none;
-  font-size: .5rem;
+  font-size: .65rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #E05113;
+  background-color: #5C5D6D;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -220,7 +220,7 @@ a.btn-primary, button.btn-primary {
 }
 /* line 167, ../sass/global.scss */
 a.btn-primary:hover, button.btn-primary:hover {
-  background-color: #C34510;
+  background-color: #30313B;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -234,7 +234,7 @@ a.btn-secondary, button.btn-secondary {
   font-size: .5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #30313B;
+  background-color: #409C94;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -246,7 +246,7 @@ a.btn-secondary, button.btn-secondary {
 }
 /* line 184, ../sass/global.scss */
 a.btn-secondary:hover, button.btn-secondary:hover {
-  background-color: #5C5D6D;
+  background-color: #34817A;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -331,7 +331,7 @@ section .container .card .btn {
 }
 /* line 278, ../sass/global.scss */
 footer {
-  background-color: black;
+  background-color: #30313B;
   padding: 80px 0;
   color: white;
 }
@@ -430,6 +430,15 @@ footer .logo {
   -webkit-transform: translate(0px, 0);
   transform: translate(0px, 0);
   overflow: hidden;
+}
+
+/* line 389, ../sass/global.scss */
+body.meet h2 {
+  color: #409C94;
+}
+/* line 393, ../sass/global.scss */
+body.meet h4 {
+  color: #E05113;
 }
 
 /* line 9, ../sass/case-detail.scss */
@@ -1061,7 +1070,7 @@ body.single-clients.menu-active .header .logo {
   left: 0;
   top: 0;
   height: 100%;
-  background-color: black;
+  background-color: #30313B;
   width: 100%;
   -moz-transform-origin: top left;
   -ms-transform-origin: top left;
@@ -1263,7 +1272,7 @@ body.single-clients.menu-active .header .logo {
 }
 /* line 592, ../sass/nav.scss */
 #menu .submenu ul li.locked a {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 @media only screen and (max-width: 1920px) {
   /* line 587, ../sass/nav.scss */
@@ -1345,7 +1354,7 @@ body.single-clients.menu-active .header .logo {
 }
 /* line 667, ../sass/nav.scss */
 #menu .container .col-sm-4.image-area {
-  background-color: black;
+  background-color: #30313B;
   padding: 0;
   margin: 0;
   -moz-transform-origin: center left;
@@ -1465,7 +1474,7 @@ body.single-clients.menu-active .header .logo {
 }
 /* line 752, ../sass/nav.scss */
 #menu .container .colophon .col-sm-4:nth-child(2), #menu .container .colophon .col-sm-4:nth-child(3) {
-  background-color: #E05113;
+  background-color: #30313B;
   padding-left: 100px;
   color: white;
 }
@@ -1524,7 +1533,7 @@ body.single-clients.menu-active .header .logo {
   /* line 812, ../sass/nav.scss */
   #menu .container .colophon .col-sm-4:nth-child(2) p {
     margin-top: 17px;
-    max-width: 320px;
+    font-size: .8rem;
   }
   /* line 818, ../sass/nav.scss */
   #menu .container .colophon .col-sm-4:nth-child(3) {
@@ -1853,10 +1862,10 @@ body.menu-active .wrapper {
     opacity: 0;
     margin-left: -90px;
     left: 50%;
-    -moz-transform: translate(0, -156px);
-    -ms-transform: translate(0, -156px);
-    -webkit-transform: translate(0, -156px);
-    transform: translate(0, -156px);
+    -moz-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -2016,7 +2025,7 @@ body.menu-active .wrapper {
     left: 0;
     top: 0;
     z-index: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #30313B;
     -moz-transform-origin: top left;
     -ms-transform-origin: top left;
     -webkit-transform-origin: top left;

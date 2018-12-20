@@ -425,7 +425,7 @@ $lng-duration: .4s all ease-in-out;
 					left: 0;
 					top: 0;
 					height: 100%;
-					background-color: black;
+					background-color: $primary-black-1;
 					width: 100%;
 					@include transform-origin(top, left);
 					@include transform(scaleY(0));
@@ -590,7 +590,7 @@ $lng-duration: .4s all ease-in-out;
 					background-position: 10px center;
 
 					a{
-						padding-left: 40px;
+						padding-left: 30px;
 					}
 
 					@media only screen and (max-width: 1920px){
@@ -665,7 +665,7 @@ $lng-duration: .4s all ease-in-out;
 		}
 		
 		.col-sm-4.image-area{
-			background-color: black;
+			background-color: $primary-black-1;
 			padding: 0;
 			margin: 0;
 			@include transform-origin(center, left);
@@ -751,7 +751,7 @@ $lng-duration: .4s all ease-in-out;
 			.col-sm-4{
 				&:nth-child(2), &:nth-child(3){
 					
-					background-color: $primary-orange-1;
+					background-color: $primary-black-1;
 
 					padding-left: 100px;
 					color: white;
@@ -811,7 +811,7 @@ $lng-duration: .4s all ease-in-out;
 
 						p{
 							margin-top: 17px;
-							max-width: 320px;
+							font-size: .8rem;
 						}
 					}
 
@@ -1043,7 +1043,7 @@ body.menu-active{
 				opacity: 0;
 				margin-left: -90px;
 				left: 50%;
-				@include transform(translate(0,-156px));
+				@include transform(translate(0,0px));
 				@include transition($sm-duration);
 			}
 		}
@@ -1177,7 +1177,7 @@ body.menu-active{
 					left: 0;
 					top: 0;
 					z-index:0;
-					background-color: rgba(0,0,0,.9);
+					background-color: $primary-black-1;
 					@include transform-origin(top, left);
 					@include transition($sm-duration);
 					@include transform(scaleX(0));
