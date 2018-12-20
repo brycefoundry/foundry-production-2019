@@ -20,7 +20,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Futura Std';
+  font-family: 'Futura-Std-Bold';
   src: url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.eot");
   src: url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.woff2") format("woff2"), url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.woff") format("woff"), url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.ttf") format("truetype"), url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.svg#FuturaStd-Bold") format("svg");
   font-weight: bold;

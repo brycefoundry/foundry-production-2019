@@ -1,7 +1,7 @@
 $metaserif: "MetaSerif-Book", "Times New Roman", serif;
 $bodoni: "Bodoni Std", "Times New Roman", serif;
 $tungsten: "Tungsten Narrow", "Helvetica", sans-serif;
-$futura: "Futura Std", "Helvetica", sans-serif;
+$futura: "Futura-Std-Bold", "Helvetica", sans-serif;
 
 
 @font-face {
@@ -41,7 +41,7 @@ $futura: "Futura Std", "Helvetica", sans-serif;
 }
 
 @font-face {
-    font-family: 'Futura Std';
+    font-family: 'Futura-Std-Bold';
     src: url('/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.eot');
     src: url('/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
         url('/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.woff2') format('woff2'),

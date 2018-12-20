@@ -20,7 +20,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Futura Std';
+  font-family: 'Futura-Std-Bold';
   src: url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.eot");
   src: url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.woff2") format("woff2"), url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.woff") format("woff"), url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.ttf") format("truetype"), url("/wp-content/themes/foundry-2019/assets/fonts/FuturaStd-Bold.svg#FuturaStd-Bold") format("svg");
   font-weight: bold;
@@ -82,7 +82,7 @@ h3 {
 /* line 92, ../sass/global.scss */
 h4 {
   font-size: 1rem;
-  font-family: "Futura Std", "Helvetica", sans-serif;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   text-transform: uppercase;
   margin: 0 0 20px 0;
 }
@@ -90,13 +90,13 @@ h4 {
 /* line 102, ../sass/global.scss */
 h5 {
   font-size: 1rem;
-  font-family: "Futura Std", "Helvetica", sans-serif;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
 }
 
 /* line 108, ../sass/global.scss */
 h6 {
   font-size: .75rem;
-  font-family: "Futura Std", "Helvetica", sans-serif;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
 }
 
 /* line 115, ../sass/global.scss */
@@ -123,7 +123,7 @@ section {
 
 /* line 155, ../sass/global.scss */
 a.btn-primary, button.btn-primary {
-  font-family: "Futura Std", "Helvetica", sans-serif;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   border: none;
   font-size: .5rem;
   text-transform: uppercase;
@@ -150,7 +150,7 @@ a.btn-primary:hover, button.btn-primary:hover {
 
 /* line 173, ../sass/global.scss */
 a.btn-secondary, button.btn-secondary {
-  font-family: "Futura Std", "Helvetica", sans-serif;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   border: none;
   font-size: .5rem;
   text-transform: uppercase;
@@ -276,7 +276,7 @@ footer ul li {
 }
 /* line 300, ../sass/global.scss */
 footer ul li strong {
-  font-family: "Futura Std", "Helvetica", sans-serif;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   margin-right: 20px;
@@ -484,7 +484,7 @@ footer .logo {
 /* line 102, ../sass/nav.scss */
 .header a.back-btn {
   color: white;
-  font-family: "Futura Std", "Helvetica", sans-serif;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   font-size: 18px;
   padding: 10px 0 10px 40px;
   position: absolute;
@@ -1040,7 +1040,7 @@ footer .logo {
 /* line 536, ../sass/nav.scss */
 #menu .submenu ul li a {
   display: block;
-  font-family: "Futura Std", "Helvetica", sans-serif;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   font-size: .65rem;
   text-transform: uppercase;
   padding: 14px 0;
@@ -1321,7 +1321,7 @@ footer .logo {
 }
 /* line 765, ../sass/nav.scss */
 #menu .container .colophon .col-sm-4:nth-child(2) p strong, #menu .container .colophon .col-sm-4:nth-child(3) p strong {
-  font-family: "Futura Std", "Helvetica", sans-serif;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   text-transform: uppercase;
   margin-right: 10px;
   color: white;
