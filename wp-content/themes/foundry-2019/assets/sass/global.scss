@@ -288,6 +288,8 @@ footer{
 	background-color: $primary-black-1;
 	padding: 80px 0;
 	color: white;
+	position: relative;
+	z-index: 10;
 
 	h6{
 		text-transform: uppercase;

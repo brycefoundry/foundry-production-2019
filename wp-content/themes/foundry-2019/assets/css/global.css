@@ -262,8 +262,10 @@ footer {
   background-color: #30313B;
   padding: 80px 0;
   color: white;
+  position: relative;
+  z-index: 10;
 }
-/* line 292, ../sass/global.scss */
+/* line 294, ../sass/global.scss */
 footer h6 {
   text-transform: uppercase;
   padding-top: 18px;
@@ -271,17 +273,17 @@ footer h6 {
   padding-bottom: 15px;
   padding-top: 15px;
 }
-/* line 303, ../sass/global.scss */
+/* line 305, ../sass/global.scss */
 footer ul {
   padding-top: 20px;
 }
-/* line 305, ../sass/global.scss */
+/* line 307, ../sass/global.scss */
 footer ul li {
   font-family: "Bodoni Std", "Times New Roman", serif;
   font-size: 1.5rem;
   margin: 0 0 30px 0;
 }
-/* line 309, ../sass/global.scss */
+/* line 311, ../sass/global.scss */
 footer ul li strong {
   font-family: "Futura-Std-Bold", "Helvetica", sans-serif;
   font-size: 1rem;
@@ -289,45 +291,45 @@ footer ul li strong {
   margin-right: 20px;
   color: #6066A3;
 }
-/* line 316, ../sass/global.scss */
+/* line 318, ../sass/global.scss */
 footer ul li a {
   color: rgba(255, 255, 255, 0.6);
 }
-/* line 320, ../sass/global.scss */
+/* line 322, ../sass/global.scss */
 footer ul li a:hover {
   text-decoration: underline;
   color: white;
 }
-/* line 331, ../sass/global.scss */
+/* line 333, ../sass/global.scss */
 footer .col-md-4:first-child h6 {
   border-bottom: 3px solid #409C94;
   color: white;
 }
-/* line 338, ../sass/global.scss */
+/* line 340, ../sass/global.scss */
 footer .col-md-4:nth-child(2) h6 {
   border-bottom: 3px solid #6066A3;
   color: white;
 }
-/* line 345, ../sass/global.scss */
+/* line 347, ../sass/global.scss */
 footer .col-md-4:last-child h6 {
   border-bottom: 3px solid #E05113;
   color: white;
 }
-/* line 353, ../sass/global.scss */
+/* line 355, ../sass/global.scss */
 footer .col-md-4 h6, footer .col-md-4 ul, footer .col-md-4 a.logo, footer .col h6, footer .col ul, footer .col a.logo {
   margin: 0 40px 0 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 358, ../sass/global.scss */
+  /* line 360, ../sass/global.scss */
   footer .col-md-4 h6, footer .col-md-4 ul, footer .col-md-4 a.logo, footer .col h6, footer .col ul, footer .col a.logo {
     margin: 0 0px 0 0;
   }
 }
-/* line 364, ../sass/global.scss */
+/* line 366, ../sass/global.scss */
 footer .logo-container {
   padding-top: 60px;
 }
-/* line 366, ../sass/global.scss */
+/* line 368, ../sass/global.scss */
 footer .logo-container p {
   display: block;
   width: 100%;
@@ -335,7 +337,7 @@ footer .logo-container p {
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
 }
-/* line 376, ../sass/global.scss */
+/* line 378, ../sass/global.scss */
 footer .logo {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -360,16 +362,16 @@ footer .logo {
   overflow: hidden;
 }
 
-/* line 398, ../sass/global.scss */
+/* line 400, ../sass/global.scss */
 body.meet h2 {
   color: #409C94;
 }
-/* line 402, ../sass/global.scss */
+/* line 404, ../sass/global.scss */
 body.meet h4 {
   color: #E05113;
 }
 
-/* line 412, ../sass/global.scss */
+/* line 414, ../sass/global.scss */
 section.intro {
   height: 100vh;
   overflow: hidden;
@@ -382,7 +384,7 @@ section.intro {
   max-width: 100%;
   margin: 0;
 }
-/* line 424, ../sass/global.scss */
+/* line 426, ../sass/global.scss */
 section.intro .intro-content {
   position: absolute;
   bottom: 120px;
@@ -391,7 +393,7 @@ section.intro .intro-content {
   max-width: 480px;
 }
 @media only screen and (max-width: 1100px) {
-  /* line 424, ../sass/global.scss */
+  /* line 426, ../sass/global.scss */
   section.intro .intro-content {
     max-width: 100%;
     width: 100%;
@@ -402,20 +404,20 @@ section.intro .intro-content {
     -webkit-transform: translate3d(-50%, 0%, 0);
     transform: translate3d(-50%, 0%, 0);
   }
-  /* line 438, ../sass/global.scss */
+  /* line 440, ../sass/global.scss */
   section.intro .intro-content .container {
     max-width: 100%;
     padding: 0 80px;
   }
 }
-/* line 444, ../sass/global.scss */
+/* line 446, ../sass/global.scss */
 section.intro .intro-content h1 {
   font-family: "Bodoni Std", "Times New Roman", serif;
   font-size: 7rem;
   padding-bottom: 20px;
   position: relative;
 }
-/* line 449, ../sass/global.scss */
+/* line 451, ../sass/global.scss */
 section.intro .intro-content h1:after {
   content: "";
   display: block;
@@ -430,26 +432,26 @@ section.intro .intro-content h1:after {
   height: 4px;
   background-color: white;
 }
-/* line 465, ../sass/global.scss */
+/* line 467, ../sass/global.scss */
 section.intro .intro-content h1, section.intro .intro-content p {
   color: white;
   text-shadow: 0 0 4px black;
   width: 100%;
   display: block;
 }
-/* line 472, ../sass/global.scss */
+/* line 474, ../sass/global.scss */
 section.intro .intro-content p {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 476, ../sass/global.scss */
+/* line 478, ../sass/global.scss */
 section.intro .intro-content a.btn {
   margin: 10px 10px 10px 0;
 }
-/* line 479, ../sass/global.scss */
+/* line 481, ../sass/global.scss */
 section.intro .intro-content a.btn:last-child {
   background-color: #409C94;
 }
-/* line 487, ../sass/global.scss */
+/* line 489, ../sass/global.scss */
 section.intro:after {
   content: "";
   position: absolute;
@@ -458,7 +460,7 @@ section.intro:after {
   width: 100%;
   height: 100%;
 }
-/* line 498, ../sass/global.scss */
+/* line 500, ../sass/global.scss */
 section .video {
   width: 100%;
   height: 100%;
@@ -467,7 +469,7 @@ section .video {
   top: 0;
   z-index: 0;
 }
-/* line 506, ../sass/global.scss */
+/* line 508, ../sass/global.scss */
 section .video video {
   width: auto;
   height: 100vh;
