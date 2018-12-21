@@ -21,4 +21,4 @@ wp-content/themes/*
 !wp-content/themes/foundry-2019/
 
 
-/wp-content/uploads/livereload/
+/wp-content/plugins/livereload/
