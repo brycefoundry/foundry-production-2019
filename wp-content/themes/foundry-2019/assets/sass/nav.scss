@@ -124,7 +124,7 @@ $lng-duration: .4s all ease-in-out;
 
 	@media only screen and (max-width: 1340px){
 		a.back-btn{
-			left: 0px;
+			left: 80px;
 		}
 
 
@@ -166,7 +166,7 @@ $lng-duration: .4s all ease-in-out;
 	@include border-radius(2px);
 
 	@media only screen and (max-width: 1340px){
-		right: 0px;
+		right: 80px;
 	}
 
 
