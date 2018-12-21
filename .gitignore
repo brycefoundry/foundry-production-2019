@@ -2,6 +2,7 @@
 wp-config.php
 
 
+
 # Thanks to: https://gist.github.com/jdbartlett/444295
 
 # Ignore everything in the root except the "wp-content" directory.
@@ -18,3 +19,6 @@ wp-content/*
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
 !wp-content/themes/foundry-2019/
+
+
+/wp-content/uploads/livereload/
