@@ -3,8 +3,8 @@
 @import "fonts";
 @import "global";
 
-$sm-duration: .2s all ease-in-out;
-$lng-duration: .4s all ease-in-out;
+$sm-duration: .2s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
 .header{
 	position: fixed;
@@ -316,6 +316,7 @@ $lng-duration: .4s all ease-in-out;
 				@include transition($sm-duration);
 				@include transition-delay(.3s);
 				
+				
 				overflow: hidden;
 
 				a, button{
@@ -335,6 +336,8 @@ $lng-duration: .4s all ease-in-out;
 					z-index: 5;
 					position: relative;
 					cursor: pointer;
+					@include transform(translate3d(100px, 0px, 0));
+					opacity: 0;
 
 					&:focus{
 						outline: none;
@@ -520,8 +523,9 @@ $lng-duration: .4s all ease-in-out;
 			pointer-events: none;
 			position: absolute;
 			top: 180px;
+			right: 0;
 			width: 100%;
-			@include transition-delay(.5s);
+			@include transition-delay(0s);
 			@include transition(.2s all ease-in-out);
 			@include transform(translate3d(-40px,0px,0));
 
@@ -530,18 +534,34 @@ $lng-duration: .4s all ease-in-out;
 				height: 6px;
 			}
 			li{
-				margin: 0 0 1px 0;
-				padding-right: 160px;
+				
+				width: 49%;
+				display: inline-block;
+				
+				text-align: center;
+				
+				@include border-radius(4px);
+				@include transition($sm-duration);
+				opacity: 0;
+				@include transition-delay(.6s);
+				@include transform(translate3d(0px,40px,0));
+
+				@media only screen and (max-width: 600px){
+					width: 100%;
+				}
 				
 				a{
+					padding: 120px 10px 10px 10px;
+					margin: 0 10px 10px 0;
+					border: 1px solid rgba(0,0,0,.2);
 					display: block;
 					font-family: $futura;
 					font-size: .65rem;
 					text-transform: uppercase;
-					padding: 14px 0;
+					
 					letter-spacing: 1px;
 					@include transition(.1s all ease-in-out);
-					padding-left: 10px;
+					
 					position: relative;					
 					color: rgba(0,0,0,.5);
 
@@ -876,7 +896,7 @@ body.menu-active{
 		@include transform(scale(1,1));
 		opacity: 1;
 		pointer-events: auto;
-		@include transition($lng-duration);
+		@include transition(.4s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
 
 		.container{
 			.colophon{
@@ -907,6 +927,18 @@ body.menu-active{
 			opacity: 1;
 			@include transition($sm-duration);
 			@include transition-delay(.6s);
+
+			ul li{
+				@include transition($sm-duration);
+				
+
+				a,button{
+					@include transform(translate3d(0px, 0, 0));
+					opacity: 1;
+					
+				}
+
+			}
 		}
 
 		.submenu{
@@ -915,6 +947,10 @@ body.menu-active{
 			pointer-events: auto;
 			@include transition($sm-duration);
 			@include transition-delay(.8s);
+
+			ul li{
+				
+			}
 		}
 	}
 	#menu-btn{
@@ -947,6 +983,18 @@ body.menu-active{
 
 	.wrapper{
 		@include transform(translate3d(0,0,0));
+	}
+}
+
+body.submenu-active{
+	#menu{
+		.submenu{
+			ul li{
+				@include transition($lng-duration);
+				opacity: 1;
+				@include transform(translate3d(0px, 0, 0));
+			}
+		}
 	}
 }
 
@@ -1267,6 +1315,10 @@ body.menu-active{
 			.submenu{
 				ul.active{
 				
+				}
+
+				ul li{
+
 				}
 			}
 		}

@@ -192,4 +192,4 @@
 
 			<!-- /header -->
 
-			<div class="wrapper">
+			<div class="wrapper <?php the_field( 'cover_type');?>">
