@@ -435,7 +435,7 @@ section.intro .intro-content h1:after {
 /* line 467, ../sass/global.scss */
 section.intro .intro-content h1, section.intro .intro-content p {
   color: white;
-  text-shadow: 0 0 4px black;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   width: 100%;
   display: block;
 }
