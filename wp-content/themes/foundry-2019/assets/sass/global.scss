@@ -470,11 +470,12 @@ body.meet{
 					color: rgba(255,255,255,1);
 					text-shadow: 0 0 4px rgba(0,0,0,.4);
 					width: 100%;
-					display: block;
+					
 				}
 
 				p{
 					color: rgba(255,255,255,.5);
+
 				}
 
 				a.btn{
@@ -531,3 +532,144 @@ body.menu-active #menu .menu ul li{
 	}
 }
 
+
+
+
+section.page-section{
+	
+	&.active{
+		h1{
+			opacity: 1;
+			.word{
+				@include transform(translate3d(0,0px,0));
+				opacity: 1;
+				@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+			}
+			&:after{
+				opacity: 1;
+				@include transform-origin(left,center);
+				@include transform(scaleX(1));
+				@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+			}	
+		}
+
+		h2{
+			@include transform(translate3d(0,0px,0));
+			opacity: 1;
+			@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+			@include transition-delay(.2s);
+		}
+
+		h3{
+			@include transform(translate3d(0,0px,0));
+			opacity: 1;
+			@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+			@include transition-delay(.3s);
+		}
+
+		.card{
+			@include transform(translate3d(0,0px,0));
+			@include transition($lng-duration);
+			opacity: 1;
+			h3,p{
+				@include transform(translate3d(0px,0px,0));
+				opacity: 1;
+				@include transition(0s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+			}
+
+			
+		}
+
+		
+
+		&.intro{
+			p{
+				@include transform(translate3d(0,0px,0));
+				opacity: 1;
+
+				@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+				@include transition-delay(.4s);
+			}
+
+			.btn{
+				@include transform(translate3d(0,0px,0));
+				opacity: 1;
+				@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+				@include transition-delay(.6s);
+			}
+		}
+	}
+
+	
+	h1{
+		opacity: 0;
+		.word{
+			@include transform(translate3d(0,200px,0));
+			opacity: 0;
+			@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+		}
+
+
+		&:after{
+			opacity: 0;
+			@include transform-origin(left,center);
+			@include transform(scaleX(0));
+			@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+		}		
+	}
+
+	h2{
+		@include transform(translate3d(200px,0px,0));
+		opacity: 0;
+		@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+	}
+
+	h3{
+		@include transform(translate3d(200px,0px,0));
+		opacity: 0;
+		@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+	}
+
+	.card{
+		@include transform(translate3d(0,100px,0));
+		@include transition($sm-duration);
+		opacity: 0;
+		h3,p{
+			@include transform(translate3d(0px,0px,0));
+			opacity: 1;
+			@include transition(0s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+		}
+
+
+		
+		
+	}
+
+	&.intro{
+		p{
+						@include transform(translate3d(0,200px,0));
+						opacity: 0;
+						@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+
+
+		}
+
+		.btn{
+			@include transform(translate3d(200px,0px,0));
+			opacity: 0;
+			@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+		}
+	}
+
+	
+}
+
+.word{
+	display: block;
+}
+
+.text-container{
+				display: block;
+				overflow: hidden;
+				background-color: transparent;
+			}

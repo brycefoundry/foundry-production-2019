@@ -7,6 +7,7 @@
 			views();
 			components();
 			modtext();
+			sectionanim();
 		
 			
 		}
@@ -36,6 +37,10 @@
 				$.scrollify({
 			       section : ".case-section",
 			     });
+
+					$.scrollify({
+				       section : ".page-section",
+				     });
 
 			}
 
@@ -73,12 +78,12 @@
 					
 				
 				if(menutoggle==0){
-					
+					$.scrollify.disable()
 					$('body').addClass('menu-active');
 					menutoggle = 1;
 					
 					
-					var duration = .7;
+					var duration = .5;
 					var outtime = duration;
 
 
@@ -105,7 +110,7 @@
 					
 					
 				}else if(menutoggle==1){
-					
+					$.scrollify.enable()
 					$('.menu ul li').find('button, a').attr('style','');
 					$('body').removeClass('menu-active');
 					$('body').removeClass('submenu-active');
@@ -202,6 +207,21 @@
 			       $(this).html(result.join(' '));
 			}); 
 
+			$('section').each(function(index){
+				var transitiondelay = 0;
+				var duration = .5;
+				$('.card').each(function(index){
+					transitiondelay = (transitiondelay+index)/10;
+
+					
+
+					var applieddelay = duration + transitiondelay;
+					
+					
+					$(this).css('transition-delay',applieddelay + 's');
+				});
+			});
+
 			
 
 			
@@ -216,7 +236,7 @@
 					transitiondelay = (transitiondelay+e)/4;
 					
 					
-					$(this).css('transition-delay',transitiondelay + 's');
+					$(this).find('.word').css('transition-delay',transitiondelay + 's');
 
 
 				});
@@ -229,6 +249,70 @@
 
 
 
+		}
+
+
+		sectionanim = function(){
+
+			$('.page-section').each(function(index){
+				var section = $(this);
+				var inview = new Waypoint({
+				  element: $('.page-section')[index],
+				  handler: function(direction) {
+				   
+
+				   if(direction=='down'){
+				   		$('.page-section').removeClass('active');						
+						section.addClass('active');
+						
+						
+				   						   
+				   
+				   }
+				  },
+				  offset: '50%'
+				})
+
+
+			});
+
+			$('.page-section').each(function(index){
+				var section = $(this);
+				var inview = new Waypoint({
+				  element: $('.page-section')[index],
+				  handler: function(direction) {
+				   
+
+				  if(direction=='up'){
+				   		$('.page-section').removeClass('active');						
+						section.addClass('active');
+						
+
+				   	
+				   }
+				  },
+				  offset: -2
+				})
+
+
+			});
+
+			var uptop = new Waypoint({
+			  element: $('section.intro')[0],
+			  handler: function(direction) {
+			  
+			  	if(direction=='down'){
+			  		
+			  	}else if(direction=='up'){
+	  		   		$('.page-section').removeClass('active');						
+	  				$('section.intro').addClass('active');
+			  		
+			  	}
+			  },
+			  offset:  '50%'
+			});
+
+			
 		}
 
 		submenuanim = function(){
