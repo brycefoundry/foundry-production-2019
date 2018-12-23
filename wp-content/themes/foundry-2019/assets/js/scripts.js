@@ -38,10 +38,14 @@
 			       section : ".case-section",
 			     });
 
-					$.scrollify({
-				       section : ".page-section",
-				     });
+					
 
+			}
+
+			if($('.page-section').length){
+				$.scrollify({
+			       section : ".page-section",
+			     });
 			}
 
 			if($('div.wrapper.bg-video').length){
@@ -210,7 +214,7 @@
 			$('section').each(function(index){
 				var transitiondelay = 0;
 				var duration = .5;
-				$('.card').each(function(index){
+				$(this).find('.card').each(function(index){
 					transitiondelay = (transitiondelay+index)/10;
 
 					
@@ -291,7 +295,9 @@
 				   	
 				   }
 				  },
-				  offset: -2
+				 offset: function() {
+				     return -this.element.clientHeight
+				   }
 				})
 
 
