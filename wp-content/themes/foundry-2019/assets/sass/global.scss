@@ -407,7 +407,7 @@ body.meet{
 
 
 
-.bg-video{
+.bg-video, .featured{
 
 	section.page-section:nth-child(2){
 		margin-top: 100vh;
@@ -518,6 +518,126 @@ body.meet{
 			    transform-origin: center center;
 				
 			}
+
+
+		}
+
+		
+	}	
+}
+
+
+.fs-video{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	
+	background-color: black;
+	z-index: 120;
+	padding: 100px 100px 140px 100px;
+	@include transform-origin(top, left);
+	@include transform(scaleX(0));
+	@include transition($sm-duration);
+	@include transition-delay(.6s);
+	opacity: 0;
+	pointer-events: none;
+
+	.fs-video-container{
+		max-width: 100%;
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		opacity: 0;
+		@include transition($sm-duration);
+
+	}
+
+	.close-fullscreen{
+		
+		position: absolute;
+		left: 50%;
+		bottom: 30px;
+		@include transform(translate3d(-50%,0%, 0));
+		width: 75px;
+		height: 75px;
+		
+		border: 2px solid white;
+		background-color: rgba(0,0,0,.5);
+		overflow: hidden;
+		z-index: 30;
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		cursor: pointer;
+		text-indent: 3px;
+		
+	}
+
+	&.active{
+
+	}
+}
+
+
+
+.play-btn{
+	
+	position: fixed;
+	left: 50%;
+	bottom: 50%;
+	@include transform(translate3d(-50%,-50%, 0)rotate(45deg));
+	@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+	@include transform-origin(center, center);
+	width: 75px;
+	height: 75px;
+	
+	border: 2px solid white;
+	background-color: rgba(0,0,0,.5);
+	overflow: hidden;
+	z-index: 120;
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	cursor: pointer;
+	text-indent: -1px;
+
+	&.minified{
+		@include transform(translate3d(-50%,-50%, 0)rotate(0deg));
+		@include transition(.2s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+		@include transform-origin(center, center);
+		opacity: 0;
+		pointer-events: none;
+
+	}
+
+	
+	
+}
+
+body.active-fs{
+	.play-btn{
+		@include transform(translate3d(-50%,0, 0)rotate(0deg));
+		bottom: 30px;
+		text-indent: 1px;
+		@include transition(.2s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+		@include transform-origin(center, center);
+		z-index: 120;
+	}
+
+	.fs-video{
+		@include transform-origin(top, left);
+		@include transform(scaleX(1));
+		@include transition($lng-duration);
+		pointer-events: auto;
+		opacity: 1;
+		@include transition-delay(.3s);
+
+		.fs-video-container{
+			opacity: 1;
+			@include transition($lng-duration);
+			@include transition-delay(.8s);
 		}
 	}	
 }
@@ -530,6 +650,8 @@ body.menu-active #menu .menu ul li{
 			@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
 		}
 	}
+
+
 }
 
 

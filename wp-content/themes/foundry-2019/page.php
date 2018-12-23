@@ -50,11 +50,26 @@
 					</div>
 				<?php endif; ?>
 
+				<?php if(get_field('cover_type')=='featured'): ?>
+					<div class="video">
+						<video autoplay muted loop playsinline>
+						  <source src="<?php the_field('cover_image_mp4'); ?>" type="video/mp4">
+						  <source src="<?php the_field('cover_image_ogg'); ?>" type="video/ogg">
+						  <source src="<?php the_field('cover_image_webm'); ?>" type="video/webm">
+						Your browser does not support the video tag.
+						</video>
+
+
+						
+					</div>
+				<?php endif; ?>
+
 				
 
 			
 		</div>
 	</div>
+	
 	
 </section>	
 <?php endif; ?>
@@ -110,6 +125,27 @@
 	<?php endwhile; ?>
 
 <?php endif; ?>
+
+<?php if(get_field('cover_type')=='featured'): ?>
+
+<div class="fs-video">
+	<div class="fs-video-container">
+		
+
+		<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+		<div class="embed-container"><iframe id="video" class="youtube-video" src="https://www.youtube.com/embed/<?php the_field( 'full_video_url');?>?enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+
+	</div>
+
+	
+
+	
+</div>
+
+<button id="fs-play" class="play-btn"><i class="fas fa-times"></i></button>
+<?php endif; ?>	
+
+
 
 
 <?php get_footer(); ?>
