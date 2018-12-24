@@ -77,14 +77,14 @@
 				if(videotoggle==0){
 					
 					videotoggle = 1;
-					$('body').addClass('active-fs');
+					$('body').addClass('active-fs').addClass('disable');
 
 					setTimeout(function(){
 						$('#video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
 					},1000);
 				}else if(videotoggle==1){
 					videotoggle = 0;
-					$('body').removeClass('active-fs');
+					$('body').removeClass('active-fs').removeClass('disable');
 					$('#video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 					
 				}
@@ -123,7 +123,7 @@
 				
 				if(menutoggle==0){
 					$.scrollify.disable()
-					$('body').addClass('menu-active');
+					$('body').addClass('menu-active').addClass('disable');
 					menutoggle = 1;
 					
 					
@@ -157,6 +157,7 @@
 					$.scrollify.enable()
 					$('.menu ul li').find('button, a').attr('style','');
 					$('body').removeClass('menu-active');
+					$('body').removeClass('disable');
 					$('body').removeClass('submenu-active');
 					$('#menu .submenu ul.active').removeClass('active');
 					$('#menu .menu ul li.expandable.active').removeClass('active');
@@ -306,7 +307,7 @@
 				   
 
 				   if(direction=='down'){
-				   		$('.page-section').removeClass('active');						
+				   		
 						section.addClass('active');
 						
 						
@@ -328,8 +329,7 @@
 				   
 
 				  if(direction=='up'){
-				   		$('.page-section').removeClass('active');						
-						section.addClass('active');
+				   		
 						
 
 				   	

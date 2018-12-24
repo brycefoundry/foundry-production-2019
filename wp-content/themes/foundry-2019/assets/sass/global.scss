@@ -254,7 +254,12 @@ section{
 	}
 }
 
-
+@media only screen and (min-width: 1480px){
+	html{
+		font-size: 22px;
+	}
+	
+}
 
 @media only screen and (min-width: 1920px){
 	html{
@@ -304,7 +309,7 @@ footer{
 		padding-top: 20px;
 		li{
 			font-family: $bodoni;
-			font-size: 1.5rem;
+			font-size: 1rem;
 			margin: 0 0 30px 0;
 			strong{
 				font-family: $futura;
@@ -435,7 +440,7 @@ body.meet{
 				@media only screen and (max-width: 1100px){
 					max-width: 100%;
 					width: 100%;
-					bottom: 20%;
+					bottom: 40px;
 					left: 50%;
 					@include transform(translate3d(-50%, 0%, 0));
 
@@ -447,7 +452,7 @@ body.meet{
 
 				h1{
 					font-family: $bodoni;
-					font-size: 7rem;
+					font-size: 5rem;
 					padding-bottom: 20px;
 					position: relative;
 					&:after{
@@ -461,6 +466,15 @@ body.meet{
 						left: 0px;
 						height: 4px;
 						background-color: white;
+					}
+					@media only screen and (max-width: 600px){
+						font-size: 4rem;
+						margin-bottom: 0px;
+					}
+
+					@media only screen and (min-width: 1920px){
+						font-size: 7rem;
+						margin-bottom: 0px;
 					}
 				}
 
@@ -534,7 +548,7 @@ body.meet{
 	width: 100%;
 	height: 100vh;
 	
-	background-color: black;
+	background-color: $secondary-green-2;
 	z-index: 120;
 	padding: 100px 100px 140px 100px;
 	@include transform-origin(top, left);
@@ -612,6 +626,18 @@ body.meet{
 
 	}
 
+	@media only screen and (max-width: 600px){
+		width: 50px;
+		height: 50px;
+		font-size: 18px;
+		@include transform(translate3d(-50%,-140%, 0)rotate(45deg));
+		@include transition(.2s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
+	}
+
+	&:focus{
+		outline: none;
+	}
+
 	
 	
 }
@@ -624,6 +650,10 @@ body.active-fs{
 		@include transition(.2s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
 		@include transform-origin(center, center);
 		z-index: 120;
+
+		@media only screen and (max-width: 812px) and (orientation: landscape){
+			display: none;
+		}
 	}
 
 	.fs-video{
@@ -638,6 +668,27 @@ body.active-fs{
 			opacity: 1;
 			@include transition($lng-duration);
 			@include transition-delay(.8s);
+		}
+
+		@media only screen and (max-width: 812px) and (orientation: portrait){
+			padding: 0;	
+
+			.embed-container{
+				@include transform(translate(0,-50%));
+				height: 100%;
+				width: 100%;
+				padding-bottom: 0px;
+				position: absolute;
+				top: 50%;
+			}
+		}
+
+		@media only screen and (max-width: 812px) and (orientation: landscape){
+			padding: 0px;	
+
+			.embed-container{
+				
+			}
 		}
 	}	
 }
@@ -762,6 +813,10 @@ section.page-section{
 			@include transition(0s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
 		}
 
+		p{
+			margin :0;
+		}
+
 
 		
 		
@@ -776,7 +831,7 @@ section.page-section{
 
 		}
 
-		.btn{
+		.btn{	
 			@include transform(translate3d(200px,0px,0));
 			opacity: 0;
 			@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
@@ -795,3 +850,29 @@ section.page-section{
 				overflow: hidden;
 				background-color: transparent;
 			}
+
+
+
+blockquote{
+	margin: 60px 0;
+}
+
+p{
+	margin: 20px 0;
+}
+
+section.page-section .row ul{
+	list-style-type: square;
+	li{
+		margin: 0px 0 20px 0;
+		padding: 10px 0 20px 0;
+		border-bottom: 1px dashed rgba(255,255,255,.2);
+	}
+}
+
+
+h5.card-title{
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+}

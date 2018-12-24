@@ -651,6 +651,22 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 				@include transition-delay(.4s);
 			}
 
+			&.about-sub-nav{
+				li{
+					width: 100%;
+					text-align: left;
+					border: none;
+
+					a{
+						padding: 20px 0 20px 20px;
+						border: none;
+						
+						margin: 0;
+					}
+
+				}
+			}
+
 		}
 
 		@media only screen and (max-width: 1100px){
