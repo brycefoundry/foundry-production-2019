@@ -440,7 +440,7 @@ body.meet{
 				@media only screen and (max-width: 1100px){
 					max-width: 100%;
 					width: 100%;
-					bottom: 100px;
+					
 					left: 50%;
 					@include transform(translate3d(-50%, 0%, 0));
 
