@@ -481,7 +481,7 @@ body.meet h4 {
   .bg-video section.intro .intro-content, .featured section.intro .intro-content {
     max-width: 100%;
     width: 100%;
-    bottom: 40px;
+    bottom: 100px;
     left: 50%;
     -moz-transform: translate3d(-50%, 0%, 0);
     -ms-transform: translate3d(-50%, 0%, 0);
