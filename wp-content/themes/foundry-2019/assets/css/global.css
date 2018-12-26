@@ -228,7 +228,7 @@ section .container .card .btn {
 @media only screen and (min-width: 1480px) {
   /* line 258, ../sass/global.scss */
   html {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -946,40 +946,40 @@ section.page-section.intro .btn {
   transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-/* line 844, ../sass/global.scss */
+/* line 846, ../sass/global.scss */
 .word {
   display: block;
 }
 
-/* line 848, ../sass/global.scss */
+/* line 850, ../sass/global.scss */
 .text-container {
   display: block;
   overflow: hidden;
   background-color: transparent;
 }
 
-/* line 856, ../sass/global.scss */
+/* line 858, ../sass/global.scss */
 blockquote {
   margin: 60px 0;
 }
 
-/* line 860, ../sass/global.scss */
+/* line 862, ../sass/global.scss */
 p {
   margin: 20px 0;
 }
 
-/* line 864, ../sass/global.scss */
+/* line 866, ../sass/global.scss */
 section.page-section .row ul {
   list-style-type: square;
 }
-/* line 866, ../sass/global.scss */
+/* line 868, ../sass/global.scss */
 section.page-section .row ul li {
   margin: 0px 0 20px 0;
   padding: 10px 0 20px 0;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
 }
 
-/* line 874, ../sass/global.scss */
+/* line 876, ../sass/global.scss */
 h5.card-title {
   text-align: center;
   text-transform: uppercase;

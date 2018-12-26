@@ -256,7 +256,7 @@ section{
 
 @media only screen and (min-width: 1480px){
 	html{
-		font-size: 22px;
+		font-size: 16px;
 	}
 	
 }
@@ -837,6 +837,8 @@ section.page-section{
 			@include transition(.6s all cubic-bezier(0.785, 0.135, 0.15, 0.86));
 		}
 	}
+
+
 
 	
 }
