@@ -33,7 +33,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 		@include transition($sm-duration);
 		width: 200px;
 		height: 50px;
-		background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-white.png);
+		background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-white.png);
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 		position: absolute;
@@ -50,7 +50,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 			@include transition($sm-duration);
 			width: 200px;
 			height: 50px;
-			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-white.png);
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-white.png);
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			position: absolute;
@@ -68,7 +68,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 			@include transition($sm-duration);
 			width: 200px;
 			height: 50px;
-			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-black.png);
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			position: absolute;
@@ -86,7 +86,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 			@include transition($sm-duration);
 			width: 200px;
 			height: 50px;
-			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-black.png);
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			position: absolute;
@@ -888,7 +888,7 @@ body.menu-active{
 
 	.header{
 		.logo{
-			background-image: url(/wp-content/themes/foundry-2019/assets/img/foundryatx-black.png);
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-white.png);
 			@include transition($sm-duration);
 			left: 0;
 			margin-left: 80px;
