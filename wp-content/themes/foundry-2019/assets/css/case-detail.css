@@ -1,17 +1,19 @@
 /* line 9, ../sass/case-detail.scss */
 body.single-clients section {
   padding: 100px 60px;
-  height: 100vh;
+  position: relative;
 }
-/* line 13, ../sass/case-detail.scss */
+/* line 15, ../sass/case-detail.scss */
+body.single-clients section .container {
+  min-height: 100vh;
+}
+/* line 19, ../sass/case-detail.scss */
 body.single-clients section.intro {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  padding: 200px 60px;
-  height: auto;
 }
-/* line 22, ../sass/case-detail.scss */
+/* line 28, ../sass/case-detail.scss */
 body.single-clients section.intro .container {
   max-width: 100%;
   display: block;
@@ -19,7 +21,7 @@ body.single-clients section.intro .container {
   padding: 0 60px;
   height: 100%;
 }
-/* line 29, ../sass/case-detail.scss */
+/* line 35, ../sass/case-detail.scss */
 body.single-clients section.intro .container .row {
   position: absolute;
   top: 50%;
@@ -28,16 +30,16 @@ body.single-clients section.intro .container .row {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 36, ../sass/case-detail.scss */
+/* line 42, ../sass/case-detail.scss */
 body.single-clients section.intro .container h1, body.single-clients section.intro .container p {
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 41, ../sass/case-detail.scss */
+/* line 47, ../sass/case-detail.scss */
 body.single-clients section.intro .container p {
   margin-top: 20px;
 }
-/* line 45, ../sass/case-detail.scss */
+/* line 51, ../sass/case-detail.scss */
 body.single-clients section.intro .container .logo {
   height: 60px;
   background-size: auto 100%;
@@ -46,24 +48,24 @@ body.single-clients section.intro .container .logo {
   background-position: bottom left;
 }
 @media only screen and (min-width: 1920px) {
-  /* line 13, ../sass/case-detail.scss */
+  /* line 19, ../sass/case-detail.scss */
   body.single-clients section.intro {
     background-size: cover;
     height: 100vh;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 13, ../sass/case-detail.scss */
+  /* line 19, ../sass/case-detail.scss */
   body.single-clients section.intro {
     padding: 300px 20px;
     height: auto !important;
   }
-  /* line 65, ../sass/case-detail.scss */
+  /* line 71, ../sass/case-detail.scss */
   body.single-clients section.intro .container {
     padding: 0 20px;
   }
 }
-/* line 79, ../sass/case-detail.scss */
+/* line 87, ../sass/case-detail.scss */
 body.single-clients.menu-active .header .logo {
   opacity: 1;
   -moz-transition: all 0.2s ease-in-out;

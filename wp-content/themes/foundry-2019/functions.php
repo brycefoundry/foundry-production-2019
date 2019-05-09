@@ -112,14 +112,14 @@ function html5blank_conditional_scripts()
 }
 
 
-// Load HTML5 Blank styles
-function html5blank_styles()
-{
-   
+function my_scripts_and_styles(){
 
-    wp_register_style('html5blank', get_template_directory_uri() . '/assets/css/screen.css', array(), '1.0', 'all');
-    wp_enqueue_style('html5blank'); // Enqueue it!
+$cache_buster = date("YmdHi", filemtime( get_stylesheet_directory() . '/assets/css/screen.css'));
+wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/assets/css/screen.css', array(), $cache_buster, 'all' );
+
 }
+
+add_action( 'wp_enqueue_scripts', 'my_scripts_and_styles', 10000);
 
 // Register HTML5 Blank Navigation
 function register_html5_menu()

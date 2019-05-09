@@ -8,7 +8,13 @@
 body.single-clients{
 	section{
 		padding: 100px 60px;
-		height: 100vh;
+		
+		
+		position: relative;
+
+		.container{
+			min-height: 100vh;
+		}
 
 		&.intro{
 			
@@ -16,8 +22,8 @@ body.single-clients{
 			background-size: cover;
 
 			background-position: top center;
-			padding: 200px 60px;
-			height: auto;
+			
+			
 
 			.container{
 				max-width: 100%;
@@ -68,6 +74,8 @@ body.single-clients{
 			}
 
 		}
+
+
 	}
 
 	.header .logo{

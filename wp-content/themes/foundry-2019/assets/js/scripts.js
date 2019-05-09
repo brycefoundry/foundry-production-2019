@@ -37,10 +37,7 @@
 				
 			}else{
 				
-				$.scrollify({
-			       section : ".case-section",
-			     });
-
+				
 					
 
 			}
