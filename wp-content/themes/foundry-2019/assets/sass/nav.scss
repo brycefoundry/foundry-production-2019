@@ -15,7 +15,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 	z-index: 110;
 	padding: 0 80px;
 	
-	@include transform(translate3d(0,120px,0));
+	@include transform(translate3d(0,60px,0));
 
 	@media only screen and (max-width: 1340px){
 		padding: 0 40px;
@@ -101,12 +101,12 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
 	a.back-btn{
 		color: white;
-		font-family: $futura;
+		font-family: $helveticaroman;
 		font-size: 18px;
-		padding: 10px 0 10px 40px;
+		padding: 14px 0 10px 40px;
 		position: absolute;
 		left: 40px;
-		top: 28px;
+		top: 18px;
 
 		background: url(/wp-content/themes/foundry-2019/assets/img/back-btn.png) no-repeat transparent scroll;
 		background-size: 28px 28px;
@@ -289,7 +289,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 	height: 100vh;
 
 	width: 100%;
-	padding: 80px;
+	padding: 40px 100px;
 	background-color: rgba(0,0,0,.3);
 	z-index: 100;
 	@include transform(scale(2,2));
@@ -308,7 +308,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 		@include transition($sm-duration);
 		ul{
 			li{
-				border-bottom: 1px dashed rgba(0,0,0,.2);
+				
 			
 				position: relative;
 				background-color: rgba(0,0,0,0);
@@ -320,7 +320,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 				overflow: hidden;
 
 				a, button{
-					font-family: $bodoni;
+					font-family: $helveticathin;
 					font-size: 3rem;
 					letter-spacing: 0px;
 					@include transition($sm-duration);
@@ -467,7 +467,8 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 					
 					
 					@include transition($sm-duration);
-					border-bottom: 1px dashed white;
+					
+
 					a, button{
 						text-decoration: none;
 						@include transition($sm-duration);
@@ -555,7 +556,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 					margin: 0 10px 10px 0;
 					border: 1px solid rgba(0,0,0,.2);
 					display: block;
-					font-family: $futura;
+					font-family: $helveticaheavy;
 					font-size: .65rem;
 					text-transform: uppercase;
 					
@@ -779,6 +780,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 			width: 100%;
 			left: 0;
 			bottom: 0;
+			display: none;
 			position: absolute;
 			@include transform(translateY(200px));
 			opacity: 0;
@@ -1254,7 +1256,7 @@ body.submenu-active{
 		.menu{
 			ul li{
 				a,button{
-					font-size: 2rem;
+					font-size: 1.6rem;
 					padding: 16px 0 12px 16px;
 				}
 

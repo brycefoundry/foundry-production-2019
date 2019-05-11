@@ -26,3 +26,45 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Bd.eot");
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Bd.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Bd.woff2") format("woff2"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Bd.woff") format("woff"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Bd.ttf") format("truetype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue Roman';
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Roman.eot");
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Roman.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Roman.woff2") format("woff2"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Roman.woff") format("woff"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Roman.ttf") format("truetype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue Extended';
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Ex.eot");
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Ex.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Ex.woff2") format("woff2"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Ex.woff") format("woff"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Ex.ttf") format("truetype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Ex.svg#HelveticaNeueLTStd-Ex") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue Thin';
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Th.eot");
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Th.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Th.woff2") format("woff2"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Th.woff") format("woff"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Th.ttf") format("truetype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Th.svg#HelveticaNeueLTStd-Th") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue Thin Extended';
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-ThEx.eot");
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-ThEx.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-ThEx.woff2") format("woff2"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-ThEx.woff") format("woff"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-ThEx.ttf") format("truetype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-ThEx.svg#HelveticaNeueLTStd-ThEx") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue Heavy';
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Hv.eot");
+  src: url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Hv.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Hv.woff2") format("woff2"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Hv.woff") format("woff"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Hv.ttf") format("truetype"), url("/wp-content/themes/foundry-2019/assets/fonts/HelveticaNeueLTStd-Hv.svg#HelveticaNeueLTStd-Hv") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
