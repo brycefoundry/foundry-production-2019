@@ -36,6 +36,8 @@ body.single-clients{
 			background-size: cover;
 			background-position: top center;
 			height: 70vh;
+
+			
 			
 
 			.container{
@@ -164,8 +166,18 @@ body.single-clients{
 }
 
 
-.postid-91{
+body.postid-91{
 	.Group.Profiles.Cover{
 		height: 100vh;
-	}		
+	}	
+
+	section{
+		&.intro{
+			background-color: #00378B;
+			@media only screen and (max-width:768px){
+				background-position: center -200px;
+			}
+
+		}
+	}	
 }

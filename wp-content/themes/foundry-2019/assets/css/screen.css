@@ -1180,7 +1180,7 @@ body.single-clients section.intro {
   background-position: top center;
   height: 70vh;
 }
-/* line 41, ../sass/case-detail.scss */
+/* line 43, ../sass/case-detail.scss */
 body.single-clients section.intro .container {
   max-width: 100%;
   display: block;
@@ -1189,13 +1189,13 @@ body.single-clients section.intro .container {
   height: 100%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 41, ../sass/case-detail.scss */
+  /* line 43, ../sass/case-detail.scss */
   body.single-clients section.intro .container {
     min-height: auto;
     padding: 200px 60px;
   }
 }
-/* line 54, ../sass/case-detail.scss */
+/* line 56, ../sass/case-detail.scss */
 body.single-clients section.intro .container .row {
   position: absolute;
   top: 50%;
@@ -1204,16 +1204,16 @@ body.single-clients section.intro .container .row {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 61, ../sass/case-detail.scss */
+/* line 63, ../sass/case-detail.scss */
 body.single-clients section.intro .container h1, body.single-clients section.intro .container p {
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 66, ../sass/case-detail.scss */
+/* line 68, ../sass/case-detail.scss */
 body.single-clients section.intro .container p {
   margin-top: 20px;
 }
-/* line 70, ../sass/case-detail.scss */
+/* line 72, ../sass/case-detail.scss */
 body.single-clients section.intro .container .logo {
   height: 60px;
   background-size: auto 100%;
@@ -1233,12 +1233,12 @@ body.single-clients section.intro .container .logo {
     padding: 300px 20px;
     height: auto !important;
   }
-  /* line 90, ../sass/case-detail.scss */
+  /* line 92, ../sass/case-detail.scss */
   body.single-clients section.intro .container {
     padding: 0 20px;
   }
 }
-/* line 106, ../sass/case-detail.scss */
+/* line 108, ../sass/case-detail.scss */
 body.single-clients.menu-active .header .logo {
   opacity: 1;
   -moz-transition: all 0.2s ease-in-out;
@@ -1250,50 +1250,50 @@ body.single-clients.menu-active .header .logo {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 113, ../sass/case-detail.scss */
+/* line 115, ../sass/case-detail.scss */
 body.single-clients .card {
   min-height: 330px;
 }
 @media only screen and (min-width: 1920px) {
-  /* line 113, ../sass/case-detail.scss */
+  /* line 115, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 450px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 113, ../sass/case-detail.scss */
+  /* line 115, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 400px;
   }
 }
 @media only screen and (max-width: 750px) {
-  /* line 113, ../sass/case-detail.scss */
+  /* line 115, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 330px;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 113, ../sass/case-detail.scss */
+  /* line 115, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 400px;
   }
 }
-/* line 132, ../sass/case-detail.scss */
+/* line 134, ../sass/case-detail.scss */
 body.single-clients .card p {
   margin: 0;
 }
-/* line 136, ../sass/case-detail.scss */
+/* line 138, ../sass/case-detail.scss */
 body.single-clients .card br {
   display: none;
 }
-/* line 140, ../sass/case-detail.scss */
+/* line 142, ../sass/case-detail.scss */
 body.single-clients .card .btn {
   width: 100%;
   position: absolute;
   bottom: 20px;
   left: 0;
 }
-/* line 149, ../sass/case-detail.scss */
+/* line 151, ../sass/case-detail.scss */
 body.single-clients .card .card-body {
   position: relative;
   display: flex;
@@ -1301,15 +1301,25 @@ body.single-clients .card .card-body {
   padding: 20px 0 0 0;
   margin: 0 20px;
 }
-/* line 157, ../sass/case-detail.scss */
+/* line 159, ../sass/case-detail.scss */
 body.single-clients .card .card-title {
   display: inline-block;
   margin: 0px 0 0 0;
 }
 
-/* line 168, ../sass/case-detail.scss */
-.postid-91 .Group.Profiles.Cover {
+/* line 170, ../sass/case-detail.scss */
+body.postid-91 .Group.Profiles.Cover {
   height: 100vh;
+}
+/* line 175, ../sass/case-detail.scss */
+body.postid-91 section.intro {
+  background-color: #00378B;
+}
+@media only screen and (max-width: 768px) {
+  /* line 175, ../sass/case-detail.scss */
+  body.postid-91 section.intro {
+    background-position: center -200px;
+  }
 }
 
 /* line 9, ../sass/nav.scss */
