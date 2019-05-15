@@ -1017,40 +1017,63 @@ h5.card-title {
   margin: 0;
 }
 
-/* line 876, ../sass/global.scss */
+@media only screen and (max-width: 990px) {
+  /* line 875, ../sass/global.scss */
+  .col-md-3 {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 875, ../sass/global.scss */
+  .col-md-3 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* line 890, ../sass/global.scss */
 .modal-dialog {
   max-width: 1140px;
 }
 @media only screen and (max-width: 1140px) {
-  /* line 876, ../sass/global.scss */
+  /* line 890, ../sass/global.scss */
   .modal-dialog {
     margin: 20px;
   }
 }
-/* line 883, ../sass/global.scss */
+/* line 897, ../sass/global.scss */
 .modal-dialog .container {
   max-width: 100%;
 }
-/* line 887, ../sass/global.scss */
+/* line 901, ../sass/global.scss */
 .modal-dialog .row {
   margin: 0 0 120px 0;
 }
-/* line 890, ../sass/global.scss */
+/* line 904, ../sass/global.scss */
 .modal-dialog p {
   margin: 0;
 }
-/* line 895, ../sass/global.scss */
+/* line 909, ../sass/global.scss */
 .modal-dialog .col-md-6 {
   margin: 0;
   padding: 0 20px 0 0;
 }
-/* line 901, ../sass/global.scss */
+@media only screen and (max-width: 768px) {
+  /* line 909, ../sass/global.scss */
+  .modal-dialog .col-md-6 {
+    padding: 0;
+  }
+}
+/* line 918, ../sass/global.scss */
 .modal-dialog img {
   width: 100%;
   height: auto;
   object-fit: contain;
 }
-/* line 909, ../sass/global.scss */
+/* line 926, ../sass/global.scss */
 .modal-dialog br {
   display: none;
 }

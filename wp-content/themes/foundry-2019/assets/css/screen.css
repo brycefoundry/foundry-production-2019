@@ -1096,40 +1096,63 @@ h5.card-title {
   margin: 0;
 }
 
-/* line 876, ../sass/global.scss */
+@media only screen and (max-width: 990px) {
+  /* line 875, ../sass/global.scss */
+  .col-md-3 {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 875, ../sass/global.scss */
+  .col-md-3 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* line 890, ../sass/global.scss */
 .modal-dialog {
   max-width: 1140px;
 }
 @media only screen and (max-width: 1140px) {
-  /* line 876, ../sass/global.scss */
+  /* line 890, ../sass/global.scss */
   .modal-dialog {
     margin: 20px;
   }
 }
-/* line 883, ../sass/global.scss */
+/* line 897, ../sass/global.scss */
 .modal-dialog .container {
   max-width: 100%;
 }
-/* line 887, ../sass/global.scss */
+/* line 901, ../sass/global.scss */
 .modal-dialog .row {
   margin: 0 0 120px 0;
 }
-/* line 890, ../sass/global.scss */
+/* line 904, ../sass/global.scss */
 .modal-dialog p {
   margin: 0;
 }
-/* line 895, ../sass/global.scss */
+/* line 909, ../sass/global.scss */
 .modal-dialog .col-md-6 {
   margin: 0;
   padding: 0 20px 0 0;
 }
-/* line 901, ../sass/global.scss */
+@media only screen and (max-width: 768px) {
+  /* line 909, ../sass/global.scss */
+  .modal-dialog .col-md-6 {
+    padding: 0;
+  }
+}
+/* line 918, ../sass/global.scss */
 .modal-dialog img {
   width: 100%;
   height: auto;
   object-fit: contain;
 }
-/* line 909, ../sass/global.scss */
+/* line 926, ../sass/global.scss */
 .modal-dialog br {
   display: none;
 }
@@ -1141,24 +1164,25 @@ body.single-clients section {
 /* line 15, ../sass/case-detail.scss */
 body.single-clients section.image {
   background-size: cover;
+  background-position: center center;
   min-height: 600px;
 }
-/* line 21, ../sass/case-detail.scss */
+/* line 22, ../sass/case-detail.scss */
 body.single-clients section img.size-full {
   width: 100%;
   height: auto;
   object-fit: contain;
 }
-/* line 32, ../sass/case-detail.scss */
+/* line 33, ../sass/case-detail.scss */
 body.single-clients section.intro {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  height: 70vh;
 }
 /* line 41, ../sass/case-detail.scss */
 body.single-clients section.intro .container {
   max-width: 100%;
-  min-height: 100vh;
   display: block;
   position: relative;
   padding: 0 60px;
@@ -1198,14 +1222,13 @@ body.single-clients section.intro .container .logo {
   background-position: bottom left;
 }
 @media only screen and (min-width: 1920px) {
-  /* line 32, ../sass/case-detail.scss */
+  /* line 33, ../sass/case-detail.scss */
   body.single-clients section.intro {
     background-size: cover;
-    height: 100vh;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 32, ../sass/case-detail.scss */
+  /* line 33, ../sass/case-detail.scss */
   body.single-clients section.intro {
     padding: 300px 20px;
     height: auto !important;
@@ -1227,50 +1250,50 @@ body.single-clients.menu-active .header .logo {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 114, ../sass/case-detail.scss */
+/* line 113, ../sass/case-detail.scss */
 body.single-clients .card {
   min-height: 330px;
 }
 @media only screen and (min-width: 1920px) {
-  /* line 114, ../sass/case-detail.scss */
+  /* line 113, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 450px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 114, ../sass/case-detail.scss */
+  /* line 113, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 400px;
   }
 }
 @media only screen and (max-width: 750px) {
-  /* line 114, ../sass/case-detail.scss */
+  /* line 113, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 330px;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 114, ../sass/case-detail.scss */
+  /* line 113, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 400px;
   }
 }
-/* line 133, ../sass/case-detail.scss */
+/* line 132, ../sass/case-detail.scss */
 body.single-clients .card p {
   margin: 0;
 }
-/* line 137, ../sass/case-detail.scss */
+/* line 136, ../sass/case-detail.scss */
 body.single-clients .card br {
   display: none;
 }
-/* line 141, ../sass/case-detail.scss */
+/* line 140, ../sass/case-detail.scss */
 body.single-clients .card .btn {
   width: 100%;
   position: absolute;
   bottom: 20px;
   left: 0;
 }
-/* line 150, ../sass/case-detail.scss */
+/* line 149, ../sass/case-detail.scss */
 body.single-clients .card .card-body {
   position: relative;
   display: flex;
@@ -1278,26 +1301,15 @@ body.single-clients .card .card-body {
   padding: 20px 0 0 0;
   margin: 0 20px;
 }
-/* line 158, ../sass/case-detail.scss */
+/* line 157, ../sass/case-detail.scss */
 body.single-clients .card .card-title {
   display: inline-block;
   margin: 0px 0 0 0;
 }
-@media only screen and (max-width: 990px) {
-  /* line 165, ../sass/case-detail.scss */
-  body.single-clients .col-md-3 {
-    width: 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  /* line 165, ../sass/case-detail.scss */
-  body.single-clients .col-md-3 {
-    width: 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+
+/* line 168, ../sass/case-detail.scss */
+.postid-91 .Group.Profiles.Cover {
+  height: 100vh;
 }
 
 /* line 9, ../sass/nav.scss */

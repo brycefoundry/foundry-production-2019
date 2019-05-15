@@ -33,7 +33,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-4">
-								<a class="back-btn" href="">Clients</a>
+								<a class="back-btn" href="">Back</a>
 							</div>
 
 							<div class="col-sm-4 logo-container">

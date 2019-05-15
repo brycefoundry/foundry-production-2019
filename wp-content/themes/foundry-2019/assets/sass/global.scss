@@ -872,6 +872,20 @@ h5.card-title{
 
 
 
+.col-md-3{
+	@media only screen and (max-width:990px){
+		width: 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	@media only screen and (max-width:500px){
+		width: 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
 
 .modal-dialog{
 	max-width: 1140px;
@@ -895,6 +909,9 @@ h5.card-title{
 	.col-md-6{
 		margin: 0;
 		padding: 0 20px 0 0;
+		@media only screen and (max-width:768px){
+			padding: 0;
+		}
 		
 	}
 

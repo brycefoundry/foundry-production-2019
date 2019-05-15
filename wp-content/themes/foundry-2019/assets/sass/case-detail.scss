@@ -14,6 +14,7 @@ body.single-clients{
 
 		&.image{
 			background-size: cover;
+			background-position: center center;
 			min-height: 600px;
 		}
 
@@ -33,14 +34,13 @@ body.single-clients{
 			
 			background-repeat: no-repeat; 
 			background-size: cover;
-
 			background-position: top center;
-			
+			height: 70vh;
 			
 
 			.container{
 				max-width: 100%;
-				min-height: 100vh;
+				
 				display: block;
 				position: relative;
 				padding: 0 60px;
@@ -79,7 +79,7 @@ body.single-clients{
 
 			@media only screen and (min-width: 1920px){
 				background-size: cover;
-				height: 100vh;
+				
 			}
 
 			@media only screen and (max-width: 600px){
@@ -109,7 +109,6 @@ body.single-clients{
 			@include transition-delay(.3s);
 		}
 	}
-
 
 	.card{
 		min-height: 330px;
@@ -162,17 +161,11 @@ body.single-clients{
 		}
 	}
 
-	.col-md-3{
-		@media only screen and (max-width:990px){
-			width: 50%;
-			flex: 0 0 50%;
-			max-width: 50%;
-		}
+}
 
-		@media only screen and (max-width:500px){
-			width: 100%;
-			flex: 0 0 100%;
-			max-width: 100%;
-		}
-	}
+
+.postid-91{
+	.Group.Profiles.Cover{
+		height: 100vh;
+	}		
 }

@@ -99,7 +99,7 @@ $gallerycount = 0;
 			
 
 			<?php if(get_sub_field('background_type')=='image'): ?>
-				<section class="case-section <?php the_sub_field( 'background_type');?> <?php the_sub_field('contrast')?>" style="background-image:url('<?php the_sub_field( 'background_image');?>');">
+				<section class="case-section <?php the_sub_field( 'title');?> <?php the_sub_field( 'background_type');?> <?php the_sub_field('contrast')?>" style="background-image:url('<?php the_sub_field( 'background_image');?>');">
 						
 					<?php the_sub_field('editor')?>
 
@@ -108,7 +108,7 @@ $gallerycount = 0;
 			<?php endif; ?>
 
 			<?php if(get_sub_field('background_type')=='video'): ?>
-				<section class="case-section <?php the_sub_field( 'background_type');?> <?php the_sub_field('contrast')?>" style="">
+				<section class="case-section <?php the_sub_field( 'title');?> <?php the_sub_field( 'background_type');?> <?php the_sub_field('contrast')?>" style="">
 						
 					<?php the_sub_field('editor')?>
 
@@ -129,7 +129,7 @@ $gallerycount = 0;
 			<?php endif; ?>
 
 			<?php if(get_sub_field('background_type')=='color'): ?>
-				<section class="case-section <?php the_sub_field( 'background_type');?> <?php the_sub_field('contrast')?>" style="background-color:<?php the_sub_field( 'background_color');?>;">
+				<section class="case-section <?php the_sub_field( 'title');?>  <?php the_sub_field( 'background_type');?> <?php the_sub_field('contrast')?>" style="background-color:<?php the_sub_field( 'background_color');?>;">
 						
 					<?php the_sub_field('editor')?>
 
