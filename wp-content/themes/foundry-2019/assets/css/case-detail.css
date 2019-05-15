@@ -1,27 +1,41 @@
 /* line 9, ../sass/case-detail.scss */
 body.single-clients section {
-  padding: 100px 60px;
   position: relative;
 }
 /* line 15, ../sass/case-detail.scss */
-body.single-clients section .container {
-  min-height: 100vh;
+body.single-clients section.image {
+  background-size: cover;
+  min-height: 600px;
 }
-/* line 19, ../sass/case-detail.scss */
+/* line 21, ../sass/case-detail.scss */
+body.single-clients section img.size-full {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+/* line 32, ../sass/case-detail.scss */
 body.single-clients section.intro {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
-/* line 28, ../sass/case-detail.scss */
+/* line 41, ../sass/case-detail.scss */
 body.single-clients section.intro .container {
   max-width: 100%;
+  min-height: 100vh;
   display: block;
   position: relative;
   padding: 0 60px;
   height: 100%;
 }
-/* line 35, ../sass/case-detail.scss */
+@media only screen and (max-width: 768px) {
+  /* line 41, ../sass/case-detail.scss */
+  body.single-clients section.intro .container {
+    min-height: auto;
+    padding: 200px 60px;
+  }
+}
+/* line 54, ../sass/case-detail.scss */
 body.single-clients section.intro .container .row {
   position: absolute;
   top: 50%;
@@ -30,16 +44,16 @@ body.single-clients section.intro .container .row {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 42, ../sass/case-detail.scss */
+/* line 61, ../sass/case-detail.scss */
 body.single-clients section.intro .container h1, body.single-clients section.intro .container p {
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 47, ../sass/case-detail.scss */
+/* line 66, ../sass/case-detail.scss */
 body.single-clients section.intro .container p {
   margin-top: 20px;
 }
-/* line 51, ../sass/case-detail.scss */
+/* line 70, ../sass/case-detail.scss */
 body.single-clients section.intro .container .logo {
   height: 60px;
   background-size: auto 100%;
@@ -48,24 +62,24 @@ body.single-clients section.intro .container .logo {
   background-position: bottom left;
 }
 @media only screen and (min-width: 1920px) {
-  /* line 19, ../sass/case-detail.scss */
+  /* line 32, ../sass/case-detail.scss */
   body.single-clients section.intro {
     background-size: cover;
     height: 100vh;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 19, ../sass/case-detail.scss */
+  /* line 32, ../sass/case-detail.scss */
   body.single-clients section.intro {
     padding: 300px 20px;
     height: auto !important;
   }
-  /* line 71, ../sass/case-detail.scss */
+  /* line 90, ../sass/case-detail.scss */
   body.single-clients section.intro .container {
     padding: 0 20px;
   }
 }
-/* line 87, ../sass/case-detail.scss */
+/* line 106, ../sass/case-detail.scss */
 body.single-clients.menu-active .header .logo {
   opacity: 1;
   -moz-transition: all 0.2s ease-in-out;
@@ -76,4 +90,76 @@ body.single-clients.menu-active .header .logo {
   -o-transition-delay: 0.3s;
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
+}
+/* line 114, ../sass/case-detail.scss */
+body.single-clients .card {
+  min-height: 330px;
+}
+@media only screen and (min-width: 1920px) {
+  /* line 114, ../sass/case-detail.scss */
+  body.single-clients .card {
+    min-height: 450px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  /* line 114, ../sass/case-detail.scss */
+  body.single-clients .card {
+    min-height: 400px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 114, ../sass/case-detail.scss */
+  body.single-clients .card {
+    min-height: 330px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 114, ../sass/case-detail.scss */
+  body.single-clients .card {
+    min-height: 400px;
+  }
+}
+/* line 133, ../sass/case-detail.scss */
+body.single-clients .card p {
+  margin: 0;
+}
+/* line 137, ../sass/case-detail.scss */
+body.single-clients .card br {
+  display: none;
+}
+/* line 141, ../sass/case-detail.scss */
+body.single-clients .card .btn {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+/* line 150, ../sass/case-detail.scss */
+body.single-clients .card .card-body {
+  position: relative;
+  display: flex;
+  height: 100%;
+  padding: 20px 0 0 0;
+  margin: 0 20px;
+}
+/* line 158, ../sass/case-detail.scss */
+body.single-clients .card .card-title {
+  display: inline-block;
+  margin: 0px 0 0 0;
+}
+@media only screen and (max-width: 990px) {
+  /* line 165, ../sass/case-detail.scss */
+  body.single-clients .col-md-3 {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 165, ../sass/case-detail.scss */
+  body.single-clients .col-md-3 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

@@ -7,13 +7,26 @@
 
 body.single-clients{
 	section{
-		padding: 100px 60px;
+		
 		
 		
 		position: relative;
 
+		&.image{
+			background-size: cover;
+			min-height: 600px;
+		}
+
+		img{
+			&.size-full{
+				width: 100%;
+				height: auto;
+				object-fit: contain;
+			}
+		}
+
 		.container{
-			min-height: 100vh;
+			
 		}
 
 		&.intro{
@@ -27,10 +40,16 @@ body.single-clients{
 
 			.container{
 				max-width: 100%;
+				min-height: 100vh;
 				display: block;
 				position: relative;
 				padding: 0 60px;
 				height: 100%;
+
+				@media only screen and(max-width: 768px){
+					min-height: auto;
+					padding: 200px 60px;
+				}
 				
 				.row{
 					position: absolute;
@@ -88,6 +107,72 @@ body.single-clients{
 			opacity: 1;
 			@include transition(.2s all ease-in-out);
 			@include transition-delay(.3s);
+		}
+	}
+
+
+	.card{
+		min-height: 330px;
+
+		@media only screen and (min-width:1920px){
+		min-height: 450px;		
+		}
+
+		@media only screen and (max-width:980px){
+		min-height: 400px;		
+		}
+
+		@media only screen and (max-width:750px){
+		min-height: 330px;		
+		}
+
+		@media only screen and (max-width:500px){
+		min-height: 400px;		
+		}
+		
+		p{
+			margin: 0;
+		}
+
+		br{
+			display: none;
+		}
+
+		.btn{
+			
+			width: 100%;
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+		}
+		
+
+		.card-body{
+			position: relative;
+		    display: flex;
+		    height: 100%;
+		    padding: 20px 0 0 0;
+		    margin: 0 20px;
+		}
+
+		.card-title{
+			display: inline-block;
+			
+			margin: 0px 0 0 0;
+		}
+	}
+
+	.col-md-3{
+		@media only screen and (max-width:990px){
+			width: 50%;
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+
+		@media only screen and (max-width:500px){
+			width: 100%;
+			flex: 0 0 100%;
+			max-width: 100%;
 		}
 	}
 }

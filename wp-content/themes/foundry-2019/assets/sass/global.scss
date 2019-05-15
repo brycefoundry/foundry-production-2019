@@ -92,7 +92,7 @@ margin: 0 0 10px 0;
 h4{
 font-size: 1rem;	
 font-family: $helveticaroman;
-text-transform: uppercase;
+
 margin: 0 0 20px 0;
 
 
@@ -137,7 +137,7 @@ a{
 }
 
 section{
-	padding:0 60px;
+	padding:100px 60px;
 }
 
 a.btn, button.btn{
@@ -158,7 +158,8 @@ a.btn-primary, button.btn-primary{
 	font-size: .65rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	background-color: $primary-black-2;
+	background-color: $primary-black-1;
+	color: $primary-white-1;
 	@include transition($sm-duration);
 	padding: 12px 20px;
 	@include border-radius(2px);
@@ -188,7 +189,7 @@ a.btn-secondary, button.btn-secondary{
 }
 
 section.page-section{
-	padding: 120px 0;
+
 	position: relative;
 	
 	z-index: 10;
@@ -196,6 +197,7 @@ section.page-section{
 	img{
 		height: auto;
 		width: 100%;
+		object-fit: contain;
 	}
 
 
@@ -232,22 +234,11 @@ section:nth-child(1){
 
 
 
-section{
-	.container{
-		.card{
-			.btn{
-				display: block;
-				margin-top: 10px;
-			}
-		}
-	}
-}
+
 
 
 @media only screen and (max-width: 768px){
-	section .container, footer .container{
-		padding: 0px 44px;
-	}
+	
 
 	.card{
 		margin: 20px 0;
@@ -877,4 +868,45 @@ h5.card-title{
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0;
+}
+
+
+
+
+.modal-dialog{
+	max-width: 1140px;
+
+	@media only screen and (max-width:1140px){
+		margin: 20px;
+	}
+	
+	.container{
+		max-width: 100%;
+	}	
+
+	.row{
+		margin: 0 0 120px 0;
+	}
+	p{
+		margin: 0;
+
+	}	
+
+	.col-md-6{
+		margin: 0;
+		padding: 0 20px 0 0;
+		
+	}
+
+	img{
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+
+	}
+
+
+	br{
+		display: none;
+	}
 }

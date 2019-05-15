@@ -20,7 +20,7 @@
 			//Cases Detail
 
 			if ($("body").hasClass("single-clients")) {
-
+				singleclients();
 			}
 
 
@@ -56,6 +56,10 @@
 				featuredvideo();
 			}
 
+		}
+
+		singleclients = function(){
+			
 		}
 
 		videocover = function(){
