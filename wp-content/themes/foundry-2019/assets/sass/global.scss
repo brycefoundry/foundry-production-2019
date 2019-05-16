@@ -144,6 +144,10 @@ section{
 	@media only screen and (max-width:400px){
 		padding: 60px 20px;		
 	}
+
+	.row{
+		
+	}
 }
 
 a.btn, button.btn{
@@ -426,6 +430,10 @@ body.meet{
 			width: 100%;
 			max-width: 100%;
 			margin: 0;
+
+			.row{
+				padding: 0px;
+			}
 
 			.intro-content{
 				position: absolute;
@@ -892,6 +900,10 @@ h5.card-title{
 	}
 }
 
+.modal-body{
+		padding: 140px;
+}	
+
 
 .modal-dialog{
 	max-width: 1140px;
@@ -905,7 +917,7 @@ h5.card-title{
 	}	
 
 	.row{
-		margin: 0 0 120px 0;
+		margin: 0 0 60px 0;
 	}
 	p{
 		margin: 0;

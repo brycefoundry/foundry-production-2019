@@ -162,12 +162,12 @@ body.single-clients .card .card-title {
 body.postid-91 .Group.Profiles.Cover {
   height: 100vh;
 }
-/* line 184, ../sass/case-detail.scss */
+/* line 186, ../sass/case-detail.scss */
 body.postid-91 section.intro {
   background-color: #00378B;
 }
 @media only screen and (max-width: 768px) {
-  /* line 184, ../sass/case-detail.scss */
+  /* line 186, ../sass/case-detail.scss */
   body.postid-91 section.intro {
     background-position: center 270px;
   }
