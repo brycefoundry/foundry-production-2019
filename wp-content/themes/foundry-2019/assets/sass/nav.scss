@@ -101,7 +101,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
 	a.back-btn{
 		color: white;
-		font-family: $helveticaroman;
+		font-family: $futura;
 		font-size: 18px;
 		padding: 14px 0 10px 40px;
 		position: absolute;
@@ -536,12 +536,12 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 			}
 			li{
 				
-				width: 49%;
+				width: 100%;
 				display: inline-block;
 				
-				text-align: center;
+				text-align: left;
 				
-				@include border-radius(4px);
+				
 				@include transition($sm-duration);
 				opacity: 0;
 				@include transition-delay(.6s);
@@ -552,17 +552,14 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 				}
 				
 				a{
-					padding: 120px 10px 10px 10px;
+					padding: 10px 10px 10px 10px;
 					margin: 0 10px 10px 0;
-					border: 1px solid rgba(0,0,0,.2);
 					display: block;
 					font-family: $futura;
 					font-size: .65rem;
 					text-transform: uppercase;
-					
 					letter-spacing: 1px;
 					@include transition(.1s all ease-in-out);
-					
 					position: relative;					
 					color: rgba(0,0,0,.5);
 
@@ -608,6 +605,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 				&.locked{
 					background: url(/wp-content/themes/foundry-2019/assets/img/lock_circle_close.png) no-repeat transparent scroll;
 					background-size: 14px auto;
+					display: none;
 					background-position: 10px center;
 
 					a{

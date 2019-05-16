@@ -128,7 +128,7 @@
 										<li class="expandable clients"><button>Clients<span class="chevron"></span></button></li>
 										<li class="expandable about"><button>About<span class="chevron"></span></button></li>
 										<li class="page_item"><a href="/meet/">Meet</a></li>
-										<li class="page_item"><a href="/news-media/">News &amp; Media</a></li>
+										<!--<li class="page_item"><a href="/news-media/">News &amp; Media</a></li>-->
 									</ul>
 								</div>
 							</nav>
@@ -143,26 +143,24 @@
 										<li><a href="/about/strategy/">Strategy</a></li>
 										<li><a href="/about/design-sprints/">Design Sprints</a></li>
 										<li><a href="/about/development/">Development</a></li>
-										<li><a href="/about/collaborators/">Collaborators</a></li>
-										<li><a href="/about/pricing/">Pricing</a></li>
 									</ul>
 
 									<ul class="clients-sub-nav clients">
-										<li><a href="/clients/atlassian/">Altir</a></li>
-										<li class="locked"><a href="/clients/alter-g/">Alter G</a></li>
+										<li class="locked"><a href="/clients/atlassian/">Altir</a></li>
+										<li><a href="/clients/alter-g/">Alter G</a></li>
 										<li><a href="/clients/atlassian/">Atlassian</a></li>
 										
-										<li><a href="/clients/bloom-labs/">Bloom Labs</a></li>
-										<li><a href="/clients/bloom-labs/">Career Fair+</a></li>
+										<li class="locked"><a href="/clients/bloom-labs/">Bloom Labs</a></li>
+										<li class="locked"><a href="/clients/bloom-labs/">Career Fair+</a></li>
 										<li class="locked"><a href="/clients/cerebri-ai/">Cerebri AI</a></li>
-										<li><a href="/clients/atlassian/">Code My Views</a></li>
+										<li class="locked"><a href="/clients/atlassian/">Code My Views</a></li>
 										<li><a href="/clients/grace-hill/">Grace Hill</a></li>
 										<li><a href="/clients/idealspot/">Idealspot</a></li>
 										<li><a href="/clients/heyl-group/">KW Heyl Group</a></li>
-										<li><a href="/clients/maxplay/">MaxPlay</a></li>
+										<li class="locked"><a href="/clients/maxplay/">MaxPlay</a></li>
 										<li class="locked"><a href="/clients/nokia-bell-labs/">Nokia Bell Labs</a></li>
 										<li class="locked"><a href="/clients/twia/">TWIA</a></li>
-										<li><a href="/clients/valera-health/">Valera Health</a></li>
+										<li class="locked"><a href="/clients/valera-health/">Valera Health</a></li>
 									</ul>
 								</div>
 							</div>
