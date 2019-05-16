@@ -144,18 +144,4 @@ $gallerycount = 0;
 <?php endif; ?>
 
 
-<?php if( have_rows('modals') ):?>
 
-
-	<?php while ( have_rows('modals') ) : the_row(); ?>
-
-			
-					
-				<?php the_sub_field('modal_editor')?>
-
-			
-								
-		
-	<?php endwhile; ?>
-
-<?php endif; ?>
