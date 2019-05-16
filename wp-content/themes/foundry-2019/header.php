@@ -74,43 +74,43 @@
 										<video autoplay muted loop playsinline>
 										  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.mp4" type="video/mp4">
 										  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.ogg" type="video/ogg">
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.webm" type="video/webm">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.webmhd.webm" type="video/webm">
 										Your browser does not support the video tag.
 										</video>
 									</li>
 
 									<li>
 										<video autoplay muted loop playsinline>
-										  <source src="https://ak9.picdn.net/shutterstock/videos/24251279/preview/stock-footage-abstract-digital-background-made-of-different-shapes-with-hight-detailed-elements-rich-details-and.webm" type="video/mp4">
-										  <source src="https://ak9.picdn.net/shutterstock/videos/24251279/preview/stock-footage-abstract-digital-background-made-of-different-shapes-with-hight-detailed-elements-rich-details-and.webm" type="video/ogg">
-										  <source src="https://ak9.picdn.net/shutterstock/videos/24251279/preview/stock-footage-abstract-digital-background-made-of-different-shapes-with-hight-detailed-elements-rich-details-and.webm" type="video/webm">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/abstract.mp4" type="video/mp4">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/abstract.mp4" type="video/ogg">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/abstract.webm" type="video/webm">
 										Your browser does not support the video tag.
 										</video>
 									</li>
 
 									<li>
 										<video autoplay muted loop playsinline>
-										  <source src="https://ak6.picdn.net/shutterstock/videos/32430376/preview/stock-footage-virtual-human-head-d-motion-graphics.webm" type="video/mp4">
-										  <source src="https://ak6.picdn.net/shutterstock/videos/32430376/preview/stock-footage-virtual-human-head-d-motion-graphics.webm" type="video/ogg">
-										  <source src="https://ak6.picdn.net/shutterstock/videos/32430376/preview/stock-footage-virtual-human-head-d-motion-graphics.webm type="video/webm">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/vr.mp4" type="video/mp4">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/vr.mp4" type="video/ogg">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/vr.webm" type="video/webm">
 										Your browser does not support the video tag.
 										</video>
 									</li>
 
 									<li>
 										<video autoplay muted loop playsinline>
-										  <source src="https://ak8.picdn.net/shutterstock/videos/22522198/preview/stock-footage-seven-stylish-diverse-people-lean-on-a-conference-table-while-energetically-discussing-daily.webm" type="video/mp4">
-										  <source src="https://ak8.picdn.net/shutterstock/videos/22522198/preview/stock-footage-seven-stylish-diverse-people-lean-on-a-conference-table-while-energetically-discussing-daily.webm" type="video/ogg">
-										  <source src="https://ak8.picdn.net/shutterstock/videos/22522198/preview/stock-footage-seven-stylish-diverse-people-lean-on-a-conference-table-while-energetically-discussing-daily.webm" type="video/webm">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/table.mp4" type="video/mp4">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/table.mp4" type="video/ogg">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/table.webm" type="video/webm">
 										Your browser does not support the video tag.
 										</video>
 									</li>
 
 									<li>
 										<video autoplay muted loop playsinline>
-										  <source src="https://ak0.picdn.net/shutterstock/videos/25834700/preview/stock-footage-casual-young-man-using-smartphone-in-a-car-he-is-checking-mails-chats-or-the-news-online.webm" type="video/mp4">
-										  <source src="https://ak0.picdn.net/shutterstock/videos/25834700/preview/stock-footage-casual-young-man-using-smartphone-in-a-car-he-is-checking-mails-chats-or-the-news-online.webm" type="video/ogg">
-										  <source src="https://ak0.picdn.net/shutterstock/videos/25834700/preview/stock-footage-casual-young-man-using-smartphone-in-a-car-he-is-checking-mails-chats-or-the-news-online.webm" type="video/webm">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/man.mp4" type="video/mp4">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/man.mp4" type="video/ogg">
+										  <source src="/wp-content/themes/foundry-2019/assets/videos/man.webm" type="video/webm">
 										Your browser does not support the video tag.
 										</video>
 									</li>
