@@ -16,7 +16,7 @@
 		}
 
 		views = function(){
-
+			
 			//Cases Detail
 
 			if ($("body").hasClass("single-clients")) {
