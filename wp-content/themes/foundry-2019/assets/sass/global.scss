@@ -69,30 +69,30 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 h1{
- font-size: 5rem;	
- font-family: $helveticathin;
+ font-size: 3.5rem;	
+ font-family: $futura;
  margin: 0 0 20px 0;
  
 
 }
 
 h2{
-font-size: 2.75rem;	
-font-family: $helveticathin;
+font-size: 2.5rem;	
+font-family: $futura;
 
 margin: 0 0 20px 0;
 }
 
 h3{
-font-size: 2.5rem;
-font-family: $helveticathin;
+font-size: 1.5rem;
+font-family: $futura;
 margin: 0 0 10px 0;
 }
 
 h4{
-font-size: 1rem;	
-font-family: $helveticaroman;
-
+font-size: 1.1rem;	
+font-family: $metaserif;
+line-height: 1.3rem;
 margin: 0 0 20px 0;
 
 
@@ -102,20 +102,22 @@ margin: 0 0 20px 0;
 h5{
 	font-size: 1rem;
 	
-	font-family: $helveticaext;
+	font-family: $futura;
 }
 
 h6{
 	font-size: .75rem;	
-	font-family: $helveticaext;
+	font-family: $futura;
+	text-transform: uppercase;
+
 
 }
 
 
 p{
 	font-size: 1rem;
-	font-family: $helveticaroman;
-	line-height: 1.4rem;	
+	font-family: $metaserif;
+	line-height: 1.5rem;	
 
 }
 
@@ -138,6 +140,10 @@ a{
 
 section{
 	padding:100px 60px;
+
+	@media only screen and (max-width:400px){
+		padding: 60px 20px;		
+	}
 }
 
 a.btn, button.btn{
@@ -442,8 +448,8 @@ body.meet{
 				}
 
 				h1{
-					font-family: $helveticathinext;
-					font-size: 5rem;
+					font-family: $futura;
+					font-size: 4rem;
 					padding-bottom: 20px;
 					position: relative;
 					&:after{
@@ -464,7 +470,7 @@ body.meet{
 					}
 
 					@media only screen and (min-width: 1920px){
-						font-size: 7rem;
+						font-size: 5rem;
 						margin-bottom: 0px;
 					}
 				}
