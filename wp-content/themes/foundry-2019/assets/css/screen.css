@@ -1433,8 +1433,8 @@ body.postid-91 section.intro {
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: absolute;
-  left: 50%;
-  margin-left: -80px;
+  right: 0;
+  margin-right: -260px;
   -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -o-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -2479,8 +2479,8 @@ body.menu-active .header .logo {
   -o-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  left: 0;
-  margin-left: 80px;
+  right: 0;
+  margin-right: 100px;
 }
 /* line 897, ../sass/nav.scss */
 body.menu-active .header.minified a.back-btn {

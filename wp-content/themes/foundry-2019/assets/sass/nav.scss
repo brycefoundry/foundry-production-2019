@@ -37,8 +37,8 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 		position: absolute;
-		left: 50%;
-		margin-left: -80px;
+		right: 0;
+		margin-right: -260px;
 		@include transition($sm-duration);
 		@include transform(translate(0px,0));
 		top: 17px;
@@ -890,8 +890,8 @@ body.menu-active{
 		.logo{
 			background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-white.png);
 			@include transition($sm-duration);
-			left: 0;
-			margin-left: 80px;
+			right: 0;
+			margin-right: 100px;
 		}
 		&.minified{
 			a.back-btn{
