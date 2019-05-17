@@ -168,7 +168,7 @@ a.btn-primary, button.btn-primary{
 	font-size: .65rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	background-color: $primary-black-1;
+	background-color: rgba(0,0,0,.9);
 	color: $primary-white-1;
 	@include transition($sm-duration);
 	padding: 12px 20px;
@@ -208,9 +208,28 @@ section.page-section{
 		height: auto;
 		width: 100%;
 		object-fit: contain;
+
 	}
 
 
+}
+
+img{
+	
+
+
+	&.lazy-loaded{
+		opacity: 1;
+		@include transform(translateY(0px));
+
+		@include transition(.5s all ease-in-out);
+	}
+
+	&.lazy-hidden{
+		background-color: transparent;
+		opacity: 0;
+		@include transform(translateY(100px));
+	}
 }
 
 
@@ -902,6 +921,22 @@ h5.card-title{
 
 .modal-body{
 		padding: 140px;
+
+		@media only screen and (max-width:1140px){
+			padding: 100px 40px;
+		}
+
+		@media only screen and (max-width:960px){
+			padding: 40px 20px;
+		}
+
+		@media only screen and (max-width:960px){
+			padding: 40px 10px;
+		}
+
+		img{
+			margin: 20px 0;
+		}
 }	
 
 

@@ -344,20 +344,7 @@
 
 			});
 
-			var uptop = new Waypoint({
-			  element: $('section.intro')[0],
-			  handler: function(direction) {
-			  
-			  	if(direction=='down'){
-			  		
-			  	}else if(direction=='up'){
-	  		   		$('.page-section').removeClass('active');						
-	  				$('section.intro').addClass('active');
-			  		
-			  	}
-			  },
-			  offset:  '50%'
-			});
+			
 
 			
 		}
