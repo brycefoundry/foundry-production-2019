@@ -22,14 +22,14 @@
 
 
 	</head>
-	<body <?php body_class(); ?>  id="px-offset-waypoint">
+	<body <?php body_class(); ?>  id="px-offset-waypoint" >
 		
 
 		
 		
 
 			<!-- header -->
-			<header class="header clear <?php the_field( 'logo_type');?>" role="banner">
+			<header class="header clear <?php the_field( 'logo_contrast');?>-logo" role="banner">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-4">
@@ -38,7 +38,7 @@
 
 							<div class="col-sm-4 logo-container">
 								
-								<a class="logo" href="<?php echo home_url(); ?>">
+								<a class="inactive logo" href="<?php echo home_url(); ?>">
 									
 									
 								</a>
@@ -48,7 +48,10 @@
 							
 
 							<div class="col-sm-4">
-								
+								<a class="active logo" href="<?php echo home_url(); ?>">
+									
+									
+								</a>
 
 								<button id="menu-btn">
 								<span>Menu</span>

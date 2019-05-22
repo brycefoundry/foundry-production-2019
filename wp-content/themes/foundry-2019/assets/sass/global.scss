@@ -226,6 +226,7 @@ section.page-section{
 	.card{
 		img{
 			margin: 0px auto;
+			padding: 20px 0;
 		}
 	}
 
@@ -443,6 +444,11 @@ body.meet{
 
 	h4{
 		color: $primary-orange-1;
+	}
+
+	.card img{
+		margin: 0;
+		padding: 0;
 	}
 
 }
@@ -1004,4 +1010,24 @@ h5.card-title{
 	br{
 		display: none;
 	}
+}
+
+
+
+.embed-container{
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto;
+
+	iframe, object, embed { 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%; 
+	}
+	 
 }

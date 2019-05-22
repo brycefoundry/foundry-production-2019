@@ -6,6 +6,36 @@
 $sm-duration: .2s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
+body.menu-active{
+	.logo.inactive{
+		visibility: visible;
+		pointer-events: auto;
+		@include opacity(1);
+		@include transition($sm-duration);
+		@include transition-delay(1s);
+	}
+
+	.logo.active{
+		visibility: hidden;
+		pointer-events: none;
+		@include opacity(0);
+		
+
+	}
+}
+
+.light-logo{
+		.logo.active{
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-white.png);
+		}
+	}
+
+	.dark-logo{
+		.logo.active{
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-dark.png);
+		}
+	}
+
 .header{
 	position: fixed;
 	width: 100%;
@@ -27,26 +57,64 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
 	.container, .row{
 		position: relative;
-		
+
 	}
 
 	.logo{
 		@include transition($sm-duration);
 		width: 200px;
 		height: 50px;
-		background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-white.png);
+		
 		background-size: 100% auto;
 		background-repeat: no-repeat;
-		position: absolute;
-		right: 0;
-		margin-right: -260px;
 		@include transition($sm-duration);
-		@include transform(translate(0px,0));
-		top: 17px;
 		overflow: hidden;
+
+		&.active{
+			position: absolute;
+		    right: 120px;
+		    top: 15px;
+		    visibility: visible;
+		    pointer-events: auto;
+		    @include opacity(1);
+		    @include transition($sm-duration);
+
+		    @media only screen and (max-width: 1340px){
+		    	right: 160px;
+		    }
+
+		    @media only screen and (max-width: 1100px){
+		    	right: 60px;
+		    	top: 18px;
+		    }
+
+		    @media only screen and (max-width: 576px){
+		    	right: auto;
+		    	top: 18px;
+		    	left: 100px;
+		    }
+		    
+		}
+
+		&.inactive{
+			position: absolute;
+			left: 80px;
+			top: 15px;
+			visibility: hidden;
+			pointer-events: none;
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-white.png);
+			@include opacity(0);
+			@include transition($sm-duration);
+
+			@media only screen and (max-width: 1340px){
+				left: 100px;
+			}
+		}
+
+
 	}
 
-	&.white{
+	/**&.white{
 		.logo{
 			@include transition($sm-duration);
 			width: 200px;
@@ -98,7 +166,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 			top: 17px;
 			overflow: hidden;
 		}
-	}
+	}*/
 
 	a.back-btn{
 		color: white;
@@ -108,7 +176,7 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 		position: absolute;
 		left: 40px;
 		top: 18px;
-
+		display: none;
 		background: url(/wp-content/themes/foundry-2019/assets/img/back-btn.png) no-repeat transparent scroll;
 		background-size: 28px 28px;
 		background-position: left center;
@@ -885,15 +953,16 @@ $lng-duration: .4s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
 
 
+
 body.menu-active{
 
 	.header{
-		.logo{
+		/*.logo{
 			background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-white.png);
 			@include transition($sm-duration);
 			right: 0;
 			margin-right: 100px;
-		}
+		}*/
 		&.minified{
 			a.back-btn{
 				@include transition($sm-duration);
@@ -906,6 +975,10 @@ body.menu-active{
 				@include transform(translate(0px,0px));
 				opacity: 1;
 			}
+		}
+
+		a.back-btn{
+			display: none;
 		}
 	}
 	#menu{
@@ -1072,6 +1145,14 @@ body.submenu-active{
 		    background-position: 0px 0;
 		    @include transition($sm-duration);
 		    opacity: 1;
+		    @include transition-delay(0s);
+
+		    	&.active{
+		    		@include transition-delay(0s);
+		    	}
+		    
+		    	
+		    
 
 			
 		}
@@ -1106,10 +1187,9 @@ body.submenu-active{
 		.header, .header.minified{
 			.logo{
 				opacity: 0;
-				margin-left: -90px;
-				left: 50%;
-				@include transform(translate(0,0px));
+				
 				@include transition($sm-duration);
+				@include transition-delay(0s);	
 			}
 		}
 
