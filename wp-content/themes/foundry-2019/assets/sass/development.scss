@@ -1,0 +1,64 @@
+@import "compass/css3/transform";
+@import "compass/css3"; 
+
+
+
+
+
+body.development{
+	section.page-section{
+		.card{
+			img{
+				max-width: 90px;
+				margin: 0 auto;
+				display: block;
+			}
+			height: auto;
+			border: none;
+			padding: 20px;
+		}
+	}
+
+
+	section:nth-child(1){
+		background: url(/wp-content/uploads/2019/05/Mouse.png);
+		background-repeat: no-repeat;
+		
+		background-position: -130px 36%;
+		background-size: 571px auto;
+
+
+		@media only screen and (max-width: 1920px){
+		background-size: 400px auto;
+		background-position: left 6%;	
+		}
+		
+		@media only screen and (max-width: 960px){
+			background-size: 300px auto;
+			background-position: left 15%;	
+
+		}
+	}
+
+	section:nth-child(3){
+		background: url(/wp-content/uploads/2019/05/Phone.png);
+		background-repeat: no-repeat;
+		padding-top: 200px;
+		background-position: right 6%;
+		background-size: 471px auto;
+
+
+		@media only screen and (max-width: 2140px){
+		background-size: 371px auto;
+
+		
+
+		}
+		
+		@media only screen and (max-width: 760px){
+			padding-top: 300px;
+			background-position: top center;
+			background-size: 231px auto;
+		}
+	}
+}

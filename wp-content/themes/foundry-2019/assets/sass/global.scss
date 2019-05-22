@@ -66,6 +66,7 @@ html{
 
 h1, h2, h3, h4, h5, h6, p{
 	display: block;
+	width: 100%;
 }
 
 h1{
@@ -139,7 +140,7 @@ a{
 }
 
 section{
-	padding:100px 60px;
+	padding: 60px;
 
 	@media only screen and (max-width:400px){
 		padding: 60px 20px;		
@@ -206,8 +207,11 @@ section.page-section{
 
 	img{
 		height: auto;
-		width: 100%;
-		object-fit: contain;
+	  	margin: 20px 0;
+	    
+	    width: 100%;
+	    display: flex;
+	    align-self: center;
 
 	}
 
@@ -286,7 +290,7 @@ section:nth-child(1){
 		font-size: 18px;
 	}
 	.container{
-		max-width: 1600px;
+		
 	}
 	section:nth-child(1){
 		padding-top: 350px;
@@ -901,6 +905,10 @@ h5.card-title{
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0;
+}
+
+.card-title{
+	text-align: center;
 }
 
 

@@ -16,9 +16,9 @@
 						<div class="col-md-4">
 							<h6>Social</h6>
 							<ul>
-								<li><strong>Y:</strong><a href="">foundrydigital</a></li>
-								<li><strong>T:</strong><a href="">madebyfoundry</a></li>
-								<li><strong>I:</strong><a href="">foundryatx</a></li>
+								
+								<li><strong>T:</strong><a target="_blank" href="https://twitter.com/thompson_ux">thompson_ux</a></li>
+								<li><strong>I:</strong><a target="_blank" href="https://instagram.com/thompsonuxdesign">thompsonuxdesign</a></li>
 							</ul>
 						</div>
 
