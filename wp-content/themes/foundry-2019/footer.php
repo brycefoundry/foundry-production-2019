@@ -8,9 +8,9 @@
 						<div class="col-md-4">
 							<h6>Resources</h6>
 							<ul>
-								<li><a href="">Design Sprints</a></li>
-								<li><a href="">Strategy</a></li>
-								<li><a href="">Pricing</a></li>
+								<li><a href="/about/design-thinking/">Design Thinking</a></li>
+								<li><a href="/about/strategy/">Strategy</a></li>
+								<li><a href="/about/development/">Development</a></li>
 							</ul>
 						</div>
 						<div class="col-md-4">
@@ -43,7 +43,7 @@
 						<a class="logo" href="<?php echo home_url(); ?>"></a>
 						
 					
-						<p>Foundry Digital LLC @ 2018</p>
+						<p>Thompson UX @ 2019</p>
 						</div>
 					
 				</div>

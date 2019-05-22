@@ -332,6 +332,14 @@ footer{
 	position: relative;
 	z-index: 10;
 
+	@media only screen and (max-width: 576px){
+		padding: 80px 60px;
+	}
+
+	@media only screen and (max-width: 400px){
+		padding: 80px 20px;
+	}
+
 	h6{
 		text-transform: uppercase;
 		padding-top: 18px;
