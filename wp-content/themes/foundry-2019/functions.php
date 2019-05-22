@@ -256,7 +256,7 @@ function html5_blank_view_article($more)
 // Remove Admin bar
 function remove_admin_bar()
 {
-    return false;
+    return true;
 }
 
 // Remove 'text/css' from our enqueued stylesheet
@@ -487,6 +487,10 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 }
 
 add_filter( 'post_thumbnail_html', array( __CLASS__, 'lli_images' ) );
-
+//Remove WPAUTOP from ACF TinyMCE Editor
+function acf_wysiwyg_remove_wpautop() {
+    remove_filter('acf_the_content', 'wpautop' );
+}
+add_action('acf/init', 'acf_wysiwyg_remove_wpautop');
 
 ?>

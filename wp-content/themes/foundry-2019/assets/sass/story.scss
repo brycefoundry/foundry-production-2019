@@ -1,0 +1,61 @@
+@import "compass/css3/transform";
+@import "compass/css3"; 
+
+
+
+
+
+body.story{
+	.col-md-6{
+	img{
+			max-height: 200px;
+			width: auto;
+	}	
+	}
+	
+	section:nth-child(6){
+		.col-md-6{
+			img{
+				max-height: none;
+				height: auto;
+				width: 100%;
+			}
+		}
+		.col-md-3{
+			img{
+				max-width: 120px;
+				width: 100%;
+			}	
+		}
+		
+	}
+
+	section:nth-child(1){
+		background: url(/wp-content/uploads/2019/05/Pen.png);
+		background-repeat: no-repeat;
+		padding-top: 500px;
+		background-position: center 200px;
+		background-size: 471px auto;
+
+			@media only screen and (max-width: 2140px){
+			background-size: 371px auto;
+			padding-top: 600px;
+			
+
+			}
+			
+			@media only screen and (max-width: 760px){
+				padding-top: 300px;
+				background-position: center 100px;
+				background-size: 231px auto;
+			}
+		
+	}
+
+
+
+	
+
+	
+}
+

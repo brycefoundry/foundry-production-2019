@@ -82,7 +82,7 @@
 			
 
 			<?php if(get_sub_field('background_type')=='image'): ?>
-				<section class="case-section <?php the_sub_field( 'background_type');?> <?php the_sub_field('contrast')?>" style="background-image:url('<?php the_sub_field( 'background_image');?>');">
+				<section class="page-section <?php the_sub_field( 'background_type');?> <?php the_sub_field('contrast')?>" style="background-image:url('<?php the_sub_field( 'background_image');?>');">
 						
 					<?php the_sub_field('editor')?>
 

@@ -141,7 +141,7 @@
 									<ul class="about-sub-nav about">
 										<li><a href="/about/story/">Story</a></li>
 										<li><a href="/about/strategy/">Strategy</a></li>
-										<li><a href="/about/design-sprints/">Design Sprints</a></li>
+										<li><a href="/about/design-thinking/">Design Thinking</a></li>
 										<li><a href="/about/development/">Development</a></li>
 									</ul>
 

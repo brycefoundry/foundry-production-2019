@@ -54,7 +54,10 @@ strong{
 html{
 	font-size: 16px;
 	font-family: $metaserif;
+
 }
+
+
 
 @media only screen and (max-width: 360px){
 	html{
@@ -205,16 +208,26 @@ section.page-section{
 	
 	z-index: 10;
 
+	&.image{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
 	img{
 		height: auto;
-	  	margin: 20px 0;
+	  	margin: 20px auto;
 	    
 	    width: 100%;
 	    display: flex;
 	    align-self: center;
 
 	}
-
+	.card{
+		img{
+			margin: 0px auto;
+		}
+	}
 
 }
 
@@ -245,7 +258,7 @@ section.white{
 	}
 
 	p{
-		color: rgba(255,255,255,.5);
+		color: rgba(255,255,255,.8);
 	}
 
 	.card{
@@ -737,6 +750,10 @@ body.menu-active #menu .menu ul li{
 
 
 section.page-section{
+
+	.row{
+		padding: 20px 0;
+	}
 	
 	&.active{
 		h1{

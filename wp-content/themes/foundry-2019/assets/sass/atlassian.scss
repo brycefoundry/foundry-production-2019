@@ -1,0 +1,24 @@
+@import "compass/css3/transform";
+@import "compass/css3"; 
+
+
+
+
+
+body.atlassian{
+	
+
+	section:nth-child(3){
+		padding-bottom: 400px;
+	}
+
+	.Major.Experiment.Sprints{
+		.card p{
+			width: 100%;
+			display: block;
+		}
+	}
+
+	
+}
+

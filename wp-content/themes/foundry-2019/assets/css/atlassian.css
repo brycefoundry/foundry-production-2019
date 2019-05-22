@@ -1,0 +1,9 @@
+/* line 11, ../sass/atlassian.scss */
+body.atlassian section:nth-child(3) {
+  padding-bottom: 400px;
+}
+/* line 16, ../sass/atlassian.scss */
+body.atlassian .Major.Experiment.Sprints .card p {
+  width: 100%;
+  display: block;
+}
