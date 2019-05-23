@@ -256,7 +256,7 @@ function html5_blank_view_article($more)
 // Remove Admin bar
 function remove_admin_bar()
 {
-    return true;
+    return false;
 }
 
 // Remove 'text/css' from our enqueued stylesheet
