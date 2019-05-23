@@ -10,6 +10,13 @@ body.alter-g{
 
 	
 	section{
+		&.Anti-Gravity.Treadmill{
+			video{
+				margin: 50px 0;
+				max-width: 100%;
+
+			}
+		}
 		&.Logging.In, &.Patient.Selection, &.Onboarding, &.Inputing.Pain, &.Live.View, &.Ending.a.Session, &.Understanding.Pain{
 			padding-top: 200px;
 			padding-bottom: 200px;

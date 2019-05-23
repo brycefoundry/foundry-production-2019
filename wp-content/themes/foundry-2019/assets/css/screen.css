@@ -1544,19 +1544,24 @@ body.atlassian .Major.Experiment.Sprints .card p {
   display: block;
 }
 
-/* line 13, ../sass/alterg.scss */
+/* line 14, ../sass/alterg.scss */
+body.alter-g section.Anti-Gravity.Treadmill video {
+  margin: 50px 0;
+  max-width: 100%;
+}
+/* line 20, ../sass/alterg.scss */
 body.alter-g section.Logging.In, body.alter-g section.Patient.Selection, body.alter-g section.Onboarding, body.alter-g section.Inputing.Pain, body.alter-g section.Live.View, body.alter-g section.Ending.a.Session, body.alter-g section.Understanding.Pain {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 @media only screen and (max-width: 1100px) {
-  /* line 13, ../sass/alterg.scss */
+  /* line 20, ../sass/alterg.scss */
   body.alter-g section.Logging.In, body.alter-g section.Patient.Selection, body.alter-g section.Onboarding, body.alter-g section.Inputing.Pain, body.alter-g section.Live.View, body.alter-g section.Ending.a.Session, body.alter-g section.Understanding.Pain {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
-/* line 27, ../sass/alterg.scss */
+/* line 34, ../sass/alterg.scss */
 body.alter-g section.Logging.In video, body.alter-g section.Patient.Selection video, body.alter-g section.Onboarding video, body.alter-g section.Inputing.Pain video, body.alter-g section.Live.View video, body.alter-g section.Ending.a.Session video, body.alter-g section.Understanding.Pain video {
   margin: 50px 0;
   max-width: 100%;
