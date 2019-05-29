@@ -59,7 +59,10 @@
 
 			if($('video').length){
 
-
+				var lazyLoadInstance = new LazyLoad({
+				    elements_selector: ".lazy"
+				    // ... more custom settings?
+				});
 				
 				$(window).scroll(function() {
 				    $('video').each(function() {
