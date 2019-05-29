@@ -110,12 +110,7 @@
 									</li>
 
 									<li>
-										<video autoplay muted loop playsinline>
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/man.mp4" type="video/mp4">
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/man.mp4" type="video/ogg">
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/man.webm" type="video/webm">
-										Your browser does not support the video tag.
-										</video>
+										
 									</li>
 								</ul>
 								
