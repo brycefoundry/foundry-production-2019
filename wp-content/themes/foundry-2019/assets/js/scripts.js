@@ -59,7 +59,9 @@
 
 			if($('video').length){
 
-				
+				var bLazy = new Blazy({
+				        // Options
+				    });
 				
 				$(window).scroll(function() {
 				    $('video').each(function() {
