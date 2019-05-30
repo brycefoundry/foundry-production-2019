@@ -44,7 +44,28 @@ body.single-clients{
 			background-position: top center;
 			height: 70vh;
 
-			
+			h1{
+				font-family: $tungsten;
+				text-transform: uppercase;
+				letter-spacing: 5px;
+				font-size: 10rem;
+				color: white;
+				margin: 0;
+				line-height: 9rem;
+				text-indent: 5px;
+				vertical-align: bottom;
+
+				@media only screen and (max-width:1100px){
+					font-size: 6rem;
+					text-indent: 0px;
+					line-height: 6rem;
+					letter-spacing: 5px;
+				}
+
+				.text-container, .word{
+					vertical-align: bottom;
+				}
+			}
 			
 
 			.container{
@@ -64,10 +85,28 @@ body.single-clients{
 					position: absolute;
 					
 					top: 50%;
+
 					@include transform(translateY(-50%));
+
+					@media only screen and (max-width:700px){
+						left: 50%;
+						@include transform(translate(-50%,-50%));
+						padding: 40px;
+						width: 100%;
+						margin: 0;
+
+
+					}
+
+					@media only screen and (max-width: 1100px){
+						.col-md-6{
+							padding: 0;
+							margin: 0;
+						}
+					}
 				}
 
-				h1, p{
+				p{
 					margin-bottom: 20px;
 					color: rgba(255,255,255,.5);
 				}
@@ -83,6 +122,11 @@ body.single-clients{
 					overflow: hidden;
 					background-repeat: no-repeat;
 					background-position: bottom left;
+					display: none;
+
+					@media only screen and (max-width: 1100px){
+						//display: block;
+					}
 				}
 			}
 

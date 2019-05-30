@@ -3,28 +3,33 @@ body.alter-g section.Anti-Gravity.Treadmill video {
   margin: 50px 0;
   max-width: 100%;
 }
-/* line 20, ../sass/alterg.scss */
+/* line 22, ../sass/alterg.scss */
 body.alter-g section.Logging.In, body.alter-g section.Patient.Selection, body.alter-g section.Onboarding, body.alter-g section.Inputing.Pain, body.alter-g section.Live.View, body.alter-g section.Ending.a.Session, body.alter-g section.Understanding.Pain, body.alter-g section.Patient.Portal, body.alter-g section.Treadmill.InterfaceUI {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 @media only screen and (max-width: 1100px) {
-  /* line 20, ../sass/alterg.scss */
+  /* line 22, ../sass/alterg.scss */
   body.alter-g section.Logging.In, body.alter-g section.Patient.Selection, body.alter-g section.Onboarding, body.alter-g section.Inputing.Pain, body.alter-g section.Live.View, body.alter-g section.Ending.a.Session, body.alter-g section.Understanding.Pain, body.alter-g section.Patient.Portal, body.alter-g section.Treadmill.InterfaceUI {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 @media only screen and (max-width: 400px) {
-  /* line 20, ../sass/alterg.scss */
+  /* line 22, ../sass/alterg.scss */
   body.alter-g section.Logging.In, body.alter-g section.Patient.Selection, body.alter-g section.Onboarding, body.alter-g section.Inputing.Pain, body.alter-g section.Live.View, body.alter-g section.Ending.a.Session, body.alter-g section.Understanding.Pain, body.alter-g section.Patient.Portal, body.alter-g section.Treadmill.InterfaceUI {
     padding-top: 60px;
     padding-bottom: 40px;
   }
 }
-/* line 37, ../sass/alterg.scss */
+/* line 39, ../sass/alterg.scss */
 body.alter-g section.Logging.In video, body.alter-g section.Patient.Selection video, body.alter-g section.Onboarding video, body.alter-g section.Inputing.Pain video, body.alter-g section.Live.View video, body.alter-g section.Ending.a.Session video, body.alter-g section.Understanding.Pain video, body.alter-g section.Patient.Portal video, body.alter-g section.Treadmill.InterfaceUI video {
   margin: 50px 0;
   max-width: 100%;
+  width: 100%;
   vertical-align: top;
+}
+/* line 47, ../sass/alterg.scss */
+body.alter-g section.Logging.In .video-container, body.alter-g section.Patient.Selection .video-container, body.alter-g section.Onboarding .video-container, body.alter-g section.Inputing.Pain .video-container, body.alter-g section.Live.View .video-container, body.alter-g section.Ending.a.Session .video-container, body.alter-g section.Understanding.Pain .video-container, body.alter-g section.Patient.Portal .video-container, body.alter-g section.Treadmill.InterfaceUI .video-container {
+  width: 100%;
 }

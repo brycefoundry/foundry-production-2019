@@ -59,6 +59,7 @@ $gallerycount = 0;
 
 	<div class="container">
 		<div class="row">
+			<h1><?php the_title(); ?></h1>
 			<div class="col-md-6">
 				<div class="logo" style="background-image:url('<?php the_field( 'client_logo');?>');"> </div>
 				<p><?php the_field( 'description');?></p>

@@ -17,6 +17,8 @@ body.alter-g{
 
 			}
 		}
+
+
 		&.Logging.In, &.Patient.Selection, &.Onboarding, &.Inputing.Pain, &.Live.View, &.Ending.a.Session, &.Understanding.Pain, &.Patient.Portal, &.Treadmill.InterfaceUI{
 			padding-top: 200px;
 			padding-bottom: 200px;
@@ -37,8 +39,13 @@ body.alter-g{
 			video{
 				margin: 50px 0;
 				max-width: 100%;
+				width: 100%;
 				vertical-align: top;
 
+			}
+
+			.video-container{
+				width: 100%;
 			}
 		}
 	}
