@@ -172,15 +172,17 @@ a.btn-primary, button.btn-primary{
 	font-size: .65rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	background-color: rgba(0,0,0,.9);
-	color: $primary-white-1;
+	background-color: white;
+	color: $primary-black-1;
 	@include transition($sm-duration);
 	padding: 12px 20px;
 	@include border-radius(2px);
 	margin: 10px 0 10px 0;
+	@include box-shadow(0 0 5px (rgba(0,0,0,.4)));
 
 	&:hover{
 		background-color: $primary-black-1;
+		color: white;
 		@include transition($sm-duration);
 	}
 }
@@ -192,6 +194,7 @@ a.btn-secondary, button.btn-secondary{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	background-color: $secondary-green-1;
+	color: white;
 	@include transition($sm-duration);
 	padding: 12px 20px;
 	@include border-radius(2px);
@@ -551,7 +554,7 @@ body.meet{
 					margin: 10px 10px 10px 0;
 
 					&:last-child{
-						background-color: $secondary-green-1;
+						
 
 					}
 				}
