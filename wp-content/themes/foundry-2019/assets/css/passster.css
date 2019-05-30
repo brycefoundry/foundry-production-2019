@@ -1192,6 +1192,37 @@ h5.card-title {
   height: 100%;
 }
 
+/* line 1043, ../sass/global.scss */
+div.pdfemb-wantmobile-fsarea {
+  position: absolute !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 13px 20px !important;
+  max-height: none !important;
+  color: white !important;
+  -moz-border-radius: 2px !important;
+  -webkit-border-radius: 2px;
+  border-radius: 2px !important;
+  background-color: #30313B !important;
+  font-family: "Futura-Std-Bold", "Helvetica", sans-serif !important;
+  letter-spacing: 1px !important;
+  line-height: auto !important;
+  -moz-box-shadow: 0 0 0 black !important;
+  -webkit-box-shadow: 0 0 0 black !important;
+  box-shadow: 0 0 0 black !important;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  margin: 0 !important;
+  border: none !important;
+  left: 50%;
+  text-transform: uppercase;
+  width: 220px !important;
+  font-size: 12px !important;
+}
+
 /* line 7, ../sass/passster.scss */
 .container.locked {
   max-width: 100%;
