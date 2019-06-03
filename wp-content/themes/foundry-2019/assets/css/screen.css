@@ -1305,8 +1305,7 @@ body.single-clients section.image {
 /* line 29, ../sass/case-detail.scss */
 body.single-clients section img.size-full {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
 }
 /* line 40, ../sass/case-detail.scss */
 body.single-clients section.intro {

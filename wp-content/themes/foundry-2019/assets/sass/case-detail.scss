@@ -1,6 +1,6 @@
 @import "compass/css3/transform";
 @import "compass/css3"; 
-
+@import "fonts";
 
 
 
@@ -28,8 +28,8 @@ body.single-clients{
 		img{
 			&.size-full{
 				width: 100%;
-				height: auto;
-				object-fit: contain;
+				height: 100%;
+				
 			}
 		}
 
