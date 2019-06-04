@@ -1619,6 +1619,10 @@ body.atlassian .Major.Experiment.Sprints .card p {
   width: 100%;
   display: block;
 }
+/* line 22, ../sass/atlassian.scss */
+body.atlassian .Mobile.Community.Profile, body.atlassian .Experiments.Cover {
+  min-height: 600px;
+}
 
 /* line 14, ../sass/alterg.scss */
 body.alter-g section.Anti-Gravity.Treadmill video {
