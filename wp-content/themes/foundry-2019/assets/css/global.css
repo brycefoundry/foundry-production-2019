@@ -1139,28 +1139,32 @@ h5.card-title {
   margin: 0;
 }
 /* line 998, ../sass/global.scss */
+.modal-dialog img {
+  width: 100%;
+  height: 100%;
+}
+/* line 1003, ../sass/global.scss */
 .modal-dialog .col-md-6 {
   margin: 0;
   padding: 0 20px 0 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 998, ../sass/global.scss */
+  /* line 1003, ../sass/global.scss */
   .modal-dialog .col-md-6 {
     padding: 0;
   }
 }
-/* line 1007, ../sass/global.scss */
-.modal-dialog img {
+/* line 1009, ../sass/global.scss */
+.modal-dialog .col-md-6 img {
   width: 100%;
   height: auto;
-  object-fit: contain;
 }
-/* line 1015, ../sass/global.scss */
+/* line 1018, ../sass/global.scss */
 .modal-dialog br {
   display: none;
 }
 
-/* line 1022, ../sass/global.scss */
+/* line 1025, ../sass/global.scss */
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -1169,7 +1173,7 @@ h5.card-title {
   max-width: 100%;
   height: auto;
 }
-/* line 1030, ../sass/global.scss */
+/* line 1033, ../sass/global.scss */
 .embed-container iframe, .embed-container object, .embed-container embed {
   position: absolute;
   top: 0;
@@ -1178,7 +1182,7 @@ h5.card-title {
   height: 100%;
 }
 
-/* line 1040, ../sass/global.scss */
+/* line 1043, ../sass/global.scss */
 div.pdfemb-wantmobile-fsarea {
   position: absolute !important;
   width: auto !important;

@@ -157,7 +157,7 @@
 										<li class="locked"><a href="/clients/heyl-group/">KW Heyl Group</a></li>
 										<li class="locked"><a href="/clients/maxplay/">MaxPlay</a></li>
 										<li class="locked"><a href="/clients/nokia-bell-labs/">Nokia Bell Labs</a></li>
-										<li class="locked"><a href="/clients/twia/">TWIA</a></li>
+										<li><a href="/clients/twia/">TWIA</a></li>
 										<li class="locked"><a href="/clients/valera-health/">Valera Health</a></li>
 									</ul>
 								</div>
