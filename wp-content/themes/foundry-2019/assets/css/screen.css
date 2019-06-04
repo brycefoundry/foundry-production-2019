@@ -1310,7 +1310,6 @@ body.single-clients section.case-section .row {
 body.single-clients section.image {
   background-size: cover;
   background-position: center center;
-  min-height: 600px;
 }
 /* line 32, ../sass/case-detail.scss */
 body.single-clients section img.size-full {

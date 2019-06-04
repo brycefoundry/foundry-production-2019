@@ -12,7 +12,7 @@ body.single-clients{
 		&.case-section{
 			.row{
 				padding: 60px 0;
-				@media only screen and(max-width:1100px){
+				@media only screen and (max-width:1100px){
 					padding: 20px 0;
 				}
 			}
@@ -25,7 +25,7 @@ body.single-clients{
 		&.image{
 			background-size: cover;
 			background-position: center center;
-			min-height: 600px;
+			
 		}
 
 		img{
