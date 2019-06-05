@@ -173,6 +173,7 @@ $gallerycount = 0;
 	'post_type' => 'clients',
 	'posts_per_page' => '4',
 	'post_status' => 'published',
+	'post__not_in' => array( get_the_ID() ),
 	);
 	$the_query = new WP_Query( $args );
 	?>
