@@ -493,4 +493,34 @@ function acf_wysiwyg_remove_wpautop() {
 }
 add_action('acf/init', 'acf_wysiwyg_remove_wpautop');
 
+add_filter('posts_where', 'no_privates');
+function no_privates($where) {
+    if( is_admin() ) return $where;
+
+    global $wpdb;
+    return " $where AND {$wpdb->posts}.post_status != 'private' ";
+}
+
+function remove_empty_tags_around_shortcodes_acf_wysiwyg( $value ) {
+  $tags = array(
+      '<p>[' => '[',
+      ']</p>' => ']',
+      ']<br>' => ']',
+      ']<br />' => ']'
+  );
+
+  $content = apply_filters('the_content',$value);
+  $content = strtr($content, $tags);
+  return $content;
+}
+
+add_filter('acf_the_content', 'remove_empty_tags_around_shortcodes_acf_wysiwyg', 10, 1);
+
+
+// Remove P Tags Around Images 
+function filter_ptags_on_images($content){
+    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+add_filter('the_content', 'filter_ptags_on_images');
+
 ?>

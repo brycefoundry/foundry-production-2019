@@ -177,12 +177,13 @@ body.single-clients section.intro .container .row {
 body.single-clients section.intro .container p {
   margin-bottom: 20px;
   color: white;
+  max-width: 480px;
 }
-/* line 125, ../sass/case-detail.scss */
+/* line 126, ../sass/case-detail.scss */
 body.single-clients section.intro .container p {
   margin-top: 20px;
 }
-/* line 129, ../sass/case-detail.scss */
+/* line 130, ../sass/case-detail.scss */
 body.single-clients section.intro .container .logo {
   height: 60px;
   background-size: auto 100%;
@@ -203,12 +204,12 @@ body.single-clients section.intro .container .logo {
     padding: 300px 20px;
     height: auto !important;
   }
-  /* line 154, ../sass/case-detail.scss */
+  /* line 155, ../sass/case-detail.scss */
   body.single-clients section.intro .container {
     padding: 0 20px;
   }
 }
-/* line 170, ../sass/case-detail.scss */
+/* line 171, ../sass/case-detail.scss */
 body.single-clients.menu-active .header .logo {
   opacity: 1;
   -moz-transition: all 0.2s ease-in-out;
@@ -220,56 +221,56 @@ body.single-clients.menu-active .header .logo {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 177, ../sass/case-detail.scss */
+/* line 178, ../sass/case-detail.scss */
 body.single-clients .card {
   min-height: 330px;
 }
 @media only screen and (min-width: 1920px) {
-  /* line 177, ../sass/case-detail.scss */
+  /* line 178, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 450px;
   }
 }
 @media only screen and (max-width: 980px) {
-  /* line 177, ../sass/case-detail.scss */
+  /* line 178, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 400px;
   }
 }
 @media only screen and (max-width: 750px) {
-  /* line 177, ../sass/case-detail.scss */
+  /* line 178, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 330px;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 177, ../sass/case-detail.scss */
+  /* line 178, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 400px;
   }
 }
 @media only screen and (max-width: 400px) {
-  /* line 177, ../sass/case-detail.scss */
+  /* line 178, ../sass/case-detail.scss */
   body.single-clients .card {
     min-height: 370px;
   }
 }
-/* line 200, ../sass/case-detail.scss */
+/* line 201, ../sass/case-detail.scss */
 body.single-clients .card p {
   margin: 0;
 }
-/* line 204, ../sass/case-detail.scss */
+/* line 205, ../sass/case-detail.scss */
 body.single-clients .card br {
   display: none;
 }
-/* line 208, ../sass/case-detail.scss */
+/* line 209, ../sass/case-detail.scss */
 body.single-clients .card .btn {
   width: 100%;
   position: absolute;
   bottom: 20px;
   left: 0;
 }
-/* line 217, ../sass/case-detail.scss */
+/* line 218, ../sass/case-detail.scss */
 body.single-clients .card .card-body {
   position: relative;
   display: flex;
@@ -277,44 +278,44 @@ body.single-clients .card .card-body {
   padding: 20px 0 0 0;
   margin: 0 20px;
 }
-/* line 225, ../sass/case-detail.scss */
+/* line 226, ../sass/case-detail.scss */
 body.single-clients .card .card-title {
   display: inline-block;
   margin: 0px 0 0 0;
 }
 
-/* line 236, ../sass/case-detail.scss */
+/* line 237, ../sass/case-detail.scss */
 body.postid-91 .Group.Profiles.Cover {
   height: 100vh;
 }
-/* line 243, ../sass/case-detail.scss */
+/* line 244, ../sass/case-detail.scss */
 body.postid-91 section.intro {
   background-color: #0048C3;
 }
 @media only screen and (max-width: 768px) {
-  /* line 243, ../sass/case-detail.scss */
+  /* line 244, ../sass/case-detail.scss */
   body.postid-91 section.intro {
     background-position: center 270px;
   }
 }
 
-/* line 256, ../sass/case-detail.scss */
+/* line 257, ../sass/case-detail.scss */
 body.postid-107 section.intro {
   background-color: #FF7E01;
 }
 @media only screen and (max-width: 768px) {
-  /* line 256, ../sass/case-detail.scss */
+  /* line 257, ../sass/case-detail.scss */
   body.postid-107 section.intro {
     background-position: -420px 170px;
   }
 }
 
-/* line 267, ../sass/case-detail.scss */
+/* line 268, ../sass/case-detail.scss */
 body.postid-74 section.intro {
   background-color: black;
 }
 @media only screen and (max-width: 768px) {
-  /* line 267, ../sass/case-detail.scss */
+  /* line 268, ../sass/case-detail.scss */
   body.postid-74 section.intro {
     background-position: -610px 200px;
   }

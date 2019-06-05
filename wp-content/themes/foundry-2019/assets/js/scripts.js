@@ -77,7 +77,9 @@
 		}
 
 		singleclients = function(){
-			
+			$('.case-section .card .btn-primary').unwrap();
+
+
 		}
 
 		videocover = function(){

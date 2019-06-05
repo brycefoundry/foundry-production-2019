@@ -160,3 +160,44 @@ $gallerycount = 0;
 	<?php endwhile; ?>
 
 <?php endif; ?>
+
+
+
+<section class="random-cases">
+	<div class="container">
+		<div class="row">
+			<h2>More Cases</h2>
+	<?php 
+	$args = array( 
+	'orderby' => 'rand',
+	'post_type' => 'clients',
+	'posts_per_page' => '4',
+	'post_status' => 'published',
+	);
+	$the_query = new WP_Query( $args );
+	?>
+	<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+	
+	<div class="col-md-3">
+		
+		
+		<div class="card">
+			<a href="<?php the_permalink(); ?>"><div class="cover-image" style="background-image:url('<?php
+			$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+			echo $feat_image;
+			?>');"></div></a>
+			<div class="card-body">
+				<h3 class="card-title"><?php the_title() ;?></h3>
+				<a class="btn btn-primary" href="<?php the_permalink(); ?>">Read Case</a>	
+			</div>
+		
+		</div>
+	</div>
+	
+			
+		
+	<?php endwhile; else: ?> <?php endif; ?>
+	<?php wp_reset_query(); ?>
+		</div>
+	</div>
+</section>
