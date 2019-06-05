@@ -125,7 +125,7 @@
 										<li class="page_item "><a href="/">Home</a></li>
 										<li class="expandable clients"><button>Clients<span class="chevron"></span></button></li>
 										<li class="expandable about"><button>About<span class="chevron"></span></button></li>
-										<li class="page_item"><a href="/meet/">Meet</a></li>
+										<!--<li class="page_item"><a href="/meet/">Meet</a></li>-->
 										<!--<li class="page_item"><a href="/news-media/">News &amp; Media</a></li>-->
 									</ul>
 								</div>
