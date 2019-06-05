@@ -77,7 +77,7 @@ $gallerycount = 0;
 							$link_title = $link['title'];
 							$link_target = $link['target'] ? $link['target'] : 'self';
 							?>
-							<a class="btn btn-primary" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+							<p><a class="btn btn-primary" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a></p>
 						<?php endif; ?>
 						
 					<?php endwhile; ?>

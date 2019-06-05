@@ -77,7 +77,7 @@
 		}
 
 		singleclients = function(){
-			$('.case-section .card .btn-primary').unwrap();
+			$('.case-section .btn-primary').unwrap();
 
 
 		}
