@@ -177,7 +177,6 @@ body.single-clients section.intro .container .row {
 body.single-clients section.intro .container p {
   margin-bottom: 20px;
   color: white;
-  max-width: 480px;
 }
 /* line 126, ../sass/case-detail.scss */
 body.single-clients section.intro .container p {
