@@ -11,3 +11,9 @@ body.atlassian .Major.Experiment.Sprints .card p {
 body.atlassian .Mobile.Community.Profile, body.atlassian .Experiments.Cover {
   min-height: 600px;
 }
+@media only screen and (max-width: 500px) {
+  /* line 22, ../sass/atlassian.scss */
+  body.atlassian .Mobile.Community.Profile, body.atlassian .Experiments.Cover {
+    min-height: 200px;
+  }
+}
