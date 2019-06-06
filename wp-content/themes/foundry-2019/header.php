@@ -123,7 +123,7 @@
 								<div class="menu">
 									<ul>
 										<li class="page_item "><a href="/">Home</a></li>
-										<li class="expandable clients"><button>Clients<span class="chevron"></span></button></li>
+										<li class="expandable clients"><button>Projects<span class="chevron"></span></button></li>
 										<li class="expandable about"><button>About<span class="chevron"></span></button></li>
 										<!--<li class="page_item"><a href="/meet/">Meet</a></li>-->
 										<!--<li class="page_item"><a href="/news-media/">News &amp; Media</a></li>-->
@@ -152,7 +152,7 @@
 										<li class="locked"><a href="/clients/bloom-labs/">Career Fair+</a></li>
 										<li class="locked"><a href="/clients/cerebri-ai/">Cerebri AI</a></li>
 										<li class="locked"><a href="/clients/atlassian/">Code My Views</a></li>
-										<li class="locked"><a href="/clients/grace-hill/">Grace Hill</a></li>
+										<li><a href="/clients/grace-hill/">Grace Hill</a></li>
 										<li><a href="/clients/idealspot/">Idealspot</a></li>
 										<li class="locked"><a href="/clients/heyl-group/">KW Heyl Group</a></li>
 										<li class="locked"><a href="/clients/maxplay/">MaxPlay</a></li>
