@@ -1272,5 +1272,6 @@ div.pdfemb-wantmobile-fsarea {
 /* line 1127, ../sass/global.scss */
 .random-cases .card-title {
   display: inline-block;
+  font-size: 1rem;
   margin: 0px 0 0 0;
 }

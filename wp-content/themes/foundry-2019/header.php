@@ -154,7 +154,7 @@
 										<li class="locked"><a href="/clients/atlassian/">Code My Views</a></li>
 										<li><a href="/clients/grace-hill/">Grace Hill</a></li>
 										<li><a href="/clients/idealspot/">Idealspot</a></li>
-										<li class="locked"><a href="/clients/heyl-group/">KW Heyl Group</a></li>
+										<li><a href="/clients/heyl-group/">KW Heyl Group</a></li>
 										<li class="locked"><a href="/clients/maxplay/">MaxPlay</a></li>
 										<li class="locked"><a href="/clients/nokia-bell-labs/">Nokia Bell Labs</a></li>
 										<li><a href="/clients/twia/">TWIA</a></li>

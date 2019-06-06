@@ -1351,6 +1351,7 @@ div.pdfemb-wantmobile-fsarea {
 /* line 1127, ../sass/global.scss */
 .random-cases .card-title {
   display: inline-block;
+  font-size: 1rem;
   margin: 0px 0 0 0;
 }
 
@@ -1640,6 +1641,23 @@ body.postid-105 section.Live.Site .container, body.postid-105 section.Vantage .c
 }
 /* line 309, ../sass/case-detail.scss */
 body.postid-105 section.Live.Site:after, body.postid-105 section.Vantage:after {
+  background-color: rgba(0, 0, 0, 0.4);
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 326, ../sass/case-detail.scss */
+body.postid-109 section.intro .container {
+  z-index: 20;
+}
+/* line 331, ../sass/case-detail.scss */
+body.postid-109 section.intro:after {
   background-color: rgba(0, 0, 0, 0.4);
   content: "";
   display: block;
