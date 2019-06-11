@@ -46,7 +46,7 @@ get_header(); ?>
 				</div>
 
 				<div class="row">
-					<div class="video-container"><video class="vid_no_margin b-lazy" poster="/wp-content/uploads/2019/06/five-years-placeholder.png" loop="loop" muted="" controls>
+					<div class="video-container"><video class="vid_no_margin b-lazy" poster="/wp-content/uploads/2019/06/five-years-placeholder.png" loop="loop" muted="" controls playsinline>
 					<source data-src="/wp-content/uploads/2019/06/five-years.mp4" type="video/mp4" />
 					<source data-src="/wp-content/uploads/2019/06/five-years.webmhd.webm" type="video/webm" />
 					</video></div>
