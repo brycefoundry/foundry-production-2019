@@ -1,0 +1,323 @@
+@import "compass/css3/transform";
+@import "compass/css3"; 
+@import "fonts";
+
+
+
+
+body.home{
+	
+	section.page-section, section{
+		@media only screen and (max-width: 576px){
+			padding: 20px;
+		}
+	}
+	
+	background: url(/wp-content/uploads/2019/06/leaves-bg.png) no-repeat black;
+	background-size:  auto 1317px;
+	background-position: -140px top;
+	background-attachment: fixed;
+
+	@media only screen and(max-width: 2200px){
+		background-size: auto 1200px;
+	}
+
+	@media only screen and(max-width: 2000px){
+		background-size: auto 1000px;
+	}
+
+	@media only screen and(max-width: 1750px){
+		background-size: auto 800px;
+	}
+
+	@media only screen and(max-width: 576px){
+		background-attachment: scroll;
+	}
+	
+
+	h1,h2,h3,h4,h5,h6,p{
+		color: white;
+	}
+
+	h1{
+		font-family: $tungsten;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-size: 10rem;
+		color: white;
+		margin: 0;
+		line-height: 9rem;
+		text-indent: 0px;
+		vertical-align: bottom;
+
+		@media only screen and (max-width:1100px){
+			font-size: 18.5vw;
+			text-indent: 0px;
+			line-height: unset;
+			letter-spacing: 5px;
+		}
+	}
+
+	h2{
+		color: #409C94;
+	}
+
+	img{
+		max-width: 100%;
+		height: auto;
+		width: auto;
+		display: block;
+	}
+
+	section .video-container, section video{
+		width: 100%;
+	}
+
+	a.inline-link{
+		font-family: $futura;
+		text-transform: uppercase;
+		color: white;
+		font-size: .65rem;
+		padding-right: 20px;
+		position: relative;
+		letter-spacing: 1px;
+
+		&:after{
+			content: "";
+			display: block;
+			width: 7px;
+			height: 10px;
+			background: url(/wp-content/uploads/2019/06/chevron-right.svg);
+			background-repeat: no-repeat;
+			background-size: 7px 10px;
+			position: absolute;
+			right: 0px;
+			top: 2px;
+			@include transform(translateX(0px));
+			@include transition(.2s all ease-in-out);
+		}
+
+		&:hover{
+			text-decoration: none;
+			
+			&:after{
+			@include transition(.2s all ease-in-out);
+			@include transform(translateX(4px));	
+			}
+		}
+
+		@media only screen and (max-width: 2400px){
+			&:after{
+				top: 1px;
+			}
+		}
+
+		@media only screen and (max-width: 1900px){
+			&:after{
+				top: 0px;
+			}
+		}
+
+		@media only screen and (max-width: 360px){
+			font-size: 1rem;
+			&:after{
+				top: 0px;
+			}
+		}
+
+	}
+
+	.masthead.page-section{
+		@media only screen and (max-width: 576px){
+			padding-top: 100px;
+		}
+		.container .row{
+			margin: 90px auto;
+
+			@media only screen and (max-width: 576px){
+				margin: 00px auto;
+				margin-top: 0px;
+
+			}
+			
+		}
+
+		.container.lg-logo{
+			position: relative;
+			&:before{
+				background: url(/wp-content/uploads/2019/06/thompsonux-lg-logo-1.png);
+				background-size: 356px 270px;
+				content: "";
+				width: 356px;
+				height: 270px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				@include transform-origin(top, left);
+				@include transform(translateX(-370px)translateY(22px)scale(.9,.9));
+
+				@media only screen and (max-width: 2400px){
+					@include transform(translateX(-370px)translateY(22px)scale(.75,.75));					
+				}
+
+				@media only screen and (max-width: 2000px){
+					@include transform(translateX(0px)translateY(22px)scale(.75,.75));					
+				}
+
+				@media only screen and (max-width: 1920px){
+					@include transform(translateX(0px)translateY(22px)scale(.68,.68));					
+				}
+
+				@media only screen and (max-width: 992px){
+					@include transform(translateX(0px)translateY(22px)scale(.5,.5));					
+				}
+
+				@media only screen and (max-width: 576px){
+					@include transform(translateX(0px)translateY(22px)scale(.3,.3));					
+					display: none;
+				}
+			}
+
+			
+		}
+
+
+		h1, h2{
+			@media only screen and (max-width: 2000px){
+				@include transform(translateX(290px));
+			}
+
+			@media only screen and (max-width: 992px){
+				@include transform(translateX(190px));
+			}
+
+			@media only screen and (max-width: 576px){
+				@include transform(translateX(0px));
+				text-align: center;
+			}
+		}
+	}
+
+	.bg-video .five-years{
+		margin-top: 0px;
+		h1,h3{
+			text-align: center;
+		}
+
+		h3{
+			color: #409C94;
+		}
+
+		.video-container{
+			margin: 60px auto;
+		}
+
+		@media only screen and (max-width: 576px){
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.process{
+		.row{
+			margin: 120px 0;
+
+			@media only screen and (max-width: 576px){
+				margin: 40px 0;
+			}
+		}
+	}
+
+	.callout{
+		padding-bottom: 120px;
+		.container .row{
+
+			padding-top: 140px;
+			padding-bottom: 140px;
+
+			background: url(/wp-content/uploads/2019/06/newage-bg.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			text-align: center;
+
+			.btn{
+				margin: 0 auto;
+			}
+		}
+	}
+
+	aside{
+		width: 420px;
+		position: fixed;
+		background-color: white;
+		right: 0;
+		height: 100vh;
+		top: 0px;
+		z-index: 20;
+
+		@media only screen and (max-width: 1220px){
+			display: none;
+		}
+
+		padding-top: 200px;
+		.container{
+			padding: 0 40px 40px 40px;			
+		}
+
+		a{
+			color: black;
+			padding: 15px 0;
+			display: block;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+		li{
+			border-bottom: 1px dotted rgba(0,0,0,.5);
+		}
+
+
+
+		h3{
+			color: black;
+		}
+	}
+
+	.header.minified .logo{
+		@include transform(translate(0,0));
+		@include opacity(1);
+	}
+
+	.light-logo .logo.active{
+		@media only screen and (max-width: 1220px){
+			background-image: url(/wp-content/themes/foundry-2019/assets/img/logo-dark.png);
+		}
+	}
+
+
+	section{
+		.container{
+			@media only screen and (max-width: 2000px){
+				padding-right: 340px;
+			}
+
+			@media only screen and (max-width: 1400px){
+				padding-right: 400px;
+			}
+
+			@media only screen and (max-width: 1220px){
+				padding-right: 0px;
+			}
+
+			@media only screen and (max-width: 576px){
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+
+
+}
+

@@ -237,6 +237,9 @@ body.menu-active{
 	@include box-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
 	@include transition($sm-duration);
 	@include border-radius(2px);
+	@media only screen and (max-width: 1100px){
+		@include border-radius(0);
+	}
 
 	@media only screen and (max-width: 1340px){
 		right: 80px;
@@ -256,6 +259,10 @@ body.menu-active{
 		@include transform(translate(-29px, 39px)rotate(0));
 		@include transition(.2s all ease-in-out);
 		text-indent: -10000px;
+
+		@media only screen and (max-width: 1100px){
+			@include transform(translate(-29px, 38px)rotate(0));
+		}
 
 		&:before{
 			content: "";
@@ -1050,9 +1057,12 @@ body.menu-active{
 	#menu-btn{
 		border: 1px solid rgba(0,0,0,.1);
 		@include border-radius(2px);
+		@media only screen and (max-width: 1100px){
+			@include border-radius(0);
+		}
 
 		span{
-			@include transform(translate(-28px, 38px)rotate(45deg));
+			@include transform(translate(-29px, 38px)rotate(45deg));
 			@include transition($sm-duration);
 
 			&:before{
