@@ -177,10 +177,10 @@ get_header(); ?>
 		<div class="container">
 			<h3>Contact</h3>
 			<ul>
-				<li><a href="https://instagram.com/thompsonuxdesign">Instagram</a></li>
-				<li><a href="https://twitter.com/thompson_ux">Twitter</a></li>
-				<li><a href="https://dribbble.com/mynameisbryce">Dribbble</a></li>
-				<li><a href="mailto:bryce@thompsonux.com">Email</a></li>
+				<li><a target="_blank" href="https://instagram.com/thompsonuxdesign">Instagram</a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/in/mynameisbryce/">LinkedIn</a></li>
+				<li><a target="_blank" href="https://dribbble.com/mynameisbryce">Dribbble</a></li>
+				<li><a target="_blank" href="mailto:bryce@thompsonux.com">Email</a></li>
 			</ul>
 		</div>
 

@@ -17,8 +17,10 @@
 							<h6>Social</h6>
 							<ul>
 								
-								<li><strong>T:</strong><a target="_blank" href="https://twitter.com/thompson_ux">thompson_ux</a></li>
-								<li><strong>I:</strong><a target="_blank" href="https://instagram.com/thompsonuxdesign">thompsonuxdesign</a></li>
+								<li><strong>D:</strong><a target="_blank" href="https://dribbble.com/mynameisbryce">mynameisbryce</a></li>
+								<li><strong>I:</strong><a target="_blank" href="https://www.instagram.com/brycethompsonux/">brycethompsonux</a></li>
+								<li><strong>L:</strong><a target="_blank" href="https://www.linkedin.com/in/mynameisbryce/">mynameisbryce</a></li>
+								<li><strong>E:</strong><a target="_blank" href="mailto:bryce@thompsonux.com">bryce@thompsonux.com</a></li>
 							</ul>
 						</div>
 
