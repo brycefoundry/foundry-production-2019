@@ -433,25 +433,25 @@ body.home .header.minified .logo {
 }
 @media only screen and (max-width: 2000px) {
   /* line 301, ../sass/home.scss */
-  body.home section .container {
+  body.home section .container, body.home footer .container {
     padding-right: 340px;
   }
 }
 @media only screen and (max-width: 1400px) {
   /* line 301, ../sass/home.scss */
-  body.home section .container {
+  body.home section .container, body.home footer .container {
     padding-right: 400px;
   }
 }
 @media only screen and (max-width: 1220px) {
   /* line 301, ../sass/home.scss */
-  body.home section .container {
+  body.home section .container, body.home footer .container {
     padding-right: 0px;
   }
 }
 @media only screen and (max-width: 576px) {
   /* line 301, ../sass/home.scss */
-  body.home section .container {
+  body.home section .container, body.home footer .container {
     padding-left: 15px;
     padding-right: 15px;
   }

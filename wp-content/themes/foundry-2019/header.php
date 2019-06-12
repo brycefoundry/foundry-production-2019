@@ -75,27 +75,27 @@
 								<ul>
 									<li class="active">
 										<video autoplay muted loop playsinline>
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.mp4" type="video/mp4">
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.ogg" type="video/ogg">
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/placeholdervideo.webmhd.webm" type="video/webm">
+										  <source src="/wp-content/uploads/2019/06/ivy-new.mp4.mp4" type="video/mp4">
+										  <source src="/wp-content/uploads/2019/06/ivy-new.mp4.mp4" type="video/ogg">
+										  <source src="/wp-content/uploads/2019/06/ivy-new.mp4.webm" type="video/webm">
 										Your browser does not support the video tag.
 										</video>
 									</li>
 
 									<li>
 										<video autoplay muted loop playsinline>
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/abstract.mp4" type="video/mp4">
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/abstract.mp4" type="video/ogg">
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/abstract.webm" type="video/webm">
+										  <source src="/wp-content/uploads/2019/06/cybernetic.mp4.mp4" type="video/mp4">
+										  <source src="/wp-content/uploads/2019/06/cybernetic.mp4.mp4" type="video/ogg">
+										  <source src="/wp-content/uploads/2019/06/cybernetic.mp4.webm" type="video/webm">
 										Your browser does not support the video tag.
 										</video>
 									</li>
 
 									<li>
 										<video autoplay muted loop playsinline>
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/vr.mp4" type="video/mp4">
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/vr.mp4" type="video/ogg">
-										  <source src="/wp-content/themes/foundry-2019/assets/videos/vr.webm" type="video/webm">
+										  <source src="/wp-content/uploads/2019/06/about.mp4.mp4" type="video/mp4">
+										  <source src="/wp-content/uploads/2019/06/about.mp4.mp4" type="video/ogg">
+										  <source src="/wp-content/uploads/2019/06/about.mp4.webm" type="video/webm">
 										Your browser does not support the video tag.
 										</video>
 									</li>

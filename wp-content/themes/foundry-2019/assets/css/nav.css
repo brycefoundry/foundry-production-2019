@@ -2539,7 +2539,16 @@ body.menu-active #menu .container .col-sm-4.image-area video {
   -webkit-transition-delay: 0.8s;
   transition-delay: 0.8s;
 }
-/* line 1026, ../sass/nav.scss */
+@media only screen and (max-width: 576px) {
+  /* line 1017, ../sass/nav.scss */
+  body.menu-active #menu .container .col-sm-4.image-area video {
+    -moz-transform: translate(-50%, -40%) scale(0.5, 0.5);
+    -ms-transform: translate(-50%, -40%) scale(0.5, 0.5);
+    -webkit-transform: translate(-50%, -40%) scale(0.5, 0.5);
+    transform: translate(-50%, -40%) scale(0.5, 0.5);
+  }
+}
+/* line 1030, ../sass/nav.scss */
 body.menu-active #menu .menu {
   -moz-transform: translate3d(0px, 0, 0);
   -ms-transform: translate3d(0px, 0, 0);
@@ -2555,14 +2564,14 @@ body.menu-active #menu .menu {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
-/* line 1032, ../sass/nav.scss */
+/* line 1036, ../sass/nav.scss */
 body.menu-active #menu .menu ul li {
   -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -o-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-/* line 1036, ../sass/nav.scss */
+/* line 1040, ../sass/nav.scss */
 body.menu-active #menu .menu ul li a, body.menu-active #menu .menu ul li button {
   -moz-transform: translate3d(0px, 0, 0);
   -ms-transform: translate3d(0px, 0, 0);
@@ -2570,7 +2579,7 @@ body.menu-active #menu .menu ul li a, body.menu-active #menu .menu ul li button 
   transform: translate3d(0px, 0, 0);
   opacity: 1;
 }
-/* line 1045, ../sass/nav.scss */
+/* line 1049, ../sass/nav.scss */
 body.menu-active #menu .submenu {
   -moz-transform: translate3d(0px, 0, 0);
   -ms-transform: translate3d(0px, 0, 0);
@@ -2587,7 +2596,7 @@ body.menu-active #menu .submenu {
   -webkit-transition-delay: 0.8s;
   transition-delay: 0.8s;
 }
-/* line 1057, ../sass/nav.scss */
+/* line 1061, ../sass/nav.scss */
 body.menu-active #menu-btn {
   border: 1px solid rgba(0, 0, 0, 0.1);
   -moz-border-radius: 2px;
@@ -2602,14 +2611,14 @@ body.menu-active #menu-btn {
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 @media only screen and (max-width: 1100px) {
-  /* line 1057, ../sass/nav.scss */
+  /* line 1061, ../sass/nav.scss */
   body.menu-active #menu-btn {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
   }
 }
-/* line 1064, ../sass/nav.scss */
+/* line 1068, ../sass/nav.scss */
 body.menu-active #menu-btn span {
   -moz-transform: translate(-29px, 38px) rotate(45deg);
   -ms-transform: translate(-29px, 38px) rotate(45deg);
@@ -2620,7 +2629,7 @@ body.menu-active #menu-btn span {
   -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-/* line 1068, ../sass/nav.scss */
+/* line 1072, ../sass/nav.scss */
 body.menu-active #menu-btn span:before {
   opacity: 0;
   -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -2628,7 +2637,7 @@ body.menu-active #menu-btn span:before {
   -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-/* line 1073, ../sass/nav.scss */
+/* line 1077, ../sass/nav.scss */
 body.menu-active #menu-btn span:after {
   -moz-transform: rotate(-90deg) translate(7px, 0px);
   -ms-transform: rotate(-90deg) translate(7px, 0px);
@@ -2637,12 +2646,12 @@ body.menu-active #menu-btn span:after {
   @incluefcde transition($sm-duration);
 }
 @media only screen and (max-width: 1100px) {
-  /* line 1057, ../sass/nav.scss */
+  /* line 1061, ../sass/nav.scss */
   body.menu-active #menu-btn {
     border: none;
   }
 }
-/* line 1088, ../sass/nav.scss */
+/* line 1092, ../sass/nav.scss */
 body.menu-active .wrapper {
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -2650,7 +2659,7 @@ body.menu-active .wrapper {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 1096, ../sass/nav.scss */
+/* line 1100, ../sass/nav.scss */
 body.submenu-active #menu .submenu ul li {
   -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -o-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -2664,17 +2673,17 @@ body.submenu-active #menu .submenu ul li {
 }
 
 @media only screen and (max-width: 1100px) {
-  /* line 1106, ../sass/nav.scss */
+  /* line 1110, ../sass/nav.scss */
   #menu {
     padding: 0px;
   }
-  /* line 1109, ../sass/nav.scss */
+  /* line 1113, ../sass/nav.scss */
   #menu .container {
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
   }
-  /* line 1112, ../sass/nav.scss */
+  /* line 1116, ../sass/nav.scss */
   #menu .container .col-sm-4.image-area {
     flex: 0 0 100%;
     max-width: 100%;
@@ -2688,14 +2697,14 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transform: scaleX(1) scaleY(0) translate3d(0px, 0, 0);
     transform: scaleX(1) scaleY(0) translate3d(0px, 0, 0);
   }
-  /* line 1120, ../sass/nav.scss */
+  /* line 1124, ../sass/nav.scss */
   #menu .container .col-sm-4.top-nav, #menu .container .col-sm-4.subnav-container {
     max-width: 50%;
     flex: 0 0 50%;
     height: 50%;
   }
 
-  /* line 1132, ../sass/nav.scss */
+  /* line 1136, ../sass/nav.scss */
   body.menu-active #menu .container .col-sm-4.image-area {
     -moz-transform-origin: top center;
     -ms-transform-origin: top center;
@@ -2708,7 +2717,7 @@ body.submenu-active #menu .submenu ul li {
   }
 }
 @media only screen and (max-width: 1100px) {
-  /* line 1142, ../sass/nav.scss */
+  /* line 1146, ../sass/nav.scss */
   .header {
     padding: 0;
     -moz-transform: translate3d(0, 0px, 0);
@@ -2716,14 +2725,14 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transform: translate3d(0, 0px, 0);
     transform: translate3d(0, 0px, 0);
   }
-  /* line 1146, ../sass/nav.scss */
+  /* line 1150, ../sass/nav.scss */
   .header a.back-btn {
     top: 23px;
     left: 23px;
     overflow: hidden;
     width: 40px;
   }
-  /* line 1153, ../sass/nav.scss */
+  /* line 1157, ../sass/nav.scss */
   .header a.logo {
     width: 180px;
     margin-left: -90px;
@@ -2741,18 +2750,18 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
   }
-  /* line 1164, ../sass/nav.scss */
+  /* line 1168, ../sass/nav.scss */
   .header a.logo.active {
     -moz-transition-delay: 0s;
     -o-transition-delay: 0s;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
   }
-  /* line 1174, ../sass/nav.scss */
+  /* line 1178, ../sass/nav.scss */
   .header .logo-container {
     position: relative;
   }
-  /* line 1176, ../sass/nav.scss */
+  /* line 1180, ../sass/nav.scss */
   .header .logo-container:after {
     content: "";
     display: none;
@@ -2785,7 +2794,7 @@ body.submenu-active #menu .submenu ul li {
     transform: scale(0, 0) translate(0, 0px);
   }
 
-  /* line 1202, ../sass/nav.scss */
+  /* line 1206, ../sass/nav.scss */
   body.menu-active .header .logo, body.menu-active .header.minified .logo {
     opacity: 0;
     -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -2797,7 +2806,7 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
   }
-  /* line 1211, ../sass/nav.scss */
+  /* line 1215, ../sass/nav.scss */
   body.menu-active .logo-container:after {
     -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -o-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -2813,7 +2822,7 @@ body.submenu-active #menu .submenu ul li {
     transform: scale(1, 1) translate(0, 156px);
   }
 
-  /* line 1221, ../sass/nav.scss */
+  /* line 1225, ../sass/nav.scss */
   #menu-btn {
     right: 20px;
     top: 20px;
@@ -2821,21 +2830,21 @@ body.submenu-active #menu .submenu ul li {
     width: 41px;
     border: none;
   }
-  /* line 1228, ../sass/nav.scss */
+  /* line 1232, ../sass/nav.scss */
   #menu-btn span {
     right: -19px;
     top: -19px;
   }
-  /* line 1233, ../sass/nav.scss */
+  /* line 1237, ../sass/nav.scss */
   #menu-btn:hover {
     border: none;
   }
 
-  /* line 1238, ../sass/nav.scss */
+  /* line 1242, ../sass/nav.scss */
   #menu {
     padding: 0px;
   }
-  /* line 1241, ../sass/nav.scss */
+  /* line 1245, ../sass/nav.scss */
   #menu:after {
     display: none;
     content: "";
@@ -2857,18 +2866,18 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
-  /* line 1266, ../sass/nav.scss */
+  /* line 1270, ../sass/nav.scss */
   #menu .container {
     overflow-y: scroll;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
   }
-  /* line 1270, ../sass/nav.scss */
+  /* line 1274, ../sass/nav.scss */
   #menu .container .menu, #menu .container .submenu {
     padding: 20px 0 0 0;
   }
-  /* line 1277, ../sass/nav.scss */
+  /* line 1281, ../sass/nav.scss */
   #menu .container .col-sm-4.image-area {
     flex: 0 0 100%;
     max-width: 100%;
@@ -2878,7 +2887,7 @@ body.submenu-active #menu .submenu ul li {
     height: 220px;
     z-index: 100;
   }
-  /* line 1289, ../sass/nav.scss */
+  /* line 1293, ../sass/nav.scss */
   #menu .container .col-sm-4.top-nav, #menu .container .col-sm-4.subnav-container {
     height: 100%;
     margin-top: 220px;
@@ -2887,18 +2896,18 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
-  /* line 1295, ../sass/nav.scss */
+  /* line 1299, ../sass/nav.scss */
   #menu .container .col-sm-4.top-nav .menu, #menu .container .col-sm-4.top-nav .submenu, #menu .container .col-sm-4.subnav-container .menu, #menu .container .col-sm-4.subnav-container .submenu {
     vertical-align: top;
     z-index: 10;
   }
-  /* line 1301, ../sass/nav.scss */
+  /* line 1305, ../sass/nav.scss */
   #menu .container .col-sm-4.top-nav {
     padding-right: 0px;
     max-width: 100%;
     flex: 0 0 100%;
   }
-  /* line 1307, ../sass/nav.scss */
+  /* line 1311, ../sass/nav.scss */
   #menu .container .col-sm-4.subnav-container {
     overflow: hidden;
     max-width: 50%;
@@ -2914,7 +2923,7 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transition-delay: 2s;
     transition-delay: 2s;
   }
-  /* line 1316, ../sass/nav.scss */
+  /* line 1320, ../sass/nav.scss */
   #menu .container .col-sm-4.subnav-container:after {
     width: 1px;
     height: 100%;
@@ -2941,7 +2950,7 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
   }
-  /* line 1330, ../sass/nav.scss */
+  /* line 1334, ../sass/nav.scss */
   #menu .container .col-sm-4.subnav-container .bg {
     width: 100%;
     height: 100%;
@@ -2965,16 +2974,16 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
   }
-  /* line 1350, ../sass/nav.scss */
+  /* line 1354, ../sass/nav.scss */
   #menu .menu ul li {
     border: none;
   }
-  /* line 1351, ../sass/nav.scss */
+  /* line 1355, ../sass/nav.scss */
   #menu .menu ul li a, #menu .menu ul li button {
     font-size: 1.6rem;
     padding: 16px 0 12px 16px;
   }
-  /* line 1358, ../sass/nav.scss */
+  /* line 1362, ../sass/nav.scss */
   #menu .menu ul li.expandable {
     -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -o-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -2982,16 +2991,16 @@ body.submenu-active #menu .submenu ul li {
     transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     background-color: white;
   }
-  /* line 1362, ../sass/nav.scss */
+  /* line 1366, ../sass/nav.scss */
   #menu .menu ul li.expandable button .chevron {
     top: 16px;
   }
-  /* line 1368, ../sass/nav.scss */
+  /* line 1372, ../sass/nav.scss */
   #menu .menu ul li:last-child a {
     max-width: 120px;
   }
 
-  /* line 1379, ../sass/nav.scss */
+  /* line 1383, ../sass/nav.scss */
   body.menu-active #menu:after {
     opacity: 1;
     -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -3004,14 +3013,14 @@ body.submenu-active #menu .submenu ul li {
     transition-delay: 0.6s;
   }
 
-  /* line 1403, ../sass/nav.scss */
+  /* line 1407, ../sass/nav.scss */
   body.submenu-active #menu .container .col-sm-4.subnav-container {
     -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -o-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
-  /* line 1407, ../sass/nav.scss */
+  /* line 1411, ../sass/nav.scss */
   body.submenu-active #menu .container .col-sm-4.subnav-container:after {
     -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -o-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -3022,7 +3031,7 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
-  /* line 1412, ../sass/nav.scss */
+  /* line 1416, ../sass/nav.scss */
   body.submenu-active #menu .container .col-sm-4.subnav-container .bg {
     -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -o-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -3037,7 +3046,7 @@ body.submenu-active #menu .submenu ul li {
     -webkit-transition-delay: 0.4s;
     transition-delay: 0.4s;
   }
-  /* line 1419, ../sass/nav.scss */
+  /* line 1423, ../sass/nav.scss */
   body.submenu-active #menu .container .col-sm-4.top-nav {
     max-width: 50%;
     flex: 0 0 50%;
@@ -3047,20 +3056,20 @@ body.submenu-active #menu .submenu ul li {
     transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
 
-  /* line 1440, ../sass/nav.scss */
+  /* line 1444, ../sass/nav.scss */
   #menu .container .submenu ul.active {
     -moz-transition-delay: 0.4s;
     -o-transition-delay: 0.4s;
     -webkit-transition-delay: 0.4s;
     transition-delay: 0.4s;
   }
-  /* line 1444, ../sass/nav.scss */
+  /* line 1448, ../sass/nav.scss */
   #menu .container .submenu ul li a:hover {
     color: white;
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 1454, ../sass/nav.scss */
+  /* line 1458, ../sass/nav.scss */
   #menu .container {
     background-position: center 90%;
   }
