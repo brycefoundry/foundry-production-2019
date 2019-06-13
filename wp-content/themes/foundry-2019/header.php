@@ -20,7 +20,7 @@
 
 		<?php wp_head(); ?>
 
-
+		<meta name="google-site-verification" content="ExxMZj3vB6guzFM34XKtKLSaByXnuPp6yt5bQRbxTzQ" />
 	</head>
 	<body <?php body_class(); ?>  id="px-offset-waypoint" >
 		
